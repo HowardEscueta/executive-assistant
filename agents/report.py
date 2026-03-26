@@ -10,6 +10,7 @@ from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN
+from pptx.oxml.ns import qn
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPORTS_DIR = os.path.join(PROJECT_ROOT, "output", "reports")
@@ -43,6 +44,30 @@ def add_text(slide, text, left, top, width, height, font_size=14, color=WHITE, b
     p.font.color.rgb = color
     p.font.bold = bold
     p.alignment = alignment
+    return tf
+
+
+def add_hyperlink(slide, text, url, left, top, width, height, font_size=9, color=ACCENT_BLUE):
+    """Add a clickable hyperlink to a slide."""
+    txbox = slide.shapes.add_textbox(Inches(left), Inches(top), Inches(width), Inches(height))
+    tf = txbox.text_frame
+    tf.word_wrap = True
+    p = tf.paragraphs[0]
+    run = p.add_run()
+    run.text = text
+    run.font.size = Pt(font_size)
+    run.font.color.rgb = color
+    run.font.underline = True
+    # Add hyperlink via oxml
+    r_elem = run._r
+    rPr = r_elem.get_or_add_rPr()
+    hlinkClick = rPr.makeelement(qn('a:hlinkClick'), {})
+    rPr.append(hlinkClick)
+    # Create relationship and set rId
+    rel_type = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink'
+    slide_part = slide.part
+    rId = slide_part.relate_to(url, rel_type, is_external=True)
+    hlinkClick.set(qn('r:id'), rId)
     return tf
 
 
@@ -82,8 +107,8 @@ def add_songs_slides(prs, songs):
             details = f"{s['channel']}  |  {s['views']:,} views  |  {s['upload_date']}  |  {s['duration_min']}"
             add_text(slide, details, 0.5, y, 9, 0.25, font_size=10, color=LIGHT_GRAY)
             y += 0.25
-            # URL
-            add_text(slide, s['url'], 0.5, y, 9, 0.25, font_size=9, color=ACCENT_BLUE)
+            # Clickable URL
+            add_hyperlink(slide, s['url'], s['url'], 0.5, y, 9, 0.25)
             y += 0.35
 
 
@@ -103,7 +128,7 @@ def add_ai_slides(prs, videos):
         details = f"{v['channel']}  |  {v['views']:,} views  |  Engagement: {v['engagement_rate']}%  |  {v['upload_date']}"
         add_text(slide, details, 0.5, y, 9, 0.25, font_size=10, color=LIGHT_GRAY)
         y += 0.25
-        add_text(slide, v['url'], 0.5, y, 9, 0.25, font_size=9, color=ACCENT_BLUE)
+        add_hyperlink(slide, v['url'], v['url'], 0.5, y, 9, 0.25)
         y += 0.35
 
 
@@ -123,14 +148,22 @@ def add_leads_slides(prs, leads):
         y = 0.7
         for i, l in enumerate(hot, 1):
             source = l.get('source', 'Web')
-            add_text(slide, f"{i}. [{source}] {l['title']}", 0.3, y, 9.2, 0.3, font_size=13, color=WHITE, bold=True)
+            budget = l.get('budget', '')
+            title_line = f"{i}. [{source}] {l['title']}"
+            if budget:
+                title_line += f"  ({budget})"
+            add_text(slide, title_line, 0.3, y, 9.2, 0.3, font_size=13, color=WHITE, bold=True)
             y += 0.3
             if l.get('snippet'):
                 add_text(slide, l['snippet'][:120], 0.5, y, 9, 0.25, font_size=10, color=LIGHT_GRAY)
                 y += 0.25
-            add_text(slide, l['url'], 0.5, y, 9, 0.25, font_size=9, color=ACCENT_BLUE)
+            add_hyperlink(slide, l['url'], l['url'], 0.5, y, 9, 0.25)
             y += 0.2
-            add_text(slide, f"Score: {l.get('score', 0)}/10", 0.5, y, 2, 0.2, font_size=10, color=ACCENT_YELLOW, bold=True)
+            status = l.get('status', '')
+            score_text = f"Score: {l.get('score', 0)}/10"
+            if status:
+                score_text += f"  |  Status: {status}"
+            add_text(slide, score_text, 0.5, y, 4, 0.2, font_size=10, color=ACCENT_YELLOW, bold=True)
             y += 0.35
 
     if others:
@@ -142,7 +175,7 @@ def add_leads_slides(prs, leads):
         for i, l in enumerate(others, 1):
             add_text(slide, f"{i}. {l['title'][:70]}", 0.3, y, 9.2, 0.25, font_size=11, color=LIGHT_GRAY)
             y += 0.25
-            add_text(slide, l['url'], 0.5, y, 9, 0.25, font_size=9, color=ACCENT_BLUE)
+            add_hyperlink(slide, l['url'], l['url'], 0.5, y, 9, 0.25)
             y += 0.3
 
 

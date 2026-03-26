@@ -3,53 +3,74 @@
   "lead_count": 7,
   "leads": [
     {
-      "title": "Build me a landing page ASAP",
-      "url": "https://www.freelancer.com/projects/website-design/build-landing-page-asap/",
-      "snippet": "Client needs a landing page built urgently. Fast turnaround required.",
-      "source": "Freelancer.com",
-      "score": 7
+      "title": "Fitness Performance Brand Landing Page - SurgeX",
+      "url": "https://www.peopleperhour.com/freelance-landing-page-design-jobs",
+      "snippet": "Clean, premium landing page on Podia for fitness training system. Video integration, minimalist design. Budget: 569 GBP. Posted 1 day ago.",
+      "source": "PeoplePerHour",
+      "score": 8,
+      "budget": "569 GBP",
+      "posted": "1 day ago",
+      "status": "OPEN"
     },
     {
-      "title": "Design a High-Converting Landing Page (UI/UX + HTML)",
-      "url": "https://www.freelancer.com/projects/ui-design/design-high-converting-landing-page",
-      "snippet": "Build a simple, high-converting landing page to collect waitlist registrations. Goal: convert visitors into leads.",
-      "source": "Freelancer.com",
-      "score": 6
+      "title": "Landing Page with AI Optimisation and SEO",
+      "url": "https://www.peopleperhour.com/freelance-landing-page-design-jobs",
+      "snippet": "Conversion-focused landing page with AI-driven optimization and SEO. Hero section + product descriptions. Budget: 80 GBP. Posted 2 days ago.",
+      "source": "PeoplePerHour",
+      "score": 7,
+      "budget": "80 GBP",
+      "posted": "2 days ago",
+      "status": "OPEN"
     },
     {
-      "title": "Custom Website Landing Page",
-      "url": "https://www.freelancer.com/projects/web-design/custom-website-landing-page",
-      "snippet": "Custom landing page for commercial electrical services. Goal: showcase services to potential clients.",
-      "source": "Freelancer.com",
-      "score": 6
+      "title": "Figma Landing Page Design - Tour & Travel Business",
+      "url": "https://www.peopleperhour.com/freelance-landing-page-design-jobs",
+      "snippet": "High-converting landing page for tour and travel business. Focus on lead generation. Budget: 100 USD. Posted 3 days ago.",
+      "source": "PeoplePerHour",
+      "score": 7,
+      "budget": "100 USD",
+      "posted": "3 days ago",
+      "status": "OPEN"
     },
     {
-      "title": "Landing Page and Payment Gateway for Catering Business",
-      "url": "https://www.freelancer.com/projects/graphic-design/landing-page-payment-gateway-design.html",
-      "snippet": "Landing page + payment gateway for catering, mobile bar, and event planning business.",
-      "source": "Freelancer.com",
-      "score": 5
+      "title": "Web Developer Needed for Cardiology Consulting Website",
+      "url": "https://www.peopleperhour.com/freelance-web-development-jobs",
+      "snippet": "Professional healthcare site. Modern, responsive design with appointment booking and blog. Budget: 300 USD. Posted 10 days ago.",
+      "source": "PeoplePerHour",
+      "score": 6,
+      "budget": "300 USD",
+      "posted": "10 days ago",
+      "status": "OPEN"
     },
     {
-      "title": "Simple Custom Landing Page Build",
-      "url": "https://www.freelancer.com/projects/creative-design/simple-custom-landing-page-build",
-      "snippet": "Simple landing page addition to existing website. Text and images provided. Tropical/paradise theme.",
-      "source": "Freelancer.com",
-      "score": 5
+      "title": "Shopify Developer - Small Visual Changes (90% Done)",
+      "url": "https://www.peopleperhour.com/freelance-web-development-jobs",
+      "snippet": "Shopify site 90% complete. Needs small visual changes + long-term collaboration. Budget: 30 GBP. Posted 2 days ago.",
+      "source": "PeoplePerHour",
+      "score": 6,
+      "budget": "30 GBP",
+      "posted": "2 days ago",
+      "status": "OPEN"
     },
     {
-      "title": "Need UI/UX Website Designer (3D & Glassmorphism) - 1 Week Project",
-      "url": "https://www.freelancer.com/projects/ui-design/need-website-designer-glassmorphism-week.html",
-      "snippet": "Landing page with 3D elements and glassmorphism design. 7-day deadline.",
-      "source": "Freelancer.com",
-      "score": 5
+      "title": "Fix Checkout Issue + Site Testing & SEO",
+      "url": "https://www.peopleperhour.com/freelance-web-development-jobs",
+      "snippet": "Diagnose checkout problems, ensure purchase flow works. Budget: 50 GBP. Posted 5 days ago.",
+      "source": "PeoplePerHour",
+      "score": 5,
+      "budget": "50 GBP",
+      "posted": "5 days ago",
+      "status": "OPEN"
     },
     {
-      "title": "Zoho Service Landing Page Design",
-      "url": "https://www.freelancer.com/projects/zoho/zoho-service-landing-page-design.html",
-      "snippet": "Landing page design for Zoho services.",
-      "source": "Freelancer.com",
-      "score": 4
+      "title": "CMS Developer (Remote) - WordPress/Drupal",
+      "url": "https://www.peopleperhour.com/freelance-web-development-jobs",
+      "snippet": "WordPress/Drupal customization. 15 USD/hr. Posted 7 hours ago.",
+      "source": "PeoplePerHour",
+      "score": 5,
+      "budget": "15 USD/hr",
+      "posted": "7 hours ago",
+      "status": "OPEN"
     }
   ]
 }
