@@ -1,6 +1,6 @@
 """
 Morning Briefing Runner
-Runs all 3 research agents and sends results via email.
+Runs all 3 research agents, generates PPT report, and sends email with attachment.
 
 Usage:
     python3 agents/morning_briefing.py
@@ -15,6 +15,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, "agents"))
 
 from agents.youtube_research.research import research, research_new_songs
 from agents.freelance_finder.finder import find
+from agents.report import generate_report
 from agents.emailer import send_briefing
 
 
@@ -23,7 +24,7 @@ def run_briefing():
     print("RUNNING MORNING BRIEFING")
     print("=" * 60)
 
-    # 1. New songs
+    # 1. New songs (English + Filipino only, no lyrics videos)
     print("\n[1/3] Searching for new songs...")
     new_songs = research_new_songs(max_results=10)
 
@@ -35,9 +36,13 @@ def run_briefing():
     print("\n[3/3] Finding freelance leads...")
     leads = find()
 
-    # 4. Send email
-    print("\n[EMAIL] Sending briefing...")
-    success = send_briefing(new_songs=new_songs, ai_trends=ai_trends, leads=leads)
+    # 4. Generate PowerPoint report
+    print("\n[REPORT] Generating PowerPoint...")
+    pptx_path = generate_report(new_songs=new_songs, ai_trends=ai_trends, leads=leads)
+
+    # 5. Send email with PPT attached
+    print("\n[EMAIL] Sending briefing with PPT...")
+    success = send_briefing(new_songs=new_songs, ai_trends=ai_trends, leads=leads, pptx_path=pptx_path)
 
     if success:
         print("\nBriefing sent! Check your email.")

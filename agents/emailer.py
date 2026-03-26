@@ -13,6 +13,8 @@ import os
 import sys
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
 from datetime import date
 
 from dotenv import load_dotenv
@@ -21,8 +23,8 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 load_dotenv(os.path.join(PROJECT_ROOT, ".env"))
 
 
-def send_email(subject, html_body, plain_body=None):
-    """Send an HTML email via Gmail SMTP."""
+def send_email(subject, html_body, plain_body=None, attachment_path=None):
+    """Send an HTML email via Gmail SMTP, optionally with a file attachment."""
     gmail_address = os.environ.get("GMAIL_ADDRESS")
     app_password = os.environ.get("GMAIL_APP_PASSWORD")
     recipient = gmail_address  # Send to self
@@ -32,14 +34,27 @@ def send_email(subject, html_body, plain_body=None):
         print("Need: GMAIL_ADDRESS and GMAIL_APP_PASSWORD")
         return False
 
-    msg = MIMEMultipart("alternative")
+    msg = MIMEMultipart("mixed")
+    body_part = MIMEMultipart("alternative")
+    if plain_body:
+        body_part.attach(MIMEText(plain_body, "plain"))
+    body_part.attach(MIMEText(html_body, "html"))
+    msg.attach(body_part)
+
     msg["From"] = gmail_address
     msg["To"] = recipient
     msg["Subject"] = subject
 
-    if plain_body:
-        msg.attach(MIMEText(plain_body, "plain"))
-    msg.attach(MIMEText(html_body, "html"))
+    # Attach file if provided
+    if attachment_path and os.path.exists(attachment_path):
+        filename = os.path.basename(attachment_path)
+        with open(attachment_path, "rb") as f:
+            attachment = MIMEBase("application", "octet-stream")
+            attachment.set_payload(f.read())
+        encoders.encode_base64(attachment)
+        attachment.add_header("Content-Disposition", f"attachment; filename={filename}")
+        msg.attach(attachment)
+        print(f"Attached: {filename}")
 
     try:
         print(f"Sending email to {recipient}...")
@@ -134,15 +149,14 @@ def build_briefing_html(new_songs=None, ai_trends=None, leads=None):
     return html
 
 
-def send_briefing(new_songs=None, ai_trends=None, leads=None):
-    """Build and send the morning briefing email."""
+def send_briefing(new_songs=None, ai_trends=None, leads=None, pptx_path=None):
+    """Build and send the morning briefing email with PPT attachment."""
     today = date.today().isoformat()
     html = build_briefing_html(new_songs, ai_trends, leads)
     subject = f"Morning Briefing - {today}"
-    return send_email(subject, html)
+    return send_email(subject, html, attachment_path=pptx_path)
 
 
 if __name__ == "__main__":
-    # Test with sample data
     print("Sending test briefing email...")
     send_briefing()

@@ -154,35 +154,103 @@ def print_report(query, videos):
     print(f"{'='*60}\n")
 
 
+def _is_english_or_filipino(title, channel, tags, description):
+    """
+    Strict filter: ONLY allow songs that are clearly English (American/Western)
+    or Filipino/Tagalog. Block everything else.
+    """
+    text = f"{title} {channel} {' '.join(tags)} {description}".lower()
+
+    # Block: any non-Latin characters in title (CJK, Devanagari, Arabic, Cyrillic, etc.)
+    for c in title:
+        cp = ord(c)
+        # Allow basic Latin, Latin Extended, punctuation, digits, common symbols
+        if cp > 0x024F and cp not in range(0x2000, 0x206F):  # general punctuation ok
+            return False
+
+    # Explicitly allow: Filipino/Tagalog indicators
+    filipino_words = ["opm", "tagalog", "filipino", "pinoy", "p-pop",
+                      "bisaya", "visayan", "hugot", "kanta", "awitin",
+                      "wish 107.5", "sb19", "bgyo", "bini", "ppop",
+                      "manila", "philippines"]
+    if any(w in text for w in filipino_words):
+        return True
+
+    # Block: non-English/non-Filipino language keywords
+    block_words = [
+        # Indian languages
+        "hindi", "bollywood", "punjabi", "tamil", "telugu", "bengali",
+        "bhojpuri", "marathi", "gujarati", "kannada", "malayalam",
+        "rajasthani", "haryanvi", "santali", "konkani", "devotional",
+        "bhajan", "meenawati", "chhattisgarh", "garo", "bodo",
+        "bwisagu", "assamese", "nepali", "pashto", "urdu", "farsi",
+        "chakma", "mizo", "manipuri",
+        # Other languages
+        "arabic", "nasheed", "turkish", "russian", "korean",
+        "japanese", "chinese", "thai", "vietnamese", "indonesian",
+        "malay", "burmese", "khmer", "lao",
+        # Latin American (non-US mainstream)
+        "reggaeton", "corrido", "cumbia", "bachata", "vallenato",
+        "sertanejo", "forr", "pagode",
+        # African
+        "afrobeats", "amapiano", "bongo flava",
+        # Worship/religious (non-mainstream)
+        "worship song", "gospel song", "praise and worship",
+        "christian song", "zinda khuda",
+    ]
+    if any(w in text for w in block_words):
+        return False
+
+    # Default: allow (likely English)
+    return True
+
+
+def _has_lyrics_in_video(title, tags):
+    """Check if the video already contains lyrics (Howard wants to ADD lyrics himself)."""
+    text = f"{title} {' '.join(tags)}".lower()
+    lyrics_words = ["lyrics", "lyric video", "lyric vid", "with lyrics",
+                    "letra", "lyrics video", "(lyrics)", "[lyrics]"]
+    return any(w in text for w in lyrics_words)
+
+
 def search_new_songs(max_results=15):
     """
     Search for brand new individual songs (not playlists/compilations).
+    ONLY English (American) and Filipino/Tagalog songs.
+    EXCLUDES videos that already have lyrics.
     Filters: Music category, uploaded in last 7 days, under 10 minutes.
-    Searches both English and Tagalog/OPM.
     """
     youtube = get_youtube_client()
     week_ago = (date.today() - timedelta(days=7)).isoformat() + "T00:00:00Z"
 
     queries = [
-        "new song official music video",
-        "new OPM song official",
-        "new release song 2026",
-        "bagong kanta 2026",
+        # English songs
+        ("new song official music video", "en"),
+        ("new pop song official video 2026", "en"),
+        ("new R&B song official video", "en"),
+        ("new hip hop song official video 2026", "en"),
+        # Filipino/OPM songs
+        ("new OPM song official music video", None),
+        ("bagong kanta OPM 2026", None),
+        ("P-pop new song 2026", None),
     ]
 
     all_ids = []
-    for q in queries:
+    for q, lang in queries:
         try:
-            response = youtube.search().list(
-                q=q,
-                part="id",
-                type="video",
-                order="date",
-                maxResults=15,
-                publishedAfter=week_ago,
-                videoCategoryId="10",  # Music category
-                videoDuration="medium",  # 4-20 min (filters out shorts and compilations)
-            ).execute()
+            params = {
+                "q": q,
+                "part": "id",
+                "type": "video",
+                "order": "date",
+                "maxResults": 20,
+                "publishedAfter": week_ago,
+                "videoCategoryId": "10",
+                "videoDuration": "medium",
+            }
+            if lang:
+                params["relevanceLanguage"] = lang
+            response = youtube.search().list(**params).execute()
             all_ids.extend(item["id"]["videoId"] for item in response.get("items", []))
         except Exception as e:
             print(f"  Search error for '{q}': {e}")
@@ -213,16 +281,28 @@ def search_new_songs(max_results=15):
         upload_date = snippet.get("publishedAt", "")[:10]
         duration = parse_duration(item.get("contentDetails", {}).get("duration", "PT0S"))
         title = snippet.get("title", "")
+        tags = snippet.get("tags", []) or []
+        description = (snippet.get("description", "") or "")[:300]
+        channel = snippet.get("channelTitle", "")
 
         # Skip compilations, playlists, mixes
         title_lower = title.lower()
         skip_words = ["playlist", "compilation", "mix 20", "top hits", "top opm", "nonstop",
-                       "best of", "collection", "mashup", "1 hour", "2 hour"]
+                       "best of", "collection", "mashup", "1 hour", "2 hour", "medley",
+                       "top 10", "top 20", "top 50"]
         if any(w in title_lower for w in skip_words):
             continue
 
-        # Skip if longer than 10 minutes (likely not a single song)
+        # Skip if longer than 10 minutes
         if duration > 600:
+            continue
+
+        # ONLY English or Filipino songs
+        if not _is_english_or_filipino(title, channel, tags, description):
+            continue
+
+        # SKIP videos that already have lyrics
+        if _has_lyrics_in_video(title, tags):
             continue
 
         days_since = 1
@@ -234,7 +314,7 @@ def search_new_songs(max_results=15):
 
         songs.append({
             "title": title,
-            "channel": snippet.get("channelTitle", ""),
+            "channel": channel,
             "views": views,
             "likes": likes,
             "engagement_rate": round(likes / views * 100, 2) if views > 0 else 0,
@@ -242,7 +322,7 @@ def search_new_songs(max_results=15):
             "upload_date": upload_date,
             "duration_min": f"{duration // 60}m{duration % 60}s",
             "url": f"https://www.youtube.com/watch?v={item['id']}",
-            "tags": snippet.get("tags", [])[:5],
+            "tags": tags[:5],
         })
 
     # Sort by most recent first, then by views
