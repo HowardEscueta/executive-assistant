@@ -35,16 +35,14 @@ Skills live in `.claude/skills/`. Each skill gets its own folder with a `SKILL.m
 
 Skills are built organically as recurring workflows emerge. Don't create skills preemptively.
 
-### Skills to Build (Backlog)
+### Available Skills
 
-These are workflows Howard wants to automate over time:
-
-1. **Morning Kickoff** -- When Howard checks in, run through: daily tasks (make bed, walk Chopper, work out, eat healthy), current priorities, open items, quick research/news
-2. **Weekly Planning** -- Review priorities, set weekly goals, check 6-month progress
-3. **Client Project Kickoff** -- Gather requirements, set up project folder, create task list
-4. **Content Pipeline** -- Idea > script/outline > post > schedule
-5. **Freelancer Outreach** -- Find leads, draft proposals/pitches
-6. **Daily Task Reminder** -- Personal daily habits checklist
+1. **Morning Kickoff** (`morning-kickoff`) -- Daily check-in: habits, priorities, open items, research
+2. **Weekly Planning** (`weekly-planning`) -- Review priorities, set weekly goals, 6-month progress check
+3. **Client Project Kickoff** (`client-project-kickoff`) -- New client intake, project folder, task breakdown
+4. **Content Pipeline** (`content-pipeline`) -- Idea > script/outline > post > schedule
+5. **Freelancer Outreach** (`freelancer-outreach`) -- Find leads, qualify, draft pitches
+6. **Daily Task Reminder** (`daily-task-reminder`) -- Personal habits checklist
 
 ---
 
