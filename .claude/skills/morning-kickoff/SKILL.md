@@ -14,8 +14,12 @@ Run this when Howard checks in for the day (says hey, good morning, what's up, e
 
 3. **Open items:** Check `decisions/log.md` and any active project READMEs in `projects/` for pending items or next steps.
 
-4. **Quick research (optional):** Run the YouTube research agent for trending content:
+4. **YouTube research:** Run both searches:
    ```bash
+   # New songs -- Howard recreates these with lyrics content
+   python3 agents/youtube-research/research.py "new music 2026" --max 5 --new-only
+   python3 agents/youtube-research/research.py "new song released this week" --max 5 --new-only
+   # AI automation trends
    python3 agents/youtube-research/research.py "AI automation" --max 5 --new-only
    ```
    Also check for freelance leads:
