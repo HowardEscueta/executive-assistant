@@ -4,11 +4,13 @@ Run this when Howard wants to find leads or draft pitches for freelance work.
 
 ## Steps
 
-1. **Find leads:** Research platforms and opportunities:
-   - Upwork, Fiverr, Freelancer (web dev gigs)
-   - Facebook groups, Reddit, Discord servers where people need websites
-   - Local businesses in Cavite that might need a web presence
-   - Search for "need a website" or "looking for web developer" posts
+1. **Find leads:** Run the freelance lead finder agent:
+   ```bash
+   python3 agents/freelance-finder/finder.py
+   python3 agents/freelance-finder/finder.py --platform reddit --max 10
+   python3 agents/freelance-finder/finder.py --query "small business needs website Philippines"
+   ```
+   Also manually check: Upwork, Fiverr, Facebook groups, local businesses in Cavite.
 
 2. **Qualify leads:** For each lead, note:
    - What they need

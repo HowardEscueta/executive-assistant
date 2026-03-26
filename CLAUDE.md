@@ -24,6 +24,15 @@ Do NOT repeat information from these files here. Read them when you need context
 - **YouTube** -- Content platform (future)
 - No MCP servers connected yet. As integrations are added, document them here.
 
+## Agents
+
+Python agents live in `agents/`. Run them with `python3 agents/<agent>/script.py`.
+
+- **YouTube Research** (`agents/youtube-research/research.py`) -- Search trending YouTube videos by topic. Uses YouTube Data API v3. Run: `python3 agents/youtube-research/research.py "topic" --max 10 --new-only`
+- **Freelance Lead Finder** (`agents/freelance-finder/finder.py`) -- Search the web for people looking for web developers. Run: `python3 agents/freelance-finder/finder.py --query "custom query" --platform reddit`
+
+API keys are stored in `.env` (git-ignored). Dependencies: `pip install -r agents/requirements.txt`
+
 ---
 
 ## Skills

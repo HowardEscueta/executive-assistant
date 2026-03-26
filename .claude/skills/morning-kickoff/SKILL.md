@@ -14,9 +14,14 @@ Run this when Howard checks in for the day (says hey, good morning, what's up, e
 
 3. **Open items:** Check `decisions/log.md` and any active project READMEs in `projects/` for pending items or next steps.
 
-4. **Quick research (optional):** If relevant, do a quick web search for:
-   - Trending content in Howard's niche (automation, web dev, content creation)
-   - Any news relevant to his active projects
+4. **Quick research (optional):** Run the YouTube research agent for trending content:
+   ```bash
+   python3 agents/youtube-research/research.py "AI automation" --max 5 --new-only
+   ```
+   Also check for freelance leads:
+   ```bash
+   python3 agents/freelance-finder/finder.py --max 3
+   ```
 
 5. **Set the day:** Ask Howard what he wants to focus on today and help him pick 1-3 concrete tasks.
 
