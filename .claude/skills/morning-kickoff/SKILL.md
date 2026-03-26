@@ -14,20 +14,31 @@ Run this when Howard checks in for the day (says hey, good morning, what's up, e
 
 3. **Open items:** Check `decisions/log.md` and any active project READMEs in `projects/` for pending items or next steps.
 
-4. **Run the full morning briefing** (searches + email):
+4. **New Songs Research** (Claude does this directly using WebSearch/WebFetch):
+   - Search music blogs for this week's real new releases (Official Charts, Billboard, Spotify New Music Friday, etc.)
+   - Only English (American) and Filipino/OPM songs
+   - Only songs that do NOT already have lyrics videos
+   - Find 10+ verified real artist releases
+   - For each song, search YouTube for the official music video and include the URL
+   - Save results to `agents/youtube_research/data/`
+
+5. **AI Automation Trends** (run the Python agent):
+   ```bash
+   python3 agents/youtube_research/research.py "AI automation" --max 5 --new-only
+   ```
+
+6. **Freelance Leads** (Claude does this directly using WebSearch):
+   - Search Freelancer.com, PeoplePerHour, and other platforms for web dev/landing page jobs
+   - Include: job title, description, budget, link
+   - Save results to `agents/freelance_finder/data/`
+
+7. **Generate PPT + Send Email:**
    ```bash
    python3 agents/morning_briefing.py
    ```
-   This runs all 3 agents (new songs, AI trends, freelance leads) and emails results to Howard.
+   Or build the data in Python and call the report/emailer directly.
 
-   Or run individually:
-   ```bash
-   python3 agents/youtube_research/research.py --new-songs --max 10
-   python3 agents/youtube_research/research.py "AI automation" --max 5 --new-only
-   python3 agents/freelance_finder/finder.py --max 5
-   ```
-
-5. **Set the day:** Ask Howard what he wants to focus on today and help him pick 1-3 concrete tasks.
+8. **Set the day:** Ask Howard what he wants to focus on today and help him pick 1-3 concrete tasks.
 
 ## Output Format
 
@@ -36,6 +47,12 @@ Keep it short. Use this structure:
 ```
 **Daily habits:** [checklist]
 **Top priorities today:** [2-3 bullets]
-**Open items:** [anything pending]
+**New songs this week:** [list with YouTube links]
+**AI automation trends:** [list with links]
+**Freelance leads:** [list with links]
 **What do you want to tackle today?**
 ```
+
+## Email
+
+After presenting the briefing, generate a PPT report and email it to Howard with all 3 sections (New Songs, AI Trends, Freelance Leads).

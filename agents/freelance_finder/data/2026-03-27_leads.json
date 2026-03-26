@@ -1,48 +1,55 @@
 {
   "date": "2026-03-27",
-  "lead_count": 6,
+  "lead_count": 7,
   "leads": [
     {
-      "title": "Seeking Full-Stack Developer for Website - Any Advice? - Reddit",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1d8ng42/seeking_fullstack_developer_for_website_any_advice/",
-      "snippet": "I'm looking to hire someone to build a website for mysmallbusiness. Previously, I thought about getting a freelancer from Fiverr to create a WordPress site for around $1000, as suggested by someRedditusers. However, I've heard mixed reviews about hiring through Fiverr for this kind of project.",
-      "source": "Reddit",
+      "title": "Build me a landing page ASAP",
+      "url": "https://www.freelancer.com/projects/website-design/build-landing-page-asap/",
+      "snippet": "Client needs a landing page built urgently. Fast turnaround required.",
+      "source": "Freelancer.com",
+      "score": 7
+    },
+    {
+      "title": "Design a High-Converting Landing Page (UI/UX + HTML)",
+      "url": "https://www.freelancer.com/projects/ui-design/design-high-converting-landing-page",
+      "snippet": "Build a simple, high-converting landing page to collect waitlist registrations. Goal: convert visitors into leads.",
+      "source": "Freelancer.com",
       "score": 6
     },
     {
-      "title": "What should I consider before paying someone to create a website for my ...",
-      "url": "https://www.redditmedia.com/r/smallbusiness/comments/1j425xk/what_should_i_consider_before_paying_someone_to/",
-      "snippet": "Hello, I've had an oldwebsiteformybusiness for a while and I've decided its time to renovate or create a newwebsitefrom scratch (same domain ofc) There's a lot of things I listed that I want to change (goals, design and data) and took tons ofwebsitesas reference. But I also thought of asking here in case I'm missing anything. Much appreciated :)",
-      "source": "Web",
+      "title": "Custom Website Landing Page",
+      "url": "https://www.freelancer.com/projects/web-design/custom-website-landing-page",
+      "snippet": "Custom landing page for commercial electrical services. Goal: showcase services to potential clients.",
+      "source": "Freelancer.com",
+      "score": 6
+    },
+    {
+      "title": "Landing Page and Payment Gateway for Catering Business",
+      "url": "https://www.freelancer.com/projects/graphic-design/landing-page-payment-gateway-design.html",
+      "snippet": "Landing page + payment gateway for catering, mobile bar, and event planning business.",
+      "source": "Freelancer.com",
       "score": 5
     },
     {
-      "title": "6 Best Website Builders Reddit Users Recommend (2026)",
-      "url": "https://www.hostingadvice.com/how-to/best-website-builders-reddit/",
-      "snippet": "One place to find such reviews isReddit. The online forum is filled with honest reviews from real people. In this guide, I'll cover some of the bestwebsitebuildersRedditusers recommend. I'll also add my thoughts and experiences using thesewebsitebuilders, including the areas in which they really excel.",
-      "source": "Web",
+      "title": "Simple Custom Landing Page Build",
+      "url": "https://www.freelancer.com/projects/creative-design/simple-custom-landing-page-build",
+      "snippet": "Simple landing page addition to existing website. Text and images provided. Tropical/paradise theme.",
+      "source": "Freelancer.com",
+      "score": 5
+    },
+    {
+      "title": "Need UI/UX Website Designer (3D & Glassmorphism) - 1 Week Project",
+      "url": "https://www.freelancer.com/projects/ui-design/need-website-designer-glassmorphism-week.html",
+      "snippet": "Landing page with 3D elements and glassmorphism design. 7-day deadline.",
+      "source": "Freelancer.com",
+      "score": 5
+    },
+    {
+      "title": "Zoho Service Landing Page Design",
+      "url": "https://www.freelancer.com/projects/zoho/zoho-service-landing-page-design.html",
+      "snippet": "Landing page design for Zoho services.",
+      "source": "Freelancer.com",
       "score": 4
-    },
-    {
-      "title": "Best place to find a good web developer? (looking to make my ... - Reddit",
-      "url": "https://www.reddit.com/r/webdev/comments/1bnelcl/best_place_to_find_a_good_web_developer_looking/",
-      "snippet": "A community dedicated to all things web development: both front-end and back-end. For more design-related questions, try /r/web_design.",
-      "source": "Reddit",
-      "score": 3
-    },
-    {
-      "title": "Exploring the Freelance Web Developer Community on Reddit: Tips and ...",
-      "url": "https://elital.jetthoughts.com/blog/exploring-the-freelance-web-developer-community-on-reddit-tips-and-insights/",
-      "snippet": "The world of freelancewebdevelopment is vast and constantly evolving. If you're looking to carve out a space for yourself in this field,Redditcan be an invaluable resource. It's a hub fordevelopersto share tips, ask questions, and connect with one another. In this article, we'll explore how to tap into the freelancewebdevelopercommunity onReddit, offering insights and practical ...",
-      "source": "Web",
-      "score": 0
-    },
-    {
-      "title": "8 Steps To Become a Freelance Web Developer in 2026 - Upwork",
-      "url": "https://www.upwork.com/resources/becoming-a-freelance-web-developer",
-      "snippet": "Learn how to start your career as a freelancewebdeveloperand get insights that will help you get started.",
-      "source": "Upwork",
-      "score": 0
     }
   ]
 }
