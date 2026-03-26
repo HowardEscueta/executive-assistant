@@ -28,8 +28,9 @@ Do NOT repeat information from these files here. Read them when you need context
 
 Python agents live in `agents/`. Run them with `python3 agents/<agent>/script.py`.
 
-- **YouTube Research** (`agents/youtube-research/research.py`) -- Search trending YouTube videos by topic. Uses YouTube Data API v3. Run: `python3 agents/youtube-research/research.py "topic" --max 10 --new-only`
-- **Freelance Lead Finder** (`agents/freelance-finder/finder.py`) -- Search the web for people looking for web developers. Run: `python3 agents/freelance-finder/finder.py --query "custom query" --platform reddit`
+- **Morning Briefing** (`agents/morning_briefing.py`) -- Runs all 3 agents below and emails results to Howard. Run: `python3 agents/morning_briefing.py`
+- **YouTube Research** (`agents/youtube_research/research.py`) -- Search trending videos by topic or new songs. Run: `python3 agents/youtube_research/research.py --new-songs --max 10` or `python3 agents/youtube_research/research.py "topic" --new-only`
+- **Freelance Lead Finder** (`agents/freelance_finder/finder.py`) -- Search the web for people looking for web developers. Run: `python3 agents/freelance_finder/finder.py --query "custom query" --platform reddit`
 
 API keys are stored in `.env` (git-ignored). Dependencies: `pip install -r agents/requirements.txt`
 

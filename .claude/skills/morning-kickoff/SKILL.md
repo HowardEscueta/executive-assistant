@@ -14,17 +14,17 @@ Run this when Howard checks in for the day (says hey, good morning, what's up, e
 
 3. **Open items:** Check `decisions/log.md` and any active project READMEs in `projects/` for pending items or next steps.
 
-4. **YouTube research:** Run both searches:
+4. **Run the full morning briefing** (searches + email):
    ```bash
-   # New songs -- Howard recreates these with lyrics content
-   python3 agents/youtube-research/research.py "new music 2026" --max 5 --new-only
-   python3 agents/youtube-research/research.py "new song released this week" --max 5 --new-only
-   # AI automation trends
-   python3 agents/youtube-research/research.py "AI automation" --max 5 --new-only
+   python3 agents/morning_briefing.py
    ```
-   Also check for freelance leads:
+   This runs all 3 agents (new songs, AI trends, freelance leads) and emails results to Howard.
+
+   Or run individually:
    ```bash
-   python3 agents/freelance-finder/finder.py --max 3
+   python3 agents/youtube_research/research.py --new-songs --max 10
+   python3 agents/youtube_research/research.py "AI automation" --max 5 --new-only
+   python3 agents/freelance_finder/finder.py --max 5
    ```
 
 5. **Set the day:** Ask Howard what he wants to focus on today and help him pick 1-3 concrete tasks.

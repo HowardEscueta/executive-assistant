@@ -6,9 +6,9 @@ Run this when Howard wants to find leads or draft pitches for freelance work.
 
 1. **Find leads:** Run the freelance lead finder agent:
    ```bash
-   python3 agents/freelance-finder/finder.py
-   python3 agents/freelance-finder/finder.py --platform reddit --max 10
-   python3 agents/freelance-finder/finder.py --query "small business needs website Philippines"
+   python3 agents/freelance_finder/finder.py
+   python3 agents/freelance_finder/finder.py --platform reddit --max 10
+   python3 agents/freelance_finder/finder.py --query "small business needs website Philippines"
    ```
    Also manually check: Upwork, Fiverr, Facebook groups, local businesses in Cavite.
 

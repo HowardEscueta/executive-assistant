@@ -154,6 +154,102 @@ def print_report(query, videos):
     print(f"{'='*60}\n")
 
 
+def search_new_songs(max_results=15):
+    """
+    Search for brand new individual songs (not playlists/compilations).
+    Filters: Music category, uploaded in last 7 days, under 10 minutes.
+    Searches both English and Tagalog/OPM.
+    """
+    youtube = get_youtube_client()
+    week_ago = (date.today() - timedelta(days=7)).isoformat() + "T00:00:00Z"
+
+    queries = [
+        "new song official music video",
+        "new OPM song official",
+        "new release song 2026",
+        "bagong kanta 2026",
+    ]
+
+    all_ids = []
+    for q in queries:
+        try:
+            response = youtube.search().list(
+                q=q,
+                part="id",
+                type="video",
+                order="date",
+                maxResults=15,
+                publishedAfter=week_ago,
+                videoCategoryId="10",  # Music category
+                videoDuration="medium",  # 4-20 min (filters out shorts and compilations)
+            ).execute()
+            all_ids.extend(item["id"]["videoId"] for item in response.get("items", []))
+        except Exception as e:
+            print(f"  Search error for '{q}': {e}")
+
+    # Deduplicate
+    seen = set()
+    unique_ids = []
+    for vid in all_ids:
+        if vid not in seen:
+            seen.add(vid)
+            unique_ids.append(vid)
+
+    if not unique_ids:
+        return []
+
+    # Get details
+    details = youtube.videos().list(
+        part="snippet,statistics,contentDetails",
+        id=",".join(unique_ids[:50]),
+    ).execute()
+
+    songs = []
+    for item in details.get("items", []):
+        snippet = item["snippet"]
+        stats = item.get("statistics", {})
+        views = int(stats.get("viewCount", 0))
+        likes = int(stats.get("likeCount", 0))
+        upload_date = snippet.get("publishedAt", "")[:10]
+        duration = parse_duration(item.get("contentDetails", {}).get("duration", "PT0S"))
+        title = snippet.get("title", "")
+
+        # Skip compilations, playlists, mixes
+        title_lower = title.lower()
+        skip_words = ["playlist", "compilation", "mix 20", "top hits", "top opm", "nonstop",
+                       "best of", "collection", "mashup", "1 hour", "2 hour"]
+        if any(w in title_lower for w in skip_words):
+            continue
+
+        # Skip if longer than 10 minutes (likely not a single song)
+        if duration > 600:
+            continue
+
+        days_since = 1
+        if upload_date:
+            try:
+                days_since = max((datetime.now() - datetime.strptime(upload_date, "%Y-%m-%d")).days, 1)
+            except ValueError:
+                pass
+
+        songs.append({
+            "title": title,
+            "channel": snippet.get("channelTitle", ""),
+            "views": views,
+            "likes": likes,
+            "engagement_rate": round(likes / views * 100, 2) if views > 0 else 0,
+            "views_per_day": round(views / days_since),
+            "upload_date": upload_date,
+            "duration_min": f"{duration // 60}m{duration % 60}s",
+            "url": f"https://www.youtube.com/watch?v={item['id']}",
+            "tags": snippet.get("tags", [])[:5],
+        })
+
+    # Sort by most recent first, then by views
+    songs.sort(key=lambda v: (v["upload_date"], v["views"]), reverse=True)
+    return songs[:max_results]
+
+
 def research(query, max_results=10, new_only=False):
     """Main entry point. Returns videos list and saves to disk."""
     print(f"Researching: '{query}'...")
@@ -167,12 +263,33 @@ def research(query, max_results=10, new_only=False):
     return videos
 
 
+def research_new_songs(max_results=10):
+    """Search for new individual songs. Returns list and saves to disk."""
+    print("Searching for new songs (English + Tagalog)...")
+    songs = search_new_songs(max_results)
+    if songs:
+        filepath = save_results("new_songs", songs)
+        print_report("New Songs (This Week)", songs)
+        print(f"Data saved to: {filepath}")
+    else:
+        print("No new songs found this week.")
+    return songs
+
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="YouTube Research Agent")
-    parser.add_argument("query", help="Topic to search")
+    parser.add_argument("query", nargs="?", default=None, help="Topic to search")
     parser.add_argument("--max", type=int, default=10, help="Max results (default: 10)")
     parser.add_argument("--new-only", action="store_true", help="Only videos from last 7 days")
+    parser.add_argument("--new-songs", action="store_true", help="Search for new songs specifically")
     args = parser.parse_args()
 
-    research(args.query, args.max, args.new_only)
+    if args.new_songs:
+        research_new_songs(args.max)
+    elif args.query:
+        research(args.query, args.max, args.new_only)
+    else:
+        print("Usage: research.py 'topic' or research.py --new-songs")
+        print("  research.py 'AI automation' --max 10 --new-only")
+        print("  research.py --new-songs --max 15")

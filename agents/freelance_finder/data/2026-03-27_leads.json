@@ -1,7 +1,14 @@
 {
   "date": "2026-03-27",
-  "lead_count": 5,
+  "lead_count": 6,
   "leads": [
+    {
+      "title": "Seeking Full-Stack Developer for Website - Any Advice? - Reddit",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1d8ng42/seeking_fullstack_developer_for_website_any_advice/",
+      "snippet": "I'm looking to hire someone to build a website for mysmallbusiness. Previously, I thought about getting a freelancer from Fiverr to create a WordPress site for around $1000, as suggested by someRedditusers. However, I've heard mixed reviews about hiring through Fiverr for this kind of project.",
+      "source": "Reddit",
+      "score": 6
+    },
     {
       "title": "What should I consider before paying someone to create a website for my ...",
       "url": "https://www.redditmedia.com/r/smallbusiness/comments/1j425xk/what_should_i_consider_before_paying_someone_to/",
@@ -17,25 +24,25 @@
       "score": 4
     },
     {
-      "title": "The Best Website Builder Reddit Answers (2026)",
-      "url": "https://www.sitebuilderreport.com/best-website-builder-reddit",
-      "snippet": "The top answer to \" From your experience, what is bestwebsitebuilder that provides full customization? \" in r/UXDesign subreddit is: \"If you're set on building awebsiteforyour portfolio, +1 squarespace. Relatively cheap and it's super easy to use, connect 3rd party apps, and add custom domains.\"",
-      "source": "Web",
-      "score": 4
-    },
-    {
-      "title": "4 Best Website Builders According to Reddit - WPShout",
-      "url": "https://wpshout.com/best-website-builder-reddit/",
-      "snippet": "Here's the bestwebsitebuilderRedditusers recommend for 4 different use cases. We spent hours analyzingRedditso you wouldn't haveto.",
-      "source": "Web",
-      "score": 4
-    },
-    {
       "title": "Best place to find a good web developer? (looking to make my ... - Reddit",
       "url": "https://www.reddit.com/r/webdev/comments/1bnelcl/best_place_to_find_a_good_web_developer_looking/",
       "snippet": "A community dedicated to all things web development: both front-end and back-end. For more design-related questions, try /r/web_design.",
       "source": "Reddit",
       "score": 3
+    },
+    {
+      "title": "Exploring the Freelance Web Developer Community on Reddit: Tips and ...",
+      "url": "https://elital.jetthoughts.com/blog/exploring-the-freelance-web-developer-community-on-reddit-tips-and-insights/",
+      "snippet": "The world of freelancewebdevelopment is vast and constantly evolving. If you're looking to carve out a space for yourself in this field,Redditcan be an invaluable resource. It's a hub fordevelopersto share tips, ask questions, and connect with one another. In this article, we'll explore how to tap into the freelancewebdevelopercommunity onReddit, offering insights and practical ...",
+      "source": "Web",
+      "score": 0
+    },
+    {
+      "title": "8 Steps To Become a Freelance Web Developer in 2026 - Upwork",
+      "url": "https://www.upwork.com/resources/becoming-a-freelance-web-developer",
+      "snippet": "Learn how to start your career as a freelancewebdeveloperand get insights that will help you get started.",
+      "source": "Upwork",
+      "score": 0
     }
   ]
 }
