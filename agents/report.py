@@ -179,7 +179,36 @@ def add_leads_slides(prs, leads):
             y += 0.3
 
 
-def generate_report(new_songs=None, ai_trends=None, leads=None):
+def add_local_leads_slides(prs, local_leads):
+    if not local_leads:
+        return
+    ACCENT_ORANGE = RGBColor(0xFF, 0x7A, 0x00)
+    add_section_header(prs, f"Local Business Leads ({len(local_leads)} No Website)", ACCENT_ORANGE)
+
+    slide = prs.slides.add_slide(prs.slide_layouts[6])
+    set_slide_bg(slide)
+    add_text(slide, "Local Businesses Without Websites", 0.3, 0.2, 9, 0.4, font_size=18, color=ACCENT_ORANGE, bold=True)
+
+    y = 0.7
+    for i, b in enumerate(local_leads[:8], 1):
+        if y > 4.8:
+            slide = prs.slides.add_slide(prs.slide_layouts[6])
+            set_slide_bg(slide)
+            add_text(slide, "Local Businesses (cont.)", 0.3, 0.2, 9, 0.4, font_size=18, color=ACCENT_ORANGE, bold=True)
+            y = 0.7
+
+        add_text(slide, f"{i}. {b['name']}  [{b['category'].title()}]", 0.3, y, 9.2, 0.3, font_size=13, color=WHITE, bold=True)
+        y += 0.28
+        rating_str = f"{b['rating']}/5 ({b['user_ratings_total']} reviews)" if b.get("rating") else "No ratings"
+        details = f"{b['address']}  |  {b.get('phone') or 'No phone'}  |  {rating_str}"
+        add_text(slide, details, 0.5, y, 9, 0.22, font_size=9, color=LIGHT_GRAY)
+        y += 0.22
+        if b.get("maps_url"):
+            add_hyperlink(slide, "View on Google Maps", b["maps_url"], 0.5, y, 4, 0.22)
+        y += 0.35
+
+
+def generate_report(new_songs=None, ai_trends=None, leads=None, local_leads=None):
     """Generate a PowerPoint briefing report. Returns the file path."""
     prs = Presentation()
     prs.slide_width = Inches(10)
@@ -189,6 +218,7 @@ def generate_report(new_songs=None, ai_trends=None, leads=None):
     add_songs_slides(prs, new_songs)
     add_ai_slides(prs, ai_trends)
     add_leads_slides(prs, leads)
+    add_local_leads_slides(prs, local_leads)
 
     today = date.today().isoformat()
     filepath = os.path.join(REPORTS_DIR, f"{today}_morning_briefing.pptx")

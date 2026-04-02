@@ -4,3 +4,7 @@ CLAUDE.local.md
 node_modules/
 __pycache__/
 output/
+
+# Separate git repos (tracked independently)
+projects/bookme/
+projects/dan-portfolio/

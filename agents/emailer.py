@@ -73,7 +73,7 @@ def send_email(subject, html_body, plain_body=None, attachment_path=None):
         return False
 
 
-def build_briefing_html(new_songs=None, ai_trends=None, leads=None):
+def build_briefing_html(new_songs=None, ai_trends=None, leads=None, local_leads=None):
     """Build an HTML email body from research results."""
     today = date.today().isoformat()
 
@@ -122,6 +122,21 @@ def build_briefing_html(new_songs=None, ai_trends=None, leads=None):
             </div>
             """
 
+    # Local Business Leads Section
+    if local_leads:
+        html += f'<h2 style="color:#FF7A00;">Local Business Leads ({len(local_leads)} No Website)</h2>\n'
+        for i, b in enumerate(local_leads, 1):
+            rating_str = f"{b['rating']}/5 ({b['user_ratings_total']} reviews)" if b.get("rating") else "No ratings"
+            maps_link = f'<a href="{b["maps_url"]}">View on Maps</a>' if b.get("maps_url") else ""
+            html += f"""
+            <div style="background:#16213e;padding:12px 16px;margin:8px 0;border-radius:8px;border-left:3px solid #FF7A00;">
+                <strong style="color:#FF7A00;">{i}. {b['name']}</strong> &nbsp;<span style="color:#888;font-size:12px;">[{b['category'].title()}]</span><br>
+                <span style="color:#ccc;font-size:13px;">{b['address']}</span><br>
+                <span style="color:#ccc;font-size:13px;">Phone: {b.get('phone') or 'Not listed'} &nbsp;|&nbsp; {rating_str}</span><br>
+                <span style="font-size:12px;">{maps_link}</span>
+            </div>
+            """
+
     # Freelance Leads Section
     if leads:
         hot = [l for l in leads if l.get('score', 0) >= 3]
@@ -149,10 +164,10 @@ def build_briefing_html(new_songs=None, ai_trends=None, leads=None):
     return html
 
 
-def send_briefing(new_songs=None, ai_trends=None, leads=None, pptx_path=None):
+def send_briefing(new_songs=None, ai_trends=None, leads=None, local_leads=None, pptx_path=None):
     """Build and send the morning briefing email with PPT attachment."""
     today = date.today().isoformat()
-    html = build_briefing_html(new_songs, ai_trends, leads)
+    html = build_briefing_html(new_songs, ai_trends, leads, local_leads)
     subject = f"Morning Briefing - {today}"
     return send_email(subject, html, attachment_path=pptx_path)
 

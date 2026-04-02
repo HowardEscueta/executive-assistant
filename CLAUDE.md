@@ -53,6 +53,7 @@ Skills are built organically as recurring workflows emerge. Don't create skills 
 4. **Content Pipeline** (`content-pipeline`) -- Idea > script/outline > post > schedule
 5. **Freelancer Outreach** (`freelancer-outreach`) -- Find leads, qualify, draft pitches
 6. **Daily Task Reminder** (`daily-task-reminder`) -- Personal habits checklist
+7. **Research** (`research`) -- Deep research on any topic, tailored to Howard's business context. Multi-source, synthesized, actionable. Usage: `/research [topic]`
 
 ---
 
