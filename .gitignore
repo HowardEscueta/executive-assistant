@@ -8,3 +8,10 @@ output/
 # Separate git repos (tracked independently)
 projects/bookme/
 projects/dan-portfolio/
+projects/dan-portfolio-original/
+
+# Skill tooling (auto-installed, not project code)
+.agents/
+.kiro/
+skills-lock.json
+images/
