@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FineSmile Dental Clinic | Tanza, Cavite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --teal: #0B7B6E;
+            --teal-light: #0fa18f;
+            --teal-dark: #075f55;
+            --teal-soft: #edf7f6;
+            --teal-pale: #d0eeeb;
+            --gold: #C8963E;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-500: #6b7280;
+            --gray-700: #374151;
+            --dark: #0f1f1d;
+            --font-body: 'DM Sans', sans-serif;
+            --font-heading: 'DM Serif Display', serif;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-body); color: var(--dark); background: var(--white); line-height: 1.6; }
+
+        /* ── PAGE LOAD ANIMATIONS ── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideRight {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideLeft {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.92); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(11,123,110,0.25); }
+            70% { box-shadow: 0 0 0 16px rgba(11,123,110,0); }
+            100% { box-shadow: 0 0 0 0 rgba(11,123,110,0); }
+        }
+        @keyframes navDrop {
+            from { opacity: 0; transform: translateY(-100%); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Hero entrance */
+        nav { animation: navDrop 0.5s ease forwards; }
+        .hero-tag { animation: fadeUp 0.6s ease 0.2s both; }
+        .hero h1 { animation: fadeUp 0.7s ease 0.35s both; }
+        .hero-desc { animation: fadeUp 0.7s ease 0.5s both; }
+        .hero-btns { animation: fadeUp 0.7s ease 0.65s both; }
+        .hero-stats { animation: fadeUp 0.7s ease 0.8s both; }
+        .hero-visual .hero-card { animation: slideLeft 0.8s ease 0.5s both; }
+
+        /* Float the hero card */
+        .hero-card { animation: slideLeft 0.8s ease 0.5s both, float 4s ease-in-out 1.5s infinite !important; }
+
+        /* Book button pulse */
+        .btn-primary { animation: pulse-ring 2.5s ease 2s infinite; }
+
+        /* ── SCROLL REVEAL ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.from-left {
+            transform: translateX(-32px);
+        }
+        .reveal.from-right {
+            transform: translateX(32px);
+        }
+        .reveal.scale {
+            transform: scale(0.94);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0) translateX(0) scale(1);
+        }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+        .reveal-delay-5 { transition-delay: 0.5s; }
+        .reveal-delay-6 { transition-delay: 0.6s; }
+        .reveal-delay-7 { transition-delay: 0.7s; }
+        .reveal-delay-8 { transition-delay: 0.8s; }
+
+        /* Nav scroll effect */
+        nav.scrolled { box-shadow: 0 4px 24px rgba(11,123,110,0.1); }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(14px);
+            z-index: 1000;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--teal-pale);
+        }
+        .nav-inner {
+            max-width: 1140px; margin: 0 auto; padding: 0 28px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .logo img { height: 48px; width: auto; }
+        .logo-fallback {
+            font-family: var(--font-heading); font-size: 1.3rem; color: var(--teal);
+        }
+        .logo-fallback span { font-family: var(--font-body); font-size: 0.65rem; display: block; color: var(--gray-500); letter-spacing: 2px; text-transform: uppercase; }
+        .nav-links { display: flex; gap: 30px; list-style: none; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--gray-700); font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--teal); }
+        .nav-cta { background: var(--teal) !important; color: var(--white) !important; padding: 10px 22px; border-radius: 50px; }
+        .nav-cta:hover { background: var(--teal-dark) !important; }
+
+        /* ── HERO ── */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(150deg, var(--teal-soft) 0%, #f0faf9 50%, var(--white) 100%);
+            display: flex; align-items: center;
+            padding: 120px 28px 80px;
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute;
+            top: -100px; right: -100px;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(11,123,110,0.07) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero-inner {
+            max-width: 1140px; margin: 0 auto;
+            display: grid; grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px; align-items: center; position: relative; z-index: 1;
+        }
+        .hero-tag {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--teal-pale); color: var(--teal);
+            padding: 6px 16px; border-radius: 50px;
+            font-size: 0.78rem; font-weight: 600; letter-spacing: 0.5px;
+            margin-bottom: 22px;
+        }
+        .hero-tag::before { content: ''; width: 6px; height: 6px; background: var(--teal); border-radius: 50%; }
+        .hero h1 {
+            font-family: var(--font-heading); font-size: 3.2rem; line-height: 1.12;
+            color: var(--dark); margin-bottom: 22px;
+        }
+        .hero h1 em { font-style: italic; color: var(--teal); }
+        .hero-desc { font-size: 1rem; color: var(--gray-500); margin-bottom: 38px; max-width: 460px; }
+        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn-primary {
+            background: var(--teal); color: var(--white);
+            padding: 14px 30px; border-radius: 50px;
+            text-decoration: none; font-weight: 600; font-size: 0.9rem;
+            transition: all 0.25s; display: inline-block;
+        }
+        .btn-primary:hover { background: var(--teal-dark); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(11,123,110,0.3); }
+        .btn-outline {
+            border: 2px solid var(--teal); color: var(--teal);
+            padding: 12px 26px; border-radius: 50px;
+            text-decoration: none; font-weight: 600; font-size: 0.9rem;
+            transition: all 0.25s; display: inline-block;
+        }
+        .btn-outline:hover { background: var(--teal); color: var(--white); }
+        .hero-stats {
+            display: flex; gap: 36px; margin-top: 50px;
+            padding-top: 32px; border-top: 1px solid var(--teal-pale);
+        }
+        .stat-num { font-family: var(--font-heading); font-size: 2rem; color: var(--teal); line-height: 1; }
+        .stat-label { font-size: 0.78rem; color: var(--gray-500); margin-top: 4px; }
+
+        /* Hero Card */
+        .hero-visual { display: flex; justify-content: center; align-items: center; }
+        .hero-card {
+            background: var(--white); border-radius: 24px; padding: 36px 28px;
+            box-shadow: 0 28px 70px rgba(11,123,110,0.13), 0 4px 16px rgba(0,0,0,0.05);
+            text-align: center; max-width: 320px; width: 100%;
+        }
+        .hero-card-logo { width: 88px; height: auto; margin: 0 auto 18px; display: block; }
+        .hero-card h3 { font-family: var(--font-heading); font-size: 1.25rem; color: var(--dark); margin-bottom: 6px; }
+        .hero-card > p { font-size: 0.84rem; color: var(--gray-500); margin-bottom: 22px; }
+        .rating-row {
+            display: flex; align-items: center; justify-content: center; gap: 6px;
+            background: var(--teal-soft); padding: 10px 16px; border-radius: 12px; margin-bottom: 16px;
+        }
+        .stars { color: #f59e0b; font-size: 1rem; letter-spacing: 1px; }
+        .rating-text { font-size: 0.84rem; font-weight: 600; color: var(--dark); }
+        .address-box {
+            background: var(--gray-50); border-radius: 10px; padding: 12px 14px;
+            font-size: 0.82rem; color: var(--gray-700); line-height: 1.5; text-align: left;
+            display: flex; gap: 10px; align-items: flex-start;
+        }
+        .address-box span:first-child { font-size: 1rem; flex-shrink: 0; }
+
+        /* ── SERVICES ── */
+        .services { padding: 100px 28px; background: var(--gray-50); }
+        .container { max-width: 1140px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-tag {
+            display: inline-block; background: var(--teal-soft); color: var(--teal);
+            padding: 6px 16px; border-radius: 50px;
+            font-size: 0.75rem; font-weight: 600; letter-spacing: 1.5px;
+            text-transform: uppercase; margin-bottom: 14px;
+        }
+        .section-header h2 { font-family: var(--font-heading); font-size: 2.4rem; color: var(--dark); margin-bottom: 12px; }
+        .section-header p { color: var(--gray-500); max-width: 480px; margin: 0 auto; font-size: 0.95rem; }
+
+        /* Service Table Grid */
+        .service-table {
+            border: 1.5px solid var(--gray-200);
+            border-radius: 22px;
+            overflow: hidden;
+        }
+        .st-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 1.5px solid var(--gray-200);
+        }
+        .st-row:last-child { border-bottom: none; }
+        .st-cell {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 28px 32px;
+            border-right: 1.5px solid var(--gray-200);
+            transition: background 0.2s ease;
+            position: relative;
+        }
+        .st-cell:last-child { border-right: none; }
+        .st-cell:hover { background: var(--gray-50); }
+
+        /* Left colored border per cell */
+        .st-cell::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 4px;
+            border-radius: 0;
+        }
+        .st-teal::before   { background: #0B7B6E; }
+        .st-blue::before   { background: #3B82F6; }
+        .st-amber::before  { background: #F59E0B; }
+        .st-rose::before   { background: #F43F5E; }
+        .st-purple::before { background: #8B5CF6; }
+        .st-dark::before   { background: #0f1f1d; }
+        .st-pink::before   { background: #EC4899; }
+        .st-green::before  { background: #10B981; }
+
+        .st-num {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            line-height: 1;
+            font-weight: 400;
+            flex-shrink: 0;
+            min-width: 36px;
+        }
+        .st-teal   .st-num { color: rgba(11,123,110,0.25); }
+        .st-blue   .st-num { color: rgba(59,130,246,0.25); }
+        .st-amber  .st-num { color: rgba(245,158,11,0.3); }
+        .st-rose   .st-num { color: rgba(244,63,94,0.25); }
+        .st-purple .st-num { color: rgba(139,92,246,0.25); }
+        .st-dark   .st-num { color: rgba(15,31,29,0.2); }
+        .st-pink   .st-num { color: rgba(236,72,153,0.25); }
+        .st-green  .st-num { color: rgba(16,185,129,0.25); }
+
+        .st-body { flex: 1; }
+        .st-body h3 { font-size: 0.97rem; font-weight: 700; color: var(--dark); margin-bottom: 5px; }
+        .st-body p  { font-size: 0.83rem; color: var(--gray-500); line-height: 1.6; }
+
+        .st-icon {
+            width: 48px; height: 48px;
+            border-radius: 13px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .st-icon svg { width: 20px; height: 20px; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+        .st-teal   .st-icon { background: #d0eeeb; }
+        .st-blue   .st-icon { background: #DBEAFE; }
+        .st-amber  .st-icon { background: #FEF3C7; }
+        .st-rose   .st-icon { background: #FFE4E6; }
+        .st-purple .st-icon { background: #EDE9FE; }
+        .st-dark   .st-icon { background: #e5e7eb; }
+        .st-pink   .st-icon { background: #FCE7F3; }
+        .st-green  .st-icon { background: #D1FAE5; }
+
+        .st-teal   .st-icon svg { stroke: #0B7B6E; }
+        .st-blue   .st-icon svg { stroke: #3B82F6; }
+        .st-amber  .st-icon svg { stroke: #D97706; }
+        .st-rose   .st-icon svg { stroke: #F43F5E; }
+        .st-purple .st-icon svg { stroke: #8B5CF6; }
+        .st-dark   .st-icon svg { stroke: #374151; }
+        .st-pink   .st-icon svg { stroke: #EC4899; }
+        .st-green  .st-icon svg { stroke: #059669; }
+
+        @media (max-width: 768px) {
+            .st-row { grid-template-columns: 1fr; }
+            .st-cell { border-right: none; border-bottom: 1.5px solid var(--gray-200); }
+            .st-cell:last-child { border-bottom: none; }
+        }
+
+        /* Bento Grid */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 220px;
+            gap: 16px;
+        }
+        .bento-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 28px 26px;
+            border: 1.5px solid var(--gray-200);
+            border-top: 4px solid var(--gray-200);
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .bento-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.09);
+        }
+        .bento-wide { grid-column: span 2; }
+
+        /* Each card gets a unique top border + icon tint */
+        .bc-teal  { border-top-color: #0B7B6E; background: linear-gradient(160deg, #edf7f6 0%, #fff 60%); }
+        .bc-blue  { border-top-color: #3B82F6; background: linear-gradient(160deg, #EFF6FF 0%, #fff 60%); }
+        .bc-amber { border-top-color: #F59E0B; background: linear-gradient(160deg, #FFFBEB 0%, #fff 60%); }
+        .bc-rose  { border-top-color: #F43F5E; background: linear-gradient(160deg, #FFF1F2 0%, #fff 60%); }
+        .bc-purple{ border-top-color: #8B5CF6; background: linear-gradient(160deg, #F5F3FF 0%, #fff 60%); }
+        .bc-dark  { border-top-color: #0f1f1d; background: var(--dark); }
+        .bc-pink  { border-top-color: #EC4899; background: linear-gradient(160deg, #FDF2F8 0%, #fff 60%); }
+        .bc-green { border-top-color: #10B981; background: linear-gradient(160deg, #ECFDF5 0%, #fff 60%); }
+
+        /* Icon containers per color */
+        .bc-teal  .bento-icon { background: #d0eeeb; }
+        .bc-blue  .bento-icon { background: #DBEAFE; }
+        .bc-amber .bento-icon { background: #FEF3C7; }
+        .bc-rose  .bento-icon { background: #FFE4E6; }
+        .bc-purple .bento-icon { background: #EDE9FE; }
+        .bc-dark  .bento-icon { background: rgba(255,255,255,0.1); }
+        .bc-pink  .bento-icon { background: #FCE7F3; }
+        .bc-green .bento-icon { background: #D1FAE5; }
+
+        /* Icon SVG colors */
+        .bc-teal  .bento-icon svg { stroke: #0B7B6E; }
+        .bc-blue  .bento-icon svg { stroke: #3B82F6; }
+        .bc-amber .bento-icon svg { stroke: #D97706; }
+        .bc-rose  .bento-icon svg { stroke: #F43F5E; }
+        .bc-purple .bento-icon svg { stroke: #8B5CF6; }
+        .bc-dark  .bento-icon svg { stroke: rgba(255,255,255,0.85); }
+        .bc-pink  .bento-icon svg { stroke: #EC4899; }
+        .bc-green .bento-icon svg { stroke: #059669; }
+
+        /* Dark card text */
+        .bc-dark h3 { color: var(--white); }
+        .bc-dark p  { color: rgba(255,255,255,0.7) !important; }
+
+        .bento-icon {
+            width: 46px; height: 46px;
+            border-radius: 13px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 18px;
+            flex-shrink: 0;
+        }
+        .bento-icon svg { width: 21px; height: 21px; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .bento-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 7px; line-height: 1.3; }
+        .bento-card p { font-size: 0.83rem; color: var(--gray-500); line-height: 1.65; }
+
+        /* Big bg number */
+        .bento-bg-number {
+            position: absolute; top: -10px; right: 14px;
+            font-family: var(--font-heading); font-size: 6.5rem;
+            color: rgba(0,0,0,0.04); line-height: 1;
+            pointer-events: none; user-select: none;
+        }
+        .bc-dark .bento-bg-number { color: rgba(255,255,255,0.04); }
+
+        /* Badge */
+        .bento-badge {
+            position: absolute; top: 18px; right: 18px;
+            font-size: 0.68rem; font-weight: 700; letter-spacing: 1px;
+            text-transform: uppercase; padding: 4px 10px; border-radius: 50px;
+        }
+        .bc-teal .bento-badge  { background: rgba(11,123,110,0.12); color: #0B7B6E; }
+        .bc-dark .bento-badge  { background: rgba(255,255,255,0.15); color: var(--white); }
+        .bc-green .bento-badge { background: rgba(16,185,129,0.12); color: #059669; }
+
+        @media (max-width: 900px) {
+            .bento-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+            .bento-grid { grid-template-columns: 1fr; }
+            .bento-wide { grid-column: span 1; }
+        }
+
+        /* ── WHY US ── */
+        .why { padding: 100px 28px; background: var(--teal); }
+        .why-inner { max-width: 1140px; margin: 0 auto; }
+        .why .section-tag { background: rgba(255,255,255,0.15); color: var(--white); }
+        .why .section-header h2 { color: var(--white); }
+        .why .section-header p { color: rgba(255,255,255,0.75); }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 0; }
+        .why-card {
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 18px; padding: 32px 26px; text-align: center;
+        }
+        .why-number {
+            font-family: var(--font-heading); font-size: 2.8rem; color: rgba(255,255,255,0.25);
+            line-height: 1; margin-bottom: 14px;
+        }
+        .why-card h3 { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 10px; }
+        .why-card p { font-size: 0.86rem; color: rgba(255,255,255,0.72); line-height: 1.65; }
+
+        /* ── CONTACT ── */
+        .contact { padding: 100px 28px; background: var(--white); }
+        .contact-inner {
+            max-width: 1140px; margin: 0 auto;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+        }
+        .contact-info h2 { font-family: var(--font-heading); font-size: 2.2rem; color: var(--dark); margin-bottom: 12px; }
+        .contact-info > p { color: var(--gray-500); margin-bottom: 40px; font-size: 0.95rem; }
+        .contact-items { display: flex; flex-direction: column; gap: 20px; }
+        .contact-item { display: flex; gap: 14px; align-items: flex-start; }
+        .contact-icon {
+            width: 44px; height: 44px; background: var(--teal-soft); border-radius: 12px;
+            display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;
+        }
+        .contact-item-body h4 { font-size: 0.74rem; font-weight: 600; color: var(--gray-500); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+        .contact-item-body p, .contact-item-body a { font-size: 0.93rem; color: var(--dark); text-decoration: none; font-weight: 500; }
+        .contact-item-body a:hover { color: var(--teal); }
+        .contact-form { background: var(--gray-50); border-radius: 22px; padding: 40px; }
+        .contact-form h3 { font-family: var(--font-heading); font-size: 1.4rem; color: var(--dark); margin-bottom: 24px; }
+        .form-group { margin-bottom: 14px; }
+        .form-group label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--dark); margin-bottom: 7px; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 11px 14px; border: 1.5px solid var(--gray-200);
+            border-radius: 10px; font-size: 0.875rem; font-family: var(--font-body);
+            background: var(--white); color: var(--dark); outline: none; transition: border-color 0.2s;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--teal); }
+        .form-group textarea { resize: vertical; min-height: 90px; }
+        .form-submit {
+            width: 100%; background: var(--teal); color: var(--white); border: none;
+            padding: 14px; border-radius: 10px; font-size: 0.93rem; font-weight: 600;
+            cursor: pointer; transition: background 0.2s; margin-top: 6px; font-family: var(--font-body);
+        }
+        .form-submit:hover { background: var(--teal-dark); }
+
+        /* ── FOOTER ── */
+        footer { background: var(--dark); color: rgba(255,255,255,0.55); padding: 52px 28px; text-align: center; }
+        .footer-inner { max-width: 1140px; margin: 0 auto; }
+        .footer-name { font-family: var(--font-heading); font-size: 1.5rem; color: var(--white); margin-bottom: 8px; }
+        .footer-sub { font-size: 0.84rem; margin-bottom: 28px; }
+        .footer-links { display: flex; justify-content: center; gap: 32px; list-style: none; margin-bottom: 24px; }
+        .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 0.84rem; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--white); }
+        .footer-copy { font-size: 0.76rem; color: rgba(255,255,255,0.3); }
+
+        /* ── MOBILE ── */
+        @media (max-width: 900px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .why-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-inner, .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+            .hero-visual { display: none; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-stats { gap: 20px; }
+            .contact-form { padding: 28px 20px; }
+        }
+        @media (max-width: 480px) {
+            .services-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="FineSmile Dental Clinic"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <div class="logo-fallback" style="display:none;">
+                FineSmile
+                <span>Dental Clinic · Tanza, Cavite</span>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="nav-cta">Book Appointment</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-tag">Tanza, Cavite · Trusted by Thousands</div>
+            <h1>Your Best Smile Starts <em>Here</em></h1>
+            <p class="hero-desc">FineSmile Dental Clinic offers complete dental care in Tanza, Cavite -- from routine checkups to full smile transformations, handled by a team of dedicated specialists.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Book an Appointment</a>
+                <a href="#services" class="btn-outline">See Our Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-num">7+</div>
+                    <div class="stat-label">Specialties</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">5.0</div>
+                    <div class="stat-label">Google Rating</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">8K+</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <img src="images/logo.png" alt="FineSmile" class="hero-card-logo"
+                     onerror="this.style.display='none'">
+                <h3>FineSmile Dental Clinic</h3>
+                <p>Complete dental care in Tanza</p>
+                <div class="rating-row">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5.0 on Google</span>
+                </div>
+                <div class="address-box">
+                    <span>📍</span>
+                    <span>4460 A. Soriano Hi-way Brgy. 4, Tanza, Cavite 4180</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-tag">What We Offer</div>
+            <h2>Complete Dental Services</h2>
+            <p>From preventive care to cosmetic enhancements -- everything your smile needs in one place.</p>
+        </div>
+        <div class="service-table reveal">
+            <div class="st-row">
+                <div class="st-cell st-teal reveal reveal-delay-1">
+                    <span class="st-num">01</span>
+                    <div class="st-body">
+                        <h3>General Dentistry</h3>
+                        <p>Checkups, cleanings, fillings, and preventive care to keep your teeth healthy for life.</p>
+                    </div>
+                    <div class="st-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.5 2 6 5 6 8c0 4 2 6 3 9 .5 1.5 1 3 3 3s2.5-1.5 3-3c1-3 3-5 3-9 0-3-2.5-6-6-6z"/></svg></div>
+                </div>
+                <div class="st-cell st-blue reveal reveal-delay-2">
+                    <span class="st-num">02</span>
+                    <div class="st-body">
+                        <h3>Orthodontics</h3>
+                        <p>Braces and aligners to straighten your teeth and give you the smile you've always wanted.</p>
+                    </div>
+                    <div class="st-icon"><svg viewBox="0 0 24 24"><path d="M8 6h8M8 10h8M8 14h5"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg></div>
+                </div>
+            </div>
+            <div class="st-row">
+                <div class="st-cell st-amber reveal reveal-delay-3">
+                    <span class="st-num">03</span>
+                    <div class="st-body">
+                        <h3>Prosthodontics</h3>
+                        <p>Crowns, bridges, and dentures that restore your smile naturally.</p>
+                    </div>
+                    <div class="st-icon"><svg viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/></svg></div>
+                </div>
+                <div class="st-cell st-rose reveal reveal-delay-4">
+                    <span class="st-num">04</span>
+                    <div class="st-body">
+                        <h3>Dental Surgery</h3>
+                        <p>Precise surgical procedures including extractions and wisdom tooth removal.</p>
+                    </div>
+                    <div class="st-icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                </div>
+            </div>
+            <div class="st-row">
+                <div class="st-cell st-purple reveal reveal-delay-5">
+                    <span class="st-num">05</span>
+                    <div class="st-body">
+                        <h3>Dental Implants</h3>
+                        <p>Permanent replacements that look, feel, and function like your natural teeth.</p>
+                    </div>
+                    <div class="st-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg></div>
+                </div>
+                <div class="st-cell st-pink reveal reveal-delay-6">
+                    <span class="st-num">06</span>
+                    <div class="st-body">
+                        <h3>Cosmetic & Aesthetic</h3>
+                        <p>Whitening, veneers, and smile makeovers to give you the confidence you deserve.</p>
+                    </div>
+                    <div class="st-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                </div>
+            </div>
+            <div class="st-row">
+                <div class="st-cell st-dark reveal reveal-delay-7">
+                    <span class="st-num">07</span>
+                    <div class="st-body">
+                        <h3>Personalized Care</h3>
+                        <p>Every treatment plan is tailored to your goals, comfort, and smile.</p>
+                    </div>
+                    <div class="st-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+                </div>
+                <div class="st-cell st-green reveal reveal-delay-8">
+                    <span class="st-num">08</span>
+                    <div class="st-body">
+                        <h3>Online Booking</h3>
+                        <p>Schedule your appointment anytime, anywhere -- fast and easy.</p>
+                    </div>
+                    <div class="st-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+    <div class="why-inner">
+        <div class="section-header reveal">
+            <div class="section-tag">Why FineSmile</div>
+            <h2>A Clinic You Can Trust</h2>
+            <p>We combine expertise, modern equipment, and genuine care to deliver results that last.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card reveal from-left reveal-delay-1">
+                <div class="why-number">01</div>
+                <h3>Team of Specialists</h3>
+                <p>Our clinic brings together general dentists, orthodontists, prosthodontists, and surgeons all under one roof.</p>
+            </div>
+            <div class="why-card reveal reveal-delay-2">
+                <div class="why-number">02</div>
+                <h3>5-Star Patient Care</h3>
+                <p>Rated 5.0 on Google by our patients. We prioritize your comfort, safety, and satisfaction every visit.</p>
+            </div>
+            <div class="why-card reveal from-right reveal-delay-3">
+                <div class="why-number">03</div>
+                <h3>Trusted by Thousands</h3>
+                <p>Over 8,000 followers and a growing community of patients who trust FineSmile with their smiles.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="contact-inner">
+        <div class="contact-info reveal from-left">
+            <div class="section-tag">Get in Touch</div>
+            <h2>Book Your Visit Today</h2>
+            <p>Reach out and our team will get back to you as soon as possible.</p>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-item-body">
+                        <h4>Phone</h4>
+                        <a href="tel:09063615358">0906 361 5358</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-item-body">
+                        <h4>Address</h4>
+                        <p>4460 A. Soriano Hi-way Brgy. 4, Tanza, Cavite 4180</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div class="contact-item-body">
+                        <h4>Hours</h4>
+                        <p>Open · Closes 5PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form reveal from-right">
+            <h3>Send Us a Message</h3>
+            <form>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="09XX XXX XXXX">
+                </div>
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <select>
+                        <option value="">Select a service</option>
+                        <option>General Dentistry</option>
+                        <option>Orthodontics</option>
+                        <option>Prosthodontics</option>
+                        <option>Dental Surgery</option>
+                        <option>Dental Implants</option>
+                        <option>Cosmetic Dentistry</option>
+                        <option>Aesthetic Dentistry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Message (optional)</label>
+                    <textarea placeholder="Any questions or concerns?"></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-name">FineSmile Dental Clinic</div>
+        <div class="footer-sub">Your best smile starts here · Tanza, Cavite</div>
+        <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Book Appointment</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 FineSmile Dental Clinic. All rights reserved.</div>
+    </div>
+</footer>
+
+<script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            const t = document.querySelector(this.getAttribute('href'));
+            if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+
+    // Nav shadow on scroll
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Scroll reveal
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                revealObserver.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Form submit
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = this.querySelector('.form-submit');
+        btn.textContent = 'Message Sent!';
+        btn.style.background = '#065f46';
+        setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; }, 3000);
+    });
+
+    // Stat counter animation
+    function animateCount(el, target, suffix = '') {
+        let current = 0;
+        const increment = target / 40;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                el.textContent = target + suffix;
+                clearInterval(timer);
+            } else {
+                el.textContent = Math.floor(current) + suffix;
+            }
+        }, 30);
+    }
+
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                const nums = e.target.querySelectorAll('.stat-num');
+                nums.forEach(n => {
+                    const text = n.textContent;
+                    if (text.includes('K')) animateCount(n, 8, 'K+');
+                    else if (text.includes('5.0')) {
+                        n.textContent = '5.0';
+                    } else if (text.includes('7')) animateCount(n, 7, '+');
+                });
+                statsObserver.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const statsEl = document.querySelector('.hero-stats');
+    if (statsEl) statsObserver.observe(statsEl);
+</script>
+</body>
+</html>
