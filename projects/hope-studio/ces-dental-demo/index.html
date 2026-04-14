@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ces Dental Clinic | Cavite, Philippines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --primary: #C0186A;
+            --primary-light: #e8558a;
+            --primary-dark: #8f0f4e;
+            --pink-soft: #fdf0f6;
+            --pink-light: #f5d0e6;
+            --white: #ffffff;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-600: #6c757d;
+            --dark: #1a1a2e;
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Playfair Display', serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--pink-light);
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            color: var(--primary);
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 0.62rem;
+            font-family: var(--font-body);
+            font-weight: 500;
+            color: var(--gray-600);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--primary); }
+
+        .nav-cta {
+            background: var(--primary) !important;
+            color: var(--white) !important;
+            padding: 10px 22px;
+            border-radius: 50px;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark) !important;
+            color: var(--white) !important;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--pink-soft) 0%, #fff4f9 60%, var(--white) 100%);
+            display: flex;
+            align-items: center;
+            padding: 120px 24px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -120px;
+            right: -120px;
+            width: 560px;
+            height: 560px;
+            background: radial-gradient(circle, rgba(192,24,106,0.07) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            left: -60px;
+            width: 320px;
+            height: 320px;
+            background: radial-gradient(circle, rgba(192,24,106,0.04) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--pink-light);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--primary);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            line-height: 1.15;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--primary);
+        }
+
+        .hero > .hero-inner > .hero-content > p {
+            font-size: 1rem;
+            color: var(--gray-600);
+            margin-bottom: 36px;
+            max-width: 440px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.25s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(192,24,106,0.28);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 12px 26px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.25s;
+            display: inline-block;
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 36px;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid var(--pink-light);
+        }
+
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.78rem;
+            color: var(--gray-600);
+            margin-top: 4px;
+        }
+
+        /* Hero Visual Card */
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px 32px;
+            box-shadow: 0 24px 64px rgba(192,24,106,0.12), 0 4px 16px rgba(0,0,0,0.06);
+            text-align: center;
+            max-width: 340px;
+            width: 100%;
+        }
+
+        .tooth-icon {
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .hero-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin-bottom: 6px;
+        }
+
+        .hero-card > p {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            margin-bottom: 24px;
+        }
+
+        .locations {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .location-tag {
+            background: var(--pink-soft);
+            color: var(--primary);
+            padding: 9px 16px;
+            border-radius: 10px;
+            font-size: 0.84rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* ── SERVICES ── */
+        .services {
+            padding: 100px 24px;
+            background: var(--white);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: var(--pink-soft);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-heading);
+            font-size: 2.3rem;
+            color: var(--dark);
+            margin-bottom: 14px;
+        }
+
+        .section-header p {
+            color: var(--gray-600);
+            max-width: 480px;
+            margin: 0 auto;
+            font-size: 0.95rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1.5px solid var(--gray-200);
+            border-radius: 18px;
+            padding: 32px 24px;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-light);
+            box-shadow: 0 12px 40px rgba(192,24,106,0.1);
+            transform: translateY(-4px);
+        }
+
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            background: var(--pink-soft);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 0.86rem;
+            color: var(--gray-600);
+            line-height: 1.65;
+        }
+
+        /* ── ABOUT / TEAM ── */
+        .about {
+            padding: 100px 24px;
+            background: linear-gradient(135deg, var(--pink-soft) 0%, #fff8fc 100%);
+        }
+
+        .about-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            display: block;
+            aspect-ratio: 4/5;
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--primary);
+            color: var(--white);
+            padding: 20px 26px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 10px 28px rgba(192,24,106,0.35);
+        }
+
+        .about-badge-number {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .about-badge-text {
+            font-size: 0.72rem;
+            opacity: 0.9;
+            margin-top: 5px;
+            letter-spacing: 0.3px;
+        }
+
+        .about-content { padding-bottom: 20px; }
+
+        .about-content h2 {
+            font-family: var(--font-heading);
+            font-size: 2.3rem;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .about-content h2 em {
+            font-style: italic;
+            color: var(--primary);
+        }
+
+        .about-content p {
+            color: var(--gray-600);
+            margin-bottom: 14px;
+            font-size: 0.95rem;
+        }
+
+        .about-features {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .feature-check {
+            width: 22px;
+            height: 22px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .feature-check svg { width: 11px; height: 11px; }
+
+        .feature-text {
+            font-size: 0.9rem;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        /* ── CONTACT ── */
+        .contact {
+            padding: 100px 24px;
+            background: var(--white);
+        }
+
+        .contact-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            color: var(--dark);
+            margin-bottom: 14px;
+        }
+
+        .contact-info > p {
+            color: var(--gray-600);
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .contact-item-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--pink-soft);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-item-content h4 {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gray-600);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .contact-item-content p,
+        .contact-item-content a {
+            font-size: 0.93rem;
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item-content a:hover { color: var(--primary); }
+
+        .contact-form {
+            background: var(--gray-100);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .contact-form h3 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            color: var(--dark);
+            margin-bottom: 24px;
+        }
+
+        .form-group { margin-bottom: 14px; }
+
+        .form-group label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 10px;
+            font-size: 0.875rem;
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--dark);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus { border-color: var(--primary); }
+
+        .form-group textarea { resize: vertical; min-height: 90px; }
+
+        .form-submit {
+            width: 100%;
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 0.93rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 6px;
+            font-family: var(--font-body);
+        }
+
+        .form-submit:hover { background: var(--primary-dark); }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--dark);
+            color: rgba(255,255,255,0.65);
+            padding: 52px 24px;
+            text-align: center;
+        }
+
+        .footer-inner { max-width: 1100px; margin: 0 auto; }
+
+        .footer-logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .footer-tagline {
+            font-size: 0.85rem;
+            margin-bottom: 28px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.55);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--white); }
+
+        .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+
+        /* ── MOBILE ── */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-inner,
+            .about-inner,
+            .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+            .hero { padding-top: 100px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-visual { display: none; }
+            .services-grid { grid-template-columns: 1fr 1fr; }
+            .hero-stats { gap: 20px; }
+            .about-badge { bottom: 10px; right: 10px; }
+            .contact-form { padding: 28px 20px; }
+        }
+
+        @media (max-width: 480px) {
+            .services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="logo">
+            <img src="images/logo.jpg" alt="Ces Dental Clinic" style="height:48px;width:auto;">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="nav-cta">Book Appointment</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-badge">Serving Cavite Communities</div>
+            <h1>Your Smile Deserves <em>Expert Care</em></h1>
+            <p>Ces Dental Clinic offers comprehensive dental services across General Trias, Dasmariñas, and Imus. From routine checkups to full smile transformations — we take care of every smile.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Book an Appointment</a>
+                <a href="#services" class="btn-outline">View Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Clinic Locations</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Expert Dentists</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">6+</div>
+                    <div class="stat-label">Services Offered</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <img src="images/logo.jpg" alt="Ces Dental Clinic" style="width:120px;height:auto;margin:0 auto 12px;display:block;">
+                <h3>Ces Dental Clinic</h3>
+                <p>Compassionate care, expert hands</p>
+                <div class="locations">
+                    <div class="location-tag">📍 General Trias</div>
+                    <div class="location-tag">📍 Dasmariñas</div>
+                    <div class="location-tag">📍 Imus</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">What We Offer</div>
+            <h2>Comprehensive Dental Services</h2>
+            <p>From preventive care to advanced treatments, everything your smile needs under one roof.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🦷</div>
+                <h3>General Dentistry</h3>
+                <p>Routine checkups, cleanings, fillings, and preventive care to keep your teeth healthy and strong for years to come.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">😁</div>
+                <h3>Orthodontics</h3>
+                <p>Braces and aligners to straighten your teeth and achieve the perfect, confident smile you've always wanted.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔬</div>
+                <h3>Oral Surgery</h3>
+                <p>Tooth extractions, wisdom tooth removal, and surgical procedures performed with precision and care.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h3>Esthetics & Whitening</h3>
+                <p>Teeth whitening, veneers, and cosmetic treatments to brighten your smile and boost your confidence.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔩</div>
+                <h3>Dental Implants</h3>
+                <p>Permanent tooth replacement solutions that look, feel, and function just like your natural teeth.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👶</div>
+                <h3>Pediatric Dentistry</h3>
+                <p>Gentle, child-friendly dental care to build healthy habits and keep young smiles bright from the very start.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT / TEAM -->
+<section class="about" id="about">
+    <div class="about-inner">
+        <div class="about-image">
+            <!-- Replace src with: images/team.jpg -->
+            <img src="images/ces dental.jpg" alt="Ces Dental Clinic Team" onerror="this.style.background='linear-gradient(135deg,#f5d0e6,#e8558a)';this.style.minHeight='480px';this.removeAttribute('src')">
+            <div class="about-badge">
+                <div class="about-badge-number">5+</div>
+                <div class="about-badge-text">Expert Dentists</div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="section-tag">About Us</div>
+            <h2>Women Who Lead With <em>Skill & Heart</em></h2>
+            <p>Ces Dental Clinic is driven by a team of passionate and skilled female dentists who are committed to delivering high-quality dental care across Cavite.</p>
+            <p>We believe every patient deserves to feel comfortable, informed, and confident — walking out with a healthier, happier smile every time.</p>
+            <div class="about-features">
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="feature-text">3 convenient locations across Cavite</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="feature-text">Online booking available for your convenience</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="feature-text">From general care to specialist treatments</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="feature-text">Patient-first approach with compassionate care</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="contact-inner">
+        <div class="contact-info">
+            <div class="section-tag">Get in Touch</div>
+            <h2>Book Your Appointment Today</h2>
+            <p>Reach out through any channel or fill out the form and we'll get back to you shortly.</p>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="contact-item-icon">📞</div>
+                    <div class="contact-item-content">
+                        <h4>Phone</h4>
+                        <a href="tel:09276485719">0927 648 5719</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">✉️</div>
+                    <div class="contact-item-content">
+                        <h4>Email</h4>
+                        <a href="mailto:cesdentalclinic@gmail.com">cesdentalclinic@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📍</div>
+                    <div class="contact-item-content">
+                        <h4>Locations</h4>
+                        <p>General Trias · Dasmariñas · Imus, Cavite</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📱</div>
+                    <div class="contact-item-content">
+                        <h4>Instagram</h4>
+                        <a href="https://instagram.com" target="_blank">@cesdentalclinic</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="09XX XXX XXXX">
+                </div>
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <select>
+                        <option value="">Select a service</option>
+                        <option>General Dentistry</option>
+                        <option>Orthodontics</option>
+                        <option>Oral Surgery</option>
+                        <option>Esthetics & Whitening</option>
+                        <option>Dental Implants</option>
+                        <option>Pediatric Dentistry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Branch</label>
+                    <select>
+                        <option value="">Select a location</option>
+                        <option>General Trias</option>
+                        <option>Dasmariñas</option>
+                        <option>Imus</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Message (optional)</label>
+                    <textarea placeholder="Any concerns or questions?"></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">Ces Dental Clinic</div>
+        <div class="footer-tagline">Empowered women creating empowered smiles across Cavite</div>
+        <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Book Appointment</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Ces Dental Clinic. All rights reserved.</div>
+    </div>
+</footer>
+
+<script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+
+    // Scroll-in animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .contact-item, .feature-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(el);
+    });
+
+    // Form submit feedback
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = this.querySelector('.form-submit');
+        btn.textContent = 'Message Sent!';
+        btn.style.background = '#2d7a4f';
+        setTimeout(() => {
+            btn.textContent = 'Send Message';
+            btn.style.background = '';
+        }, 3000);
+    });
+</script>
+
+</body>
+</html>

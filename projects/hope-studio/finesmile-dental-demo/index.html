@@ -257,69 +257,49 @@
         .st-cell:last-child { border-right: none; }
         .st-cell:hover { background: var(--gray-50); }
 
-        /* Left colored border per cell */
+        /* Subtle left border - all teal, consistent */
         .st-cell::before {
             content: '';
             position: absolute;
-            left: 0; top: 0; bottom: 0;
-            width: 4px;
-            border-radius: 0;
+            left: 0; top: 20%; bottom: 20%;
+            width: 3px;
+            background: var(--teal-pale);
+            border-radius: 4px;
+            transition: background 0.2s, top 0.2s, bottom 0.2s;
         }
-        .st-teal::before   { background: #0B7B6E; }
-        .st-blue::before   { background: #3B82F6; }
-        .st-amber::before  { background: #F59E0B; }
-        .st-rose::before   { background: #F43F5E; }
-        .st-purple::before { background: #8B5CF6; }
-        .st-dark::before   { background: #0f1f1d; }
-        .st-pink::before   { background: #EC4899; }
-        .st-green::before  { background: #10B981; }
+        .st-cell:hover::before {
+            background: var(--teal);
+            top: 10%; bottom: 10%;
+        }
 
         .st-num {
             font-family: var(--font-heading);
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             line-height: 1;
             font-weight: 400;
+            color: rgba(11,123,110,0.18);
             flex-shrink: 0;
-            min-width: 36px;
+            min-width: 32px;
         }
-        .st-teal   .st-num { color: rgba(11,123,110,0.25); }
-        .st-blue   .st-num { color: rgba(59,130,246,0.25); }
-        .st-amber  .st-num { color: rgba(245,158,11,0.3); }
-        .st-rose   .st-num { color: rgba(244,63,94,0.25); }
-        .st-purple .st-num { color: rgba(139,92,246,0.25); }
-        .st-dark   .st-num { color: rgba(15,31,29,0.2); }
-        .st-pink   .st-num { color: rgba(236,72,153,0.25); }
-        .st-green  .st-num { color: rgba(16,185,129,0.25); }
 
         .st-body { flex: 1; }
         .st-body h3 { font-size: 0.97rem; font-weight: 700; color: var(--dark); margin-bottom: 5px; }
         .st-body p  { font-size: 0.83rem; color: var(--gray-500); line-height: 1.6; }
 
         .st-icon {
-            width: 48px; height: 48px;
+            width: 46px; height: 46px;
             border-radius: 13px;
+            background: var(--teal-soft);
             display: flex; align-items: center; justify-content: center;
             flex-shrink: 0;
+            transition: background 0.2s;
         }
-        .st-icon svg { width: 20px; height: 20px; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .st-cell:hover .st-icon { background: var(--teal-pale); }
+        .st-icon svg { width: 20px; height: 20px; fill: none; stroke: var(--teal); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
-        .st-teal   .st-icon { background: #d0eeeb; }
-        .st-blue   .st-icon { background: #DBEAFE; }
-        .st-amber  .st-icon { background: #FEF3C7; }
-        .st-rose   .st-icon { background: #FFE4E6; }
-        .st-purple .st-icon { background: #EDE9FE; }
-        .st-dark   .st-icon { background: #e5e7eb; }
-        .st-pink   .st-icon { background: #FCE7F3; }
-        .st-green  .st-icon { background: #D1FAE5; }
-
-        .st-teal   .st-icon svg { stroke: #0B7B6E; }
-        .st-blue   .st-icon svg { stroke: #3B82F6; }
-        .st-amber  .st-icon svg { stroke: #D97706; }
-        .st-rose   .st-icon svg { stroke: #F43F5E; }
-        .st-purple .st-icon svg { stroke: #8B5CF6; }
-        .st-dark   .st-icon svg { stroke: #374151; }
-        .st-pink   .st-icon svg { stroke: #EC4899; }
-        .st-green  .st-icon svg { stroke: #059669; }
+        /* Keep these for class references in HTML but neutralize them */
+        .st-teal, .st-blue, .st-amber, .st-rose,
+        .st-purple, .st-dark, .st-pink, .st-green { }
 
         @media (max-width: 768px) {
             .st-row { grid-template-columns: 1fr; }

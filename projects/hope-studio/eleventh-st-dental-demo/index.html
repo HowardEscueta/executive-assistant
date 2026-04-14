@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleventh St. Dental Studio | Tanza, Cavite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --blue: #1C5FA8;
+            --blue-light: #2E79CB;
+            --blue-dark: #144885;
+            --blue-soft: #EEF4FD;
+            --blue-pale: #D0E4F7;
+            --gold: #C9963F;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-500: #6b7280;
+            --gray-700: #374151;
+            --dark: #0F1F35;
+            --font-body: 'DM Sans', sans-serif;
+            --font-heading: 'Cormorant Garamond', serif;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-body); color: var(--dark); background: var(--white); line-height: 1.6; }
+
+        /* ── ANIMATIONS ── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(28px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideLeft {
+            from { opacity: 0; transform: translateX(36px); }
+            to   { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes navDrop {
+            from { opacity: 0; transform: translateY(-100%); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50%       { transform: translateY(-10px); }
+        }
+        @keyframes pulseRing {
+            0%   { box-shadow: 0 0 0 0 rgba(28,95,168,0.28); }
+            70%  { box-shadow: 0 0 0 16px rgba(28,95,168,0); }
+            100% { box-shadow: 0 0 0 0 rgba(28,95,168,0); }
+        }
+
+        nav             { animation: navDrop 0.5s ease forwards; }
+        .hero-tag       { animation: fadeUp 0.6s ease 0.2s both; }
+        .hero h1        { animation: fadeUp 0.7s ease 0.35s both; }
+        .hero-desc      { animation: fadeUp 0.7s ease 0.5s both; }
+        .hero-btns      { animation: fadeUp 0.7s ease 0.65s both; }
+        .hero-stats     { animation: fadeUp 0.7s ease 0.8s both; }
+        .hero-card      { animation: slideLeft 0.8s ease 0.5s both, float 4.5s ease-in-out 1.5s infinite !important; }
+        .btn-primary    { animation: pulseRing 2.5s ease 2.2s infinite; }
+
+        /* ── SCROLL REVEAL ── */
+        .reveal {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+        .reveal.from-left  { transform: translateX(-30px); }
+        .reveal.from-right { transform: translateX(30px); }
+        .reveal.visible    { opacity: 1; transform: translateY(0) translateX(0); }
+        .rd1 { transition-delay: 0.08s; }
+        .rd2 { transition-delay: 0.16s; }
+        .rd3 { transition-delay: 0.24s; }
+        .rd4 { transition-delay: 0.32s; }
+        .rd5 { transition-delay: 0.40s; }
+        .rd6 { transition-delay: 0.48s; }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(14px);
+            z-index: 1000; padding: 14px 0;
+            border-bottom: 1px solid var(--blue-pale);
+            transition: box-shadow 0.3s;
+        }
+        nav.scrolled { box-shadow: 0 4px 24px rgba(28,95,168,0.1); }
+        .nav-inner {
+            max-width: 1140px; margin: 0 auto; padding: 0 28px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo img { height: 50px; width: auto; object-fit: contain; mix-blend-mode: multiply; filter: brightness(1.08); }
+        .logo-fallback {
+            font-family: var(--font-heading); font-size: 1.4rem;
+            color: var(--blue); font-weight: 600; line-height: 1.1;
+        }
+        .logo-fallback span {
+            display: block; font-family: var(--font-body);
+            font-size: 0.62rem; color: var(--gray-500);
+            letter-spacing: 2px; text-transform: uppercase; font-weight: 500;
+        }
+        .nav-links { display: flex; gap: 30px; list-style: none; align-items: center; }
+        .nav-links a {
+            text-decoration: none; color: var(--gray-700);
+            font-size: 0.88rem; font-weight: 500; transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--blue); }
+        .nav-cta {
+            background: var(--blue) !important; color: var(--white) !important;
+            padding: 10px 22px; border-radius: 50px; transition: background 0.2s !important;
+        }
+        .nav-cta:hover { background: var(--blue-dark) !important; }
+
+        /* ── HERO ── */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(150deg, var(--blue-soft) 0%, #f5f9ff 55%, var(--white) 100%);
+            display: flex; align-items: center;
+            padding: 120px 28px 80px; position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute;
+            top: -120px; right: -120px;
+            width: 640px; height: 640px;
+            background: radial-gradient(circle, rgba(28,95,168,0.07) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero::after {
+            content: ''; position: absolute;
+            bottom: -80px; left: -80px;
+            width: 380px; height: 380px;
+            background: radial-gradient(circle, rgba(28,95,168,0.04) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero-inner {
+            max-width: 1140px; margin: 0 auto;
+            display: grid; grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px; align-items: center; position: relative; z-index: 1;
+        }
+        .hero-tag {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--blue-pale); color: var(--blue);
+            padding: 6px 16px; border-radius: 50px;
+            font-size: 0.78rem; font-weight: 600; letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+        .hero-tag::before {
+            content: ''; width: 6px; height: 6px;
+            background: var(--blue); border-radius: 50%;
+        }
+        .hero h1 {
+            font-family: var(--font-heading); font-size: 3.4rem;
+            line-height: 1.1; color: var(--dark); margin-bottom: 20px;
+        }
+        .hero h1 em { font-style: italic; color: var(--blue); }
+        .hero-desc { font-size: 1rem; color: var(--gray-500); margin-bottom: 38px; max-width: 460px; }
+        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn-primary {
+            background: var(--blue); color: var(--white);
+            padding: 14px 30px; border-radius: 50px;
+            text-decoration: none; font-weight: 600; font-size: 0.9rem;
+            transition: all 0.25s; display: inline-block;
+        }
+        .btn-primary:hover {
+            background: var(--blue-dark); transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(28,95,168,0.32);
+        }
+        .btn-outline {
+            border: 2px solid var(--blue); color: var(--blue);
+            padding: 12px 26px; border-radius: 50px;
+            text-decoration: none; font-weight: 600; font-size: 0.9rem;
+            transition: all 0.25s; display: inline-block;
+        }
+        .btn-outline:hover { background: var(--blue); color: var(--white); }
+        .hero-stats {
+            display: flex; gap: 36px; margin-top: 50px;
+            padding-top: 30px; border-top: 1px solid var(--blue-pale);
+        }
+        .stat-num { font-family: var(--font-heading); font-size: 2.1rem; color: var(--blue); line-height: 1; }
+        .stat-label { font-size: 0.78rem; color: var(--gray-500); margin-top: 4px; }
+
+        /* Hero Card */
+        .hero-visual { display: flex; justify-content: center; align-items: center; }
+        .hero-card {
+            background: var(--white); border-radius: 24px; padding: 36px 28px;
+            box-shadow: 0 28px 72px rgba(28,95,168,0.14), 0 4px 16px rgba(0,0,0,0.05);
+            text-align: center; max-width: 310px; width: 100%;
+        }
+        .hero-card-logo {
+            width: 110px; height: auto; margin: 0 auto 18px;
+            display: block; object-fit: contain; mix-blend-mode: multiply; filter: brightness(1.08);
+        }
+        .hero-card h3 {
+            font-family: var(--font-heading); font-size: 1.3rem;
+            color: var(--dark); margin-bottom: 6px; font-weight: 600;
+        }
+        .hero-card > p { font-size: 0.84rem; color: var(--gray-500); margin-bottom: 20px; }
+        .ig-badge {
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
+            border-radius: 12px; padding: 10px 14px; margin-bottom: 14px;
+        }
+        .ig-badge span { color: white; font-size: 0.82rem; font-weight: 600; }
+        .address-box {
+            background: var(--gray-50); border-radius: 10px; padding: 11px 14px;
+            font-size: 0.81rem; color: var(--gray-700); line-height: 1.5;
+            text-align: left; display: flex; gap: 8px; align-items: flex-start;
+        }
+        .address-box span:first-child { font-size: 1rem; flex-shrink: 0; }
+
+        /* ── SERVICES ── */
+        .services { padding: 100px 28px; background: linear-gradient(160deg, #e8f2fd 0%, #f4f9ff 60%, #eef4fd 100%); }
+        .container { max-width: 1140px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-tag {
+            display: inline-block; background: var(--blue-soft); color: var(--blue);
+            padding: 6px 16px; border-radius: 50px;
+            font-size: 0.73rem; font-weight: 600; letter-spacing: 1.5px;
+            text-transform: uppercase; margin-bottom: 14px;
+        }
+        .section-header h2 {
+            font-family: var(--font-heading); font-size: 2.6rem;
+            color: var(--dark); margin-bottom: 12px;
+        }
+        .section-header p { color: var(--gray-500); max-width: 480px; margin: 0 auto; font-size: 0.95rem; }
+
+        /* ── SERVICE LIST ── */
+        .services-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid var(--blue-pale);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 40px rgba(28,95,168,0.1), 0 2px 8px rgba(28,95,168,0.06);
+            background: var(--white);
+        }
+        .si {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            padding: 30px 32px;
+            border-right: 1px solid var(--blue-pale);
+            border-bottom: 1px solid var(--blue-pale);
+            position: relative;
+            transition: background 0.22s;
+            cursor: default;
+        }
+        .si:nth-child(even) { border-right: none; }
+        .si:nth-last-child(-n+2) { border-bottom: none; }
+        .si:hover { background: var(--blue-soft); }
+
+        /* Left accent bar */
+        .si::before {
+            content: '';
+            position: absolute; left: 0; top: 16px; bottom: 16px;
+            width: 3px; background: var(--blue); border-radius: 2px;
+            transform: scaleY(0); transition: transform 0.22s ease;
+        }
+        .si:hover::before { transform: scaleY(1); }
+
+        /* Number */
+        .si-num {
+            font-family: var(--font-heading);
+            font-size: 2.6rem; font-weight: 600; line-height: 1;
+            color: var(--gray-200); flex-shrink: 0; width: 48px;
+            text-align: center; transition: color 0.22s;
+            letter-spacing: -1px;
+        }
+        .si:hover .si-num { color: var(--blue); }
+
+        /* Body */
+        .si-body { flex: 1; min-width: 0; }
+        .si-body h3 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 5px; transition: color 0.22s; }
+        .si:hover .si-body h3 { color: var(--blue-dark); }
+        .si-body p { font-size: 0.82rem; color: var(--gray-500); line-height: 1.6; }
+
+        /* Icon */
+        .si-icon {
+            width: 46px; height: 46px; border-radius: 12px;
+            background: var(--gray-100); display: flex; align-items: center;
+            justify-content: center; font-size: 1.25rem; flex-shrink: 0;
+            transition: background 0.22s, box-shadow 0.22s;
+        }
+        .si:hover .si-icon { background: var(--blue-pale); }
+
+        /* ── HOURS ── */
+        .hours { padding: 100px 28px; background: var(--blue); }
+        .hours-inner { max-width: 1140px; margin: 0 auto; }
+        .hours .section-tag { background: rgba(255,255,255,0.18); color: var(--white); }
+        .hours .section-header h2 { color: var(--white); }
+        .hours .section-header p { color: rgba(255,255,255,0.72); }
+        .hours-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .hours-card {
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 18px; padding: 28px 24px; text-align: center;
+        }
+        .hours-card.closed { background: rgba(0,0,0,0.15); border-color: rgba(255,255,255,0.08); }
+        .hours-day {
+            font-size: 0.73rem; font-weight: 700; letter-spacing: 1.5px;
+            text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 10px;
+        }
+        .hours-time {
+            font-family: var(--font-heading); font-size: 1.6rem;
+            color: var(--white); line-height: 1.1; margin-bottom: 6px;
+        }
+        .hours-card.closed .hours-time { color: rgba(255,255,255,0.38); font-size: 1.3rem; }
+        .hours-note { font-size: 0.8rem; color: rgba(255,255,255,0.55); }
+        .hours-cta {
+            text-align: center; margin-top: 48px;
+        }
+        .hours-cta p { color: rgba(255,255,255,0.75); margin-bottom: 18px; font-size: 0.95rem; }
+        .btn-white {
+            background: var(--white); color: var(--blue);
+            padding: 14px 32px; border-radius: 50px;
+            text-decoration: none; font-weight: 700; font-size: 0.9rem;
+            transition: all 0.25s; display: inline-block;
+        }
+        .btn-white:hover { background: var(--blue-soft); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+
+        /* ── ABOUT ── */
+        .about { padding: 100px 28px; background: var(--blue-soft); }
+        .about-inner {
+            max-width: 1140px; margin: 0 auto;
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 80px; align-items: center;
+        }
+        .about-content { }
+        .about-content h2 {
+            font-family: var(--font-heading); font-size: 2.5rem;
+            color: var(--dark); margin-bottom: 20px; line-height: 1.15;
+        }
+        .about-content h2 em { font-style: italic; color: var(--blue); }
+        .about-content p { color: var(--gray-500); margin-bottom: 14px; font-size: 0.95rem; line-height: 1.7; }
+        .features { margin-top: 30px; display: flex; flex-direction: column; gap: 13px; }
+        .feature-item { display: flex; align-items: flex-start; gap: 12px; }
+        .feature-check {
+            width: 22px; height: 22px; background: var(--blue); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; margin-top: 2px;
+        }
+        .feature-check svg { width: 11px; height: 11px; }
+        .feature-text { font-size: 0.9rem; color: var(--dark); font-weight: 500; }
+        .about-card {
+            background: var(--white); border-radius: 22px; padding: 40px 32px;
+            box-shadow: 0 20px 56px rgba(28,95,168,0.1); text-align: center;
+        }
+        .about-card-icon { font-size: 3.5rem; margin-bottom: 18px; }
+        .about-card h3 {
+            font-family: var(--font-heading); font-size: 1.5rem;
+            color: var(--dark); margin-bottom: 10px;
+        }
+        .about-card > p { font-size: 0.9rem; color: var(--gray-500); margin-bottom: 28px; line-height: 1.65; }
+        .ig-follow {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
+            color: white; padding: 12px 22px; border-radius: 50px;
+            text-decoration: none; font-weight: 600; font-size: 0.88rem;
+            transition: all 0.25s;
+        }
+        .ig-follow:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(238,42,123,0.35); }
+        .about-stats { display: flex; justify-content: center; gap: 32px; margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--gray-200); }
+        .about-stat-num { font-family: var(--font-heading); font-size: 1.8rem; color: var(--blue); line-height: 1; }
+        .about-stat-label { font-size: 0.75rem; color: var(--gray-500); margin-top: 3px; }
+
+        /* ── CONTACT ── */
+        .contact { padding: 100px 28px; background: linear-gradient(160deg, #f4f9ff 0%, #eef4fd 100%); }
+        .contact-inner {
+            max-width: 1140px; margin: 0 auto;
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 80px; align-items: start;
+        }
+        .contact-info h2 { font-family: var(--font-heading); font-size: 2.3rem; color: var(--dark); margin-bottom: 12px; }
+        .contact-info > p { color: var(--gray-500); margin-bottom: 40px; font-size: 0.95rem; }
+        .contact-items { display: flex; flex-direction: column; gap: 20px; }
+        .contact-item { display: flex; gap: 14px; align-items: flex-start; }
+        .contact-icon {
+            width: 44px; height: 44px; background: var(--blue-soft);
+            border-radius: 12px; display: flex; align-items: center;
+            justify-content: center; font-size: 1.1rem; flex-shrink: 0;
+        }
+        .contact-item-body h4 {
+            font-size: 0.73rem; font-weight: 700; color: var(--gray-500);
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;
+        }
+        .contact-item-body p,
+        .contact-item-body a {
+            font-size: 0.93rem; color: var(--dark); text-decoration: none; font-weight: 500;
+        }
+        .contact-item-body a:hover { color: var(--blue); }
+        .contact-form { background: var(--gray-50); border-radius: 22px; padding: 40px; }
+        .contact-form h3 { font-family: var(--font-heading); font-size: 1.5rem; color: var(--dark); margin-bottom: 24px; }
+        .form-group { margin-bottom: 14px; }
+        .form-group label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--dark); margin-bottom: 7px; }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%; padding: 11px 14px; border: 1.5px solid var(--gray-200);
+            border-radius: 10px; font-size: 0.875rem; font-family: var(--font-body);
+            background: var(--white); color: var(--dark); outline: none; transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus { border-color: var(--blue); }
+        .form-group textarea { resize: vertical; min-height: 90px; }
+        .form-submit {
+            width: 100%; background: var(--blue); color: var(--white); border: none;
+            padding: 14px; border-radius: 10px; font-size: 0.93rem; font-weight: 600;
+            cursor: pointer; transition: background 0.2s; margin-top: 6px; font-family: var(--font-body);
+        }
+        .form-submit:hover { background: var(--blue-dark); }
+
+        /* ── FOOTER ── */
+        footer { background: var(--dark); color: rgba(255,255,255,0.5); padding: 52px 28px; text-align: center; }
+        .footer-inner { max-width: 1140px; margin: 0 auto; }
+        .footer-name { font-family: var(--font-heading); font-size: 1.6rem; color: var(--white); margin-bottom: 6px; }
+        .footer-sub { font-size: 0.84rem; margin-bottom: 28px; }
+        .footer-links { display: flex; justify-content: center; gap: 30px; list-style: none; margin-bottom: 24px; flex-wrap: wrap; }
+        .footer-links a { color: rgba(255,255,255,0.42); text-decoration: none; font-size: 0.84rem; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--white); }
+        .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.28); }
+
+        /* ── MOBILE ── */
+        @media (max-width: 900px) {
+            .hours-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-inner, .about-inner, .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+            .hero-visual { display: none; }
+            .hero { padding-top: 100px; }
+            .hero h1 { font-size: 2.4rem; }
+            .hero-stats { gap: 24px; }
+            .contact-form { padding: 28px 20px; }
+            .services-list { grid-template-columns: 1fr; }
+            .si { border-right: none; }
+            .si:nth-last-child(-n+2) { border-bottom: 1px solid var(--blue-pale); }
+            .si:last-child { border-bottom: none; }
+        }
+        @media (max-width: 480px) {
+            .hours-grid { grid-template-columns: 1fr; }
+            .si { padding: 22px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="logo">
+            <img src="images/eleventh st.jpg" alt="Eleventh St. Dental Studio"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <div class="logo-fallback" style="display:none;">
+                Eleventh St. Dental Studio
+                <span>Tanza, Cavite</span>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="nav-cta">Book Appointment</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-tag">Daang Amaya, Tanza, Cavite</div>
+            <h1>A <em>Gentle Approach</em> to Dentistry</h1>
+            <p class="hero-desc">Eleventh St. Dental Studio offers comprehensive dental care in a warm, welcoming environment. Your comfort is our priority from the moment you walk in.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Book an Appointment</a>
+                <a href="#services" class="btn-outline">See Our Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-num">1.2K</div>
+                    <div class="stat-label">IG Followers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">6+</div>
+                    <div class="stat-label">Services Offered</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">5</div>
+                    <div class="stat-label">Days Open</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <img src="images/eleventh st.jpg" alt="Eleventh St. Dental Studio" class="hero-card-logo"
+                     onerror="this.style.display='none'">
+                <h3>Eleventh St. Dental Studio</h3>
+                <p>A Gentle Approach to Dentistry</p>
+                <div class="ig-badge">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    <span>@eleventhstdentalstudio</span>
+                </div>
+                <div class="address-box">
+                    <span>📍</span>
+                    <span>Rosal St. De Roman Subd., Daang Amaya 1, Tanza, Philippines 4108</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-tag">What We Offer</div>
+            <h2>Complete Dental Services</h2>
+            <p>From routine cleanings to full smile transformations -- handled with a gentle touch every step of the way.</p>
+        </div>
+        <div class="services-list reveal">
+            <div class="si rd1">
+                <div class="si-num">01</div>
+                <div class="si-body">
+                    <h3>General Dentistry</h3>
+                    <p>Checkups, cleanings, fillings, and preventive care to keep your teeth healthy for the long run.</p>
+                </div>
+                <div class="si-icon">🦷</div>
+            </div>
+            <div class="si rd2">
+                <div class="si-num">02</div>
+                <div class="si-body">
+                    <h3>Orthodontics</h3>
+                    <p>Braces and aligners fitted to straighten your teeth and give you the confident smile you deserve.</p>
+                </div>
+                <div class="si-icon">😁</div>
+            </div>
+            <div class="si rd3">
+                <div class="si-num">03</div>
+                <div class="si-body">
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Teeth whitening, veneers, and smile makeovers that enhance your natural beauty.</p>
+                </div>
+                <div class="si-icon">✨</div>
+            </div>
+            <div class="si rd4">
+                <div class="si-num">04</div>
+                <div class="si-body">
+                    <h3>Oral Surgery</h3>
+                    <p>Safe and gentle extractions and surgical procedures with the utmost care for your comfort.</p>
+                </div>
+                <div class="si-icon">🔬</div>
+            </div>
+            <div class="si rd5">
+                <div class="si-num">05</div>
+                <div class="si-body">
+                    <h3>Dental Implants</h3>
+                    <p>Permanent tooth replacements that look, feel, and function exactly like your natural teeth.</p>
+                </div>
+                <div class="si-icon">🔩</div>
+            </div>
+            <div class="si rd6">
+                <div class="si-num">06</div>
+                <div class="si-body">
+                    <h3>Restorative Dentistry</h3>
+                    <p>Crowns, bridges, and dentures crafted to restore your smile's full function and appearance.</p>
+                </div>
+                <div class="si-icon">🔧</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOURS -->
+<section class="hours" id="hours">
+    <div class="hours-inner">
+        <div class="section-header reveal">
+            <div class="section-tag">Clinic Schedule</div>
+            <h2>When We're Open</h2>
+            <p>We're here for you five days a week. Walk-ins welcome, appointments preferred.</p>
+        </div>
+        <div class="hours-grid">
+            <div class="hours-card reveal rd1">
+                <div class="hours-day">Mon · Tue · Thu</div>
+                <div class="hours-time">9:00 AM – 6:00 PM</div>
+                <div class="hours-note">Regular clinic days</div>
+            </div>
+            <div class="hours-card reveal rd2">
+                <div class="hours-day">Friday</div>
+                <div class="hours-time">9:00 AM – 5:00 PM</div>
+                <div class="hours-note">Closes one hour early</div>
+            </div>
+            <div class="hours-card reveal rd3">
+                <div class="hours-day">Sunday</div>
+                <div class="hours-time">1:00 PM – 7:00 PM</div>
+                <div class="hours-note">Afternoon hours only</div>
+            </div>
+        </div>
+        <div class="hours-cta reveal">
+            <p>Closed on Wednesdays and Saturdays. Call us to confirm your schedule.</p>
+            <a href="tel:09985587667" class="btn-white">Call 0998-558-7667</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="about-inner">
+        <div class="about-content reveal from-left">
+            <div class="section-tag">About Us</div>
+            <h2>Dentistry Done With <em>Warmth & Care</em></h2>
+            <p>At Eleventh St. Dental Studio, we believe a trip to the dentist shouldn't be something you dread. Our studio is designed to feel welcoming, calm, and comfortable -- so you can focus on your smile, not your nerves.</p>
+            <p>We offer a full range of dental services, all delivered by a caring team committed to making every visit a positive experience for the whole family.</p>
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="feature-text">Gentle, patient-first approach every visit</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="feature-text">Comprehensive services from prevention to restoration</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="feature-text">Conveniently located in Daang Amaya, Tanza</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-check">
+                        <svg viewBox="0 0 11 11" fill="none"><path d="M2 5.5l2.5 2.5 4.5-4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="feature-text">Open 5 days a week including Sundays</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-card reveal from-right">
+            <div class="about-card-icon">🦷</div>
+            <h3>Follow Us on Instagram</h3>
+            <p>Stay updated with tips, before-and-afters, promos, and announcements from our studio.</p>
+            <a href="https://www.instagram.com/eleventhstdentalstudio" target="_blank" class="ig-follow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                @eleventhstdentalstudio
+            </a>
+            <div class="about-stats">
+                <div class="about-stat">
+                    <div class="about-stat-num">1.2K</div>
+                    <div class="about-stat-label">Followers</div>
+                </div>
+                <div class="about-stat">
+                    <div class="about-stat-num">15</div>
+                    <div class="about-stat-label">Following</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="contact-inner">
+        <div class="contact-info reveal from-left">
+            <div class="section-tag">Get in Touch</div>
+            <h2>Book Your Visit Today</h2>
+            <p>Call, message, or fill out the form and our team will confirm your appointment as soon as possible.</p>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-item-body">
+                        <h4>Phone</h4>
+                        <a href="tel:09985587667">0998-558-7667</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-item-body">
+                        <h4>Email</h4>
+                        <a href="mailto:eleventhst1105@gmail.com">eleventhst1105@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-item-body">
+                        <h4>Address</h4>
+                        <p>Rosal St. De Roman Subd., Daang Amaya 1, Tanza, Philippines 4108</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div class="contact-item-body">
+                        <h4>Hours</h4>
+                        <p>Mon/Tue/Thu 9AM–6PM · Fri 9AM–5PM · Sun 1PM–7PM<br>Closed Wed & Sat</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-item-body">
+                        <h4>Instagram</h4>
+                        <a href="https://www.instagram.com/eleventhstdentalstudio" target="_blank">@eleventhstdentalstudio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form reveal from-right">
+            <h3>Send Us a Message</h3>
+            <form>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="09XX XXX XXXX">
+                </div>
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <select>
+                        <option value="">Select a service</option>
+                        <option>General Dentistry</option>
+                        <option>Orthodontics</option>
+                        <option>Cosmetic Dentistry</option>
+                        <option>Oral Surgery</option>
+                        <option>Dental Implants</option>
+                        <option>Restorative Dentistry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Day</label>
+                    <select>
+                        <option value="">Select a day</option>
+                        <option>Monday (9AM–6PM)</option>
+                        <option>Tuesday (9AM–6PM)</option>
+                        <option>Thursday (9AM–6PM)</option>
+                        <option>Friday (9AM–5PM)</option>
+                        <option>Sunday (1PM–7PM)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Message (optional)</label>
+                    <textarea placeholder="Any questions or concerns?"></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-name">Eleventh St. Dental Studio</div>
+        <div class="footer-sub">A Gentle Approach to Dentistry · Tanza, Cavite</div>
+        <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Book Appointment</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Eleventh St. Dental Studio. All rights reserved.</div>
+    </div>
+</footer>
+
+<script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            const t = document.querySelector(this.getAttribute('href'));
+            if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+
+    // Nav shadow on scroll
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Scroll reveal
+    const revealObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                revealObs.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // Form submit feedback
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = this.querySelector('.form-submit');
+        btn.textContent = 'Message Sent!';
+        btn.style.background = '#166534';
+        setTimeout(() => {
+            btn.textContent = 'Send Message';
+            btn.style.background = '';
+        }, 3000);
+    });
+</script>
+</body>
+</html>

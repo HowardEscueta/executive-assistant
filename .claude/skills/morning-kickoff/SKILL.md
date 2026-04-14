@@ -22,12 +22,7 @@ Run this when Howard checks in for the day (says hey, good morning, what's up, e
    - For each song, search YouTube for the official music video and include the URL
    - Save results to `agents/youtube_research/data/`
 
-5. **AI Automation Trends** (run the Python agent):
-   ```bash
-   python3 agents/youtube_research/research.py "AI automation" --max 5 --new-only
-   ```
-
-6. **Freelance Leads** (Claude does this directly using WebSearch):
+5. **Freelance Leads** (Claude does this directly using WebSearch):
    - Search Freelancer.com, PeoplePerHour, and other platforms for web dev/landing page jobs
    - Include: job title, description, budget, link
    - Save results to `agents/freelance_finder/data/`
@@ -48,11 +43,10 @@ Keep it short. Use this structure:
 **Daily habits:** [checklist]
 **Top priorities today:** [2-3 bullets]
 **New songs this week:** [list with YouTube links]
-**AI automation trends:** [list with links]
 **Freelance leads:** [list with links]
 **What do you want to tackle today?**
 ```
 
 ## Email
 
-After presenting the briefing, generate a PPT report and email it to Howard with all 3 sections (New Songs, AI Trends, Freelance Leads).
+After presenting the briefing, generate a PPT report and email it to Howard with both sections (New Songs, Freelance Leads).
