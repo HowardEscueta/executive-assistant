@@ -1,0 +1,414 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-PH
+      - link "Accessibility feedback" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e13]:
+        - link "Go to Google home" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&ictx=0&sa=X&ved=0ahUKEwiVoYrAzemTAxVnGRAIHYePABIQpYkNCAs
+          - img "Go to Google home" [ref=e15]
+        - generic [ref=e21]:
+          - combobox "Search" [ref=e24]: SGC Dental Clinic General Trias Cavite facebook SGC Dental Clinic General Trias Cavite facebook
+          - generic [ref=e25]:
+            - button "Clear" [ref=e27] [cursor=pointer]:
+              - img [ref=e29]
+            - generic [ref=e32]:
+              - button "Search by voice" [ref=e33] [cursor=pointer]:
+                - img [ref=e34]
+              - button "Search by image" [ref=e36] [cursor=pointer]:
+                - img [ref=e37]
+        - button "Search" [ref=e39] [cursor=pointer]:
+          - img [ref=e42]
+    - generic [ref=e44]:
+      - button "Settings" [ref=e46] [cursor=pointer]:
+        - img [ref=e49]
+      - generic [ref=e52]:
+        - button "Google apps" [ref=e54] [cursor=pointer]:
+          - img [ref=e55]
+        - link "Sign in" [ref=e59] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DSGC%2BDental%2BClinic%2BGeneral%2BTrias%2BCavite%2Bfacebook%26sei%3DZz3cacn2MeKtwPAPuZmCeA&ec=futura_srp_og_si_72236_p
+  - generic [ref=e61]:
+    - navigation [ref=e67]:
+      - generic [ref=e71]:
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - link "AI Mode" [ref=e76] [cursor=pointer]:
+              - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3tR7kVu8a3MULVA9bsoO0mCCFiZoMv28ux3eOJ39Q_ixnRJO66C0xBAUoovRT1WiWVCpn7Oht3e2c17hDG64_tWhmadOu_r8fjA8ow4Q4n4Kv0AdrD1f-rCQtjOspZKHAbC5ET5Z1KkNgNUQp3HLqQZI0F7WNrt348jQo57Fc4Q8B2z-ig&aep=1&ntc=1&sa=X&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ2J8OegQICRAE
+              - generic [ref=e79]: AI Mode
+          - listitem [ref=e80]:
+            - link "All" [disabled] [ref=e81]:
+              - generic [ref=e83]: All
+          - listitem [ref=e84]:
+            - link "Images" [ref=e85] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3tR7kVu8a3MULVA9bsoO0mCCFiZoMv28ux3eOJ39Q_ixnRJO66C0xBAUoovRT1WiWVCpn7Oht3e2c17hDG64_tWhmadOu_r8fjA8ow4Q4n4Kv0AdrD1f-rCQtjOspZKHAbC5ET5Z1KkNgNUQp3HLqQZI0F7WNrt348jQo57Fc4Q8B2z-ig&q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sa=X&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQtKgLegQIEhAB
+              - generic [ref=e87]: Images
+          - listitem [ref=e88]:
+            - link "Forums" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=18&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3tR7kVu8a3MULVA9bsoO0mCCFiZoMv28ux3eOJ39Q_ixnRJO66C0xBAUoovRT1WiWVCpn7Oht3e2c17hDG64_tWhmadOu_r8fjA8ow4Q4n4Kv0AdrD1f-rCQtjOspZKHAbC5ET5Z1KkNgNUQp3HLqQZI0F7WNrt348jQo57Fc4Q8B2z-ig&q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sa=X&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQs6gLegQIFxAB
+              - generic [ref=e91]: Forums
+          - listitem [ref=e92]:
+            - link "Videos" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3tR7kVu8a3MULVA9bsoO0mCCFiZoMv28ux3eOJ39Q_ixnRJO66C0xBAUoovRT1WiWVCpn7Oht3e2c17hDG64_tWhmadOu_r8fjA8ow4Q4n4Kv0AdrD1f-rCQtjOspZKHAbC5ET5Z1KkNgNUQp3HLqQZI0F7WNrt348jQo57Fc4Q8B2z-ig&q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sa=X&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQtKgLegQIFRAB
+              - generic [ref=e95]: Videos
+          - listitem [ref=e96]:
+            - link "Shopping" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3tR7kVu8a3MULVA9bsoO0mCCFiZoMv28ux3eOJ39Q_ixnRJO66C0xBAUoovRT1WiWVCpn7Oht3e2c17hDG64_tWhmadOu_r8fjA8ow4Q4n4Kv0AdrD1f-rCQtjOspZKHAbC5ET5Z1KkNgNUQp3HLqQZI0F7WNrt348jQo57Fc4Q8B2z-ig&q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&ved=1t:220175&ictx=111
+              - generic [ref=e99]: Shopping
+          - listitem [ref=e100]:
+            - link "Short videos" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3tR7kVu8a3MULVA9bsoO0mCCFiZoMv28ux3eOJ39Q_ixnRJO66C0xBAUoovRT1WiWVCpn7Oht3e2c17hDG64_tWhmadOu_r8fjA8ow4Q4n4Kv0AdrD1f-rCQtjOspZKHAbC5ET5Z1KkNgNUQp3HLqQZI0F7WNrt348jQo57Fc4Q8B2z-ig&q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sa=X&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQs6gLegQIERAB
+              - generic [ref=e103]: Short videos
+          - listitem [ref=e104]:
+            - button "More filters" [ref=e105] [cursor=pointer]:
+              - generic "More filters" [ref=e106]:
+                - generic [ref=e107]:
+                  - generic [ref=e108]: More
+                  - img [ref=e110]
+        - button "Tools" [ref=e113] [cursor=pointer]:
+          - generic [ref=e115]:
+            - generic [ref=e116]: Tools
+            - img [ref=e118]
+    - navigation [ref=e121]:
+      - navigation [ref=e124]:
+        - list [ref=e131]:
+          - listitem [ref=e132]:
+            - link "Add Open now" [ref=e133] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&q=SGC+Dental+Clinic+General+Trias+Cavite+facebook+open+now&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-iGnOwrZVoX4N5JrkcQHATxlpW5AcbNkueTenSg0ivGm_6fo7Jw185zD0iFXBhSABJV1Rc7wDxJlvrE8pmCGroYllLySmnoOfl3C5Qae2QQVFNWcie-w2x4OO3I0T5RO04Wgo9srFAAoYQ2JBIFK2OYT0lFz_cPlo4BtgCf3ULLDfxLNvUk8UdeEseBCp976wezUTK0CW-peozyUuIHfz_9ujjJ4&sa=X&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQxKsJKAB6BAgLEAE&ictx=0
+              - generic [ref=e135]: Open now
+          - listitem [ref=e136]:
+            - link "Add Top rated" [ref=e137] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&q=top+rated+SGC+Dental+Clinic+General+Trias+Cavite+facebook&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-x5sx7ziEj2PQJxqvd6r_jPA_CgqfMhTyTbxOv27d8p47Q9K1_V1qRqEFaRyHHTLJHWDObe7vFrW1Cl4KuvH-1aaJdsF7f2rJawsDNUqGNEXkzEBMFVz4ggw73dF_tVezvVraIWZSlQy6QNdLOHy392c9Aq800uRbwhY1Qx68j2shIWzDOk4kjfIIqfRj8rBQXQU1-8pgtfIcYuXhnPi0jWix4pE&sa=X&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQxKsJKAF6BAgOEAE&ictx=0
+              - generic [ref=e139]: Top rated
+    - heading "Search Results" [level=1] [ref=e140]
+    - main [ref=e146]:
+      - generic [ref=e152]:
+        - heading "Results for Sgc Dental Clinic, 253 General Trias Dr, Drive, Heneral Trias" [level=2] [ref=e153]:
+          - generic [ref=e154]:
+            - text: Results for
+            - text: Sgc Dental Clinic, 253 General Trias Dr, Drive, Heneral Trias
+        - generic [ref=e156]:
+          - text: ∙
+          - button "Choose area" [ref=e157] [cursor=pointer]
+        - button "How location is used" [ref=e160] [cursor=pointer]:
+          - img [ref=e162]
+      - generic [ref=e167]:
+        - generic [ref=e170]:
+          - heading "Web results" [level=2] [ref=e171]
+          - generic [ref=e172]:
+            - generic [ref=e175]:
+              - link "SGC Dental Clinic | General Trias Facebook · SGC Dental Clinic 490+ followers" [ref=e177] [cursor=pointer]:
+                - /url: https://www.facebook.com/sgcdentalclinic/
+                - heading "SGC Dental Clinic | General Trias" [level=3] [ref=e178]
+                - generic [ref=e183]:
+                  - generic [ref=e185]: Facebook · SGC Dental Clinic
+                  - generic [ref=e187]: 490+ followers
+              - button "About this result" [ref=e188] [cursor=pointer]:
+                - img [ref=e191]
+            - generic [ref=e194]:
+              - generic [ref=e195]:
+                - text: "Our Clinic is located at:"
+                - emphasis [ref=e196]: Tejero,General Trias,Cavite Purok 1,Brgy. Tejero,General Trias,Cavite
+                - text: (Second floor of smart padala tejero branch)
+              - link "Read more" [ref=e197] [cursor=pointer]:
+                - /url: https://www.facebook.com/sgcdentalclinic/#:~:text=SGC%20Dental%20Clinic%20Offers%3ATeeth%20Cleaning,of%20smart%20padala%20tejero%20branch
+        - generic [ref=e201]:
+          - generic [ref=e204]:
+            - link "SGC Dental Clinic | General Trias Facebook https://m.facebook.com › ... › SGC Dental Clinic" [ref=e206] [cursor=pointer]:
+              - /url: https://m.facebook.com/sgcdentalclinic/about/
+              - heading "SGC Dental Clinic | General Trias" [level=3] [ref=e207]
+              - generic [ref=e212]:
+                - generic [ref=e214]: Facebook
+                - generic [ref=e216]: https://m.facebook.com › ... › SGC Dental Clinic
+            - button "About this result" [ref=e217] [cursor=pointer]:
+              - img [ref=e220]
+          - generic [ref=e224]:
+            - emphasis [ref=e225]: SGC Dental Clinic, General Trias
+            - text: . 490 likes · 2 talking about this · 6 were here. We make our patients feel comfortable and satisfied to our services.
+        - generic [ref=e229]:
+          - generic [ref=e232]:
+            - link "SGC Dental Clinic Facebook · SGC Dental Clinic 8 reactions · 4 years ago" [ref=e234] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/posts/sgc-dental-clinic-offersteeth-cleaningour-clinic-is-located-attejerogeneral-tria/1261559174303459/
+              - heading "SGC Dental Clinic" [level=3] [ref=e235]
+              - generic [ref=e240]:
+                - generic [ref=e242]: Facebook · SGC Dental Clinic
+                - generic [ref=e244]: 8 reactions · 4 years ago
+            - button "About this result" [ref=e245] [cursor=pointer]:
+              - img [ref=e248]
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - text: Tejero,
+              - emphasis [ref=e253]: General Trias
+              - text: ","
+              - emphasis [ref=e254]: Cavite
+              - text: "(Second floor of smart padala tejero branch) To book an appointment,simply call our number: ☎ 09466972021 smart/tnt ☎ ..."
+            - link "Read more" [ref=e255] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/posts/sgc-dental-clinic-offersteeth-cleaningour-clinic-is-located-attejerogeneral-tria/1261559174303459/#:~:text=Tejero%2CGeneral%20Trias%2CCavite(Second%20floor%20of%20smart,09063287100%20globe%2Ftm%20%22Just%20always%20smile%22
+        - generic [ref=e259]:
+          - generic [ref=e262]:
+            - link "SGC Dental Clinic Facebook · SGC Dental Clinic 4 reactions · 1 year ago" [ref=e264] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/posts/sgc-dental-clinic-metal-braces-progressour-clinic-is-located-attejero-city-of-ge/961541429001697/
+              - heading "SGC Dental Clinic" [level=3] [ref=e265]
+              - generic [ref=e270]:
+                - generic [ref=e272]: Facebook · SGC Dental Clinic
+                - generic [ref=e274]: 4 reactions · 1 year ago
+            - button "About this result" [ref=e275] [cursor=pointer]:
+              - img [ref=e278]
+          - generic [ref=e281]:
+            - generic [ref=e282]:
+              - text: Tejero,
+              - emphasis [ref=e283]: General Trias
+              - text: ","
+              - emphasis [ref=e284]: Cavite
+              - text: "(2nd floor of Barbershop/Smart Padala Tejero Branch) To book an appointment,simply call our number: ☎ 09466972021 ..."
+            - link "Read more" [ref=e285] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/posts/sgc-dental-clinic-metal-braces-progressour-clinic-is-located-attejero-city-of-ge/961541429001697/#:~:text=Tejero%2CGeneral%20Trias%2CCavite%20(2nd%20floor%20of,a%20Healthier%20Smile%20Starts%20Here%22
+        - generic [ref=e289]:
+          - generic [ref=e292]:
+            - link "SGC Dental Clinic Facebook · SGC Dental Clinic 5 reactions · 2 years ago" [ref=e294] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/posts/message-us-for-more-infos-our-clinic-is-located-attejerogeneral-triascavitepurok/862187858937055/
+              - heading "SGC Dental Clinic" [level=3] [ref=e295]
+              - generic [ref=e300]:
+                - generic [ref=e302]: Facebook · SGC Dental Clinic
+                - generic [ref=e304]: 5 reactions · 2 years ago
+            - button "About this result" [ref=e305] [cursor=pointer]:
+              - img [ref=e308]
+          - generic [ref=e311]:
+            - generic [ref=e312]:
+              - text: Tejero,General Trias,
+              - emphasis [ref=e313]: Cavite
+              - text: "(Second floor of smart padala tejero branch) For inquiries,simply call our number: ☎ 09466972021 smart/tnt ☎ ..."
+            - link "Read more" [ref=e314] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/posts/message-us-for-more-infos-our-clinic-is-located-attejerogeneral-triascavitepurok/862187858937055/#:~:text=Tejero%2CGeneral%20Trias%2CCavite(Second%20floor%20of%20smart,our%20Facebook%20page%20via%20Messenger.
+        - generic [ref=e318]:
+          - generic [ref=e321]:
+            - link "SGC Dental Clinic Facebook · SGC Dental Clinic 4 reactions · 5 years ago" [ref=e323] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/posts/sgc-dental-clinic-offers-dental-bridge-and-removable-partial-denture-our-clinic-/1129705854155459/
+              - heading "SGC Dental Clinic" [level=3] [ref=e324]
+              - generic [ref=e329]:
+                - generic [ref=e331]: Facebook · SGC Dental Clinic
+                - generic [ref=e333]: 4 reactions · 5 years ago
+            - button "About this result" [ref=e334] [cursor=pointer]:
+              - img [ref=e337]
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - text: Our
+              - emphasis [ref=e342]: Clinic
+              - text: "is located at: Tejero,"
+              - emphasis [ref=e343]: General Trias
+              - text: ","
+              - emphasis [ref=e344]: Cavite
+              - text: Purok 1,Brgy. Tejero,
+              - emphasis [ref=e345]: General Trias
+              - text: ","
+              - emphasis [ref=e346]: Cavite
+              - text: (Second floor of smart padala tejero branch)
+            - link "Read more" [ref=e347] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/posts/sgc-dental-clinic-offers-dental-bridge-and-removable-partial-denture-our-clinic-/1129705854155459/#:~:text=SGC%20Dental%20Clinic%20Offers%3A%20Dental,of%20smart%20padala%20tejero%20branch
+        - generic [ref=e351]:
+          - heading "Local Results" [level=2] [ref=e352]
+          - generic [ref=e353]:
+            - heading "Places" [level=2] [ref=e357]
+            - generic [ref=e358]:
+              - heading "Map" [level=3] [ref=e359]
+              - link [ref=e362] [cursor=pointer]:
+                - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&udm=1&lsack=aD3caZXNGeeywPAPh5-CkAE&sa=X&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQtgN6BAgzEAM
+            - generic [ref=e365]:
+              - generic [ref=e368]:
+                - button "Sgc Dental Clinic Rated 5.0 out of 5, 6 user reviews · Dentist 253 General Trias Dr \"SECOND TO NONE!\"" [ref=e370] [cursor=pointer]:
+                  - generic [ref=e372]:
+                    - heading "Sgc Dental Clinic" [level=3] [ref=e373]:
+                      - generic [ref=e374]: Sgc Dental Clinic
+                    - generic [ref=e375]:
+                      - img "Rated 5.0 out of 5, 6 user reviews" [ref=e377]:
+                        - text: "5.0"
+                        - img [ref=e378]
+                        - text: (6)
+                      - text: · Dentist
+                    - generic [ref=e381]: 253 General Trias Dr
+                    - generic [ref=e383]:
+                      - img [ref=e386]
+                      - generic [ref=e390]: "\"SECOND TO NONE!\""
+                - link "Directions" [ref=e391] [cursor=pointer]:
+                  - /url: /maps/dir//Sgc+Dental+Clinic,+253+General+Trias+Dr,+Drive,+Heneral+Trias,+4107+Cavite/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x33962c91865a1697:0x5b69163de05c1695?sa=X&ved=1t:57443&ictx=111
+                  - generic [ref=e393]:
+                    - img [ref=e396]
+                    - generic [ref=e401]: Directions
+              - generic [ref=e405]:
+                - button "GC Dental Care - General Trias Rated 4.9 out of 5, 222 user reviews · Dental clinic Unit 1-C Ground Floor, Hsinhua Bldg, Governor's Dr · 0906 262 2051 Opens soon · 9 AM \"The service is good, the staff are nice and approachable\"" [ref=e407] [cursor=pointer]:
+                  - generic [ref=e409]:
+                    - heading "GC Dental Care - General Trias" [level=3] [ref=e410]:
+                      - generic [ref=e411]: GC Dental Care - General Trias
+                    - generic [ref=e412]:
+                      - img "Rated 4.9 out of 5, 222 user reviews" [ref=e414]:
+                        - text: "4.9"
+                        - img [ref=e415]
+                        - text: (222)
+                      - text: · Dental clinic
+                    - generic [ref=e418]: Unit 1-C Ground Floor, Hsinhua Bldg, Governor's Dr · 0906 262 2051
+                    - generic [ref=e420]: Opens soon · 9 AM
+                    - generic [ref=e422]:
+                      - img [ref=e425]
+                      - generic [ref=e429]: "\"The service is good, the staff are nice and approachable\""
+                - link "Website" [ref=e430] [cursor=pointer]:
+                  - /url: https://www.gcdentalcare.ph/
+                  - generic [ref=e432]:
+                    - img [ref=e435]
+                    - generic [ref=e437]: Website
+                - link "Directions" [ref=e438] [cursor=pointer]:
+                  - /url: /maps/dir//Unit+1-C+Ground+Floor,+GC+Dental+Care+-+General+Trias,+Hsinhua+Bldg,+Governor's+Dr,+General+Trias,+Cavite/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3397d57d9e110469:0xe1166659344e548d?sa=X&ved=1t:57443&ictx=111
+                  - generic [ref=e440]:
+                    - img [ref=e443]
+                    - generic [ref=e448]: Directions
+              - generic [ref=e452]:
+                - button "Arch's Dental Clinic - General Trias City Branch Rated 4.6 out of 5, 29 user reviews · Dentist 2476 Arnaldo Hwy · 0956 562 8076 Closed · Opens 10 AM \"Highly recommended!\"" [ref=e454] [cursor=pointer]:
+                  - generic [ref=e456]:
+                    - heading "Arch's Dental Clinic - General Trias City Branch" [level=3] [ref=e457]:
+                      - generic [ref=e458]: Arch's Dental Clinic - General Trias City Branch
+                    - generic [ref=e459]:
+                      - img "Rated 4.6 out of 5, 29 user reviews" [ref=e461]:
+                        - text: "4.6"
+                        - img [ref=e462]
+                        - text: (29)
+                      - text: · Dentist
+                    - generic [ref=e465]: 2476 Arnaldo Hwy · 0956 562 8076
+                    - generic [ref=e467]: Closed · Opens 10 AM
+                    - generic [ref=e469]:
+                      - img [ref=e472]
+                      - generic [ref=e476]: "\"Highly recommended!\""
+                - link "Directions" [ref=e477] [cursor=pointer]:
+                  - /url: /maps/dir//Arch's+Dental+Clinic+-+General+Trias+City+Branch,+2476+Arnaldo+Hwy,+General+Trias,+Cavite/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3397d5f1cda31939:0x4d9398e86873ce2a?sa=X&ved=1t:57443&ictx=111
+                  - generic [ref=e479]:
+                    - img [ref=e482]
+                    - generic [ref=e487]: Directions
+            - heading "More places" [level=3] [ref=e490]:
+              - link "More places" [ref=e492] [cursor=pointer]:
+                - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&udm=1&lsack=aD3caZXNGeeywPAPh5-CkAE&sa=X&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQjGp6BAg0EAE
+                - separator [ref=e493]
+                - generic [ref=e494]:
+                  - generic [ref=e495]: More places
+                  - img [ref=e497]
+        - generic [ref=e501]:
+          - heading "Web results" [level=2] [ref=e502]
+          - generic [ref=e503]:
+            - generic [ref=e506]:
+              - link "SGC Dental Clinic - December 27,2020 Facebook https://m.facebook.com › photos" [ref=e508] [cursor=pointer]:
+                - /url: https://m.facebook.com/652445875214795/photos/1261555674303809/
+                - heading "SGC Dental Clinic - December 27,2020" [level=3] [ref=e509]
+                - generic [ref=e514]:
+                  - generic [ref=e516]: Facebook
+                  - generic [ref=e518]: https://m.facebook.com › photos
+              - button "About this result" [ref=e519] [cursor=pointer]:
+                - img [ref=e522]
+            - generic [ref=e526]:
+              - text: HOLIDAY ADVISORY‼️
+              - emphasis [ref=e527]: SGC DENTAL CLINIC will be closed on November 1 & 2, 2025
+              - text: in observance of the All Saints' Day and All Souls' Day.
+        - generic [ref=e531]:
+          - generic [ref=e534]:
+            - link "🦷 Ready for a straighter smile without the hassle of braces ... Facebook · SGC Dental Clinic-Sanja Mayor 2 reactions · 10 months ago" [ref=e536] [cursor=pointer]:
+              - /url: https://www.facebook.com/61573894854022/posts/-ready-for-a-straighter-smile-without-the-hassle-of-braces-discover-the-power-of/122133067868796495/
+              - heading "🦷 Ready for a straighter smile without the hassle of braces ..." [level=3] [ref=e537]
+              - generic [ref=e542]:
+                - generic [ref=e544]: Facebook · SGC Dental Clinic-Sanja Mayor
+                - generic [ref=e546]: 2 reactions · 10 months ago
+            - button "About this result" [ref=e547] [cursor=pointer]:
+              - img [ref=e550]
+          - generic [ref=e553]:
+            - generic [ref=e554]:
+              - text: ✨
+              - emphasis [ref=e555]: Get started with clear aligners today
+              - text: and enjoy a confident, straighter smile. No wires, no worries! Book your FREE consultation now. Why ...
+            - link "Read more" [ref=e556] [cursor=pointer]:
+              - /url: https://www.facebook.com/61573894854022/posts/-ready-for-a-straighter-smile-without-the-hassle-of-braces-discover-the-power-of/122133067868796495/#:~:text=%F0%9F%98%81%20%E2%9C%A8%20Get%20started%20with,%F0%9F%A6%B7%20Why%20choose%20clear%20aligners%3F
+        - generic [ref=e562]:
+          - generic [ref=e565]:
+            - link "A&V Dental Clinic - General Trias on Reels Facebook · A&V Dental Clinic - General Trias 5 reactions · 2 years ago" [ref=e567] [cursor=pointer]:
+              - /url: https://www.facebook.com/avdcdentalclinic/videos/660346845905048/
+              - heading "A&V Dental Clinic - General Trias on Reels" [level=3] [ref=e568]
+              - generic [ref=e573]:
+                - generic [ref=e575]: Facebook · A&V Dental Clinic - General Trias
+                - generic [ref=e577]: 5 reactions · 2 years ago
+            - button "About this result" [ref=e578] [cursor=pointer]:
+              - img [ref=e581]
+          - generic [ref=e583]:
+            - link "A&V Dental Clinic - General Trias on Reels by A&V Dental Clinic - General Trias on Facebook. Play on Facebook. 0:25" [ref=e584] [cursor=pointer]:
+              - /url: https://www.facebook.com/avdcdentalclinic/videos/660346845905048/
+              - generic [ref=e586]:
+                - img [ref=e592]
+                - generic [ref=e596]: 0:25
+            - generic [ref=e598]: SGC Dental Clinic. General Dentist. No photo description available. Dra. Virgie V. Aranas Orthodontics and Dental Clinic. Dra ...
+        - generic [ref=e602]:
+          - generic [ref=e605]:
+            - link "“Better tools, better smiles! ✨ Upgraded equipment for your ... Instagram https://www.instagram.com › Reels" [ref=e607] [cursor=pointer]:
+              - /url: https://www.instagram.com/p/DPX1LFcEf7t/
+              - heading "“Better tools, better smiles! ✨ Upgraded equipment for your ..." [level=3] [ref=e608]
+              - generic [ref=e613]:
+                - generic [ref=e615]: Instagram
+                - generic [ref=e617]: https://www.instagram.com › Reels
+            - button "About this result" [ref=e618] [cursor=pointer]:
+              - img [ref=e621]
+          - generic [ref=e625]:
+            - text: Precision in Every Smile. ✨ Opening this April 2026. We can't wait to care for your smile! ✨
+            - emphasis [ref=e626]: Clinic
+            - text: "location: Unit 2N, G&C Building, No. 02 Arnaldo ..."
+      - navigation [ref=e629]:
+        - heading "Page Navigation" [level=1] [ref=e630]
+        - text: "1"
+        - link "Page 2" [ref=e633] [cursor=pointer]:
+          - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=10&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8tMDegQIDxAE
+          - text: "2"
+        - link "Page 3" [ref=e635] [cursor=pointer]:
+          - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=20&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8tMDegQIDxAG
+          - text: "3"
+        - link "Page 4" [ref=e637] [cursor=pointer]:
+          - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=30&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8tMDegQIDxAI
+          - text: "4"
+        - link "Page 5" [ref=e639] [cursor=pointer]:
+          - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=40&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8tMDegQIDxAK
+          - text: "5"
+        - link "Page 6" [ref=e641] [cursor=pointer]:
+          - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=50&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8tMDegQIDxAM
+          - text: "6"
+        - link "Page 7" [ref=e643] [cursor=pointer]:
+          - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=60&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8tMDegQIDxAO
+          - text: "7"
+        - link "Page 8" [ref=e645] [cursor=pointer]:
+          - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=70&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8tMDegQIDxAQ
+          - text: "8"
+        - link "Page 9" [ref=e647] [cursor=pointer]:
+          - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=80&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8tMDegQIDxAS
+          - text: "9"
+        - link "Page 10" [ref=e649] [cursor=pointer]:
+          - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=90&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8tMDegQIDxAU
+          - text: "10"
+        - heading "Next" [level=2] [ref=e651]:
+          - link "Next" [ref=e652] [cursor=pointer]:
+            - /url: /search?q=SGC+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=aD3caZXNGeeywPAPh5-CkAE&start=10&sa=N&sstk=Af77f_dUMjWULRfHnOJS8CQ45yTHs19hMjyWGBq_NXXJ1BR90qsjMpkmsJZ2wMO9z9IwGucVbIxA5HUAPfiidXWTb0cL58CyJNf0YA&ved=2ahUKEwiVoYrAzemTAxVnGRAIHYePABIQ8NMDegQIDxAW
+            - generic [ref=e654]: Next
+      - navigation
+    - contentinfo [ref=e655]:
+      - heading "Footer Links" [level=1] [ref=e656]
+      - generic [ref=e660]:
+        - generic [ref=e662]:
+          - text: Philippines
+          - generic [ref=e664]:
+            - button "Tanza, Cavite - Based on your past activity" [ref=e666] [cursor=pointer]:
+              - generic [ref=e667]: Tanza, Cavite
+              - generic [ref=e669]:
+                - text: "-"
+                - generic [ref=e670]: Based on your past activity
+            - text: "-"
+            - button "Update location" [ref=e672] [cursor=pointer]: Update location
+        - generic [ref=e675]:
+          - link "Help" [ref=e676] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-PH&fg=1
+          - link "Send feedback" [ref=e677] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e678] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-PH&fg=1
+          - link "Terms" [ref=e679] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-PH&fg=1

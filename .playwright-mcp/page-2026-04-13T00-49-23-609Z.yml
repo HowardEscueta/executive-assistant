@@ -1,0 +1,184 @@
+- generic [ref=e5]:
+  - banner:
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - generic:
+          - button [disabled]:
+            - img
+        - button "Facebook" [ref=e12] [cursor=pointer]:
+          - img "Facebook" [ref=e13]
+      - link "Log In" [ref=e19] [cursor=pointer]:
+        - /url: https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Fsgcdentalclinic%2F
+        - generic [ref=e23]: Log In
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - link "View profile cover photo" [ref=e539] [cursor=pointer]:
+        - /url: https://www.facebook.com/photo/?fbid=905014654654375&set=a.574632197692624
+      - generic [ref=e50]:
+        - link "SGC Dental Clinic" [ref=e540] [cursor=pointer]:
+          - /url: https://www.facebook.com/photo/?fbid=574632231025954&set=a.574632211025956&__tn__=%3C
+          - img "SGC Dental Clinic" [ref=e541]
+        - generic [ref=e62]:
+          - heading "SGC Dental Clinic" [level=1] [ref=e542]: SGC Dental Clinic
+          - generic [ref=e69]:
+            - link "498 followers" [ref=e543] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/followers/
+              - strong [ref=e71]: "498"
+              - text: followers
+            - text: •
+            - link "5 following" [ref=e544] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/following/
+              - strong [ref=e73]: "5"
+              - text: following
+    - generic [ref=e81]:
+      - tablist [ref=e89]:
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: More
+            - img [ref=e95]
+          - tab "Posts" [selected] [ref=e545] [cursor=pointer]:
+            - generic [ref=e100]: Posts
+          - tab "About" [ref=e546] [cursor=pointer]:
+            - generic [ref=e104]: About
+          - tab "Reels" [ref=e547] [cursor=pointer]:
+            - generic [ref=e108]: Reels
+          - tab "Photos" [ref=e548] [cursor=pointer]:
+            - generic [ref=e112]: Photos
+      - button "Profile settings see more options" [ref=e549] [cursor=pointer]:
+        - img [ref=e118]
+    - generic [ref=e124]:
+      - generic [ref=e127]:
+        - generic [ref=e131]:
+          - heading "Intro" [level=2] [ref=e550]:
+            - generic [ref=e142]: Intro
+          - generic [ref=e143]:
+            - generic [ref=e147]: We make our patients feel comfortable and satisfied to our services.
+            - list [ref=e150]:
+              - button "Page · General Dentist" [ref=e551] [cursor=pointer]:
+                - generic [ref=e159]:
+                  - strong [ref=e160]: Page
+                  - text: · General Dentist
+              - button "PUROK I TEJERO, GENERAL TRIAS, CAVITE, General Trias, Philippines" [ref=e552] [cursor=pointer]:
+                - generic [ref=e165]: PUROK I TEJERO, GENERAL TRIAS, CAVITE, General Trias, Philippines
+              - generic [ref=e171]: 0946 697 2021
+              - generic [ref=e177]: cequinasusan8@gmail.com
+              - button "Open now" [ref=e553] [cursor=pointer]:
+                - generic [ref=e182]:
+                  - generic [ref=e183]: Open now
+                  - img [ref=e185]
+              - generic [ref=e192]: Price Range · $$
+              - link "Not yet rated (0 Reviews) More information about ratings" [ref=e554] [cursor=pointer]:
+                - /url: https://www.facebook.com/sgcdentalclinic/reviews
+                - generic [ref=e199]:
+                  - text: Not yet rated (0 Reviews)
+                  - button "More information about ratings" [ref=e555]:
+                    - img [ref=e201]
+        - generic [ref=e206]:
+          - generic [ref=e213]:
+            - heading "Photos" [level=2] [ref=e556]:
+              - link "Photos" [ref=e557] [cursor=pointer]:
+                - /url: https://www.facebook.com/sgcdentalclinic/photos
+            - link "See all photos" [ref=e558] [cursor=pointer]:
+              - /url: https://www.facebook.com/sgcdentalclinic/photos
+              - generic [ref=e224]: See all photos
+          - generic [ref=e228]:
+            - link [ref=e231] [cursor=pointer]:
+              - /url: /photo/?fbid=1312587530563750&set=pb.100054375466684.-2207520000
+            - link [ref=e236] [cursor=pointer]:
+              - /url: /photo/?fbid=1160587922430379&set=pb.100054375466684.-2207520000
+            - link [ref=e241] [cursor=pointer]:
+              - /url: /photo/?fbid=1111029377386234&set=pb.100054375466684.-2207520000
+            - link [ref=e246] [cursor=pointer]:
+              - /url: /photo/?fbid=1077242367431602&set=pb.100054375466684.-2207520000
+            - link [ref=e251] [cursor=pointer]:
+              - /url: /photo/?fbid=1041391724350000&set=pb.100054375466684.-2207520000
+            - link [ref=e256] [cursor=pointer]:
+              - /url: /photo/?fbid=1010709827418190&set=pb.100054375466684.-2207520000
+            - link [ref=e261] [cursor=pointer]:
+              - /url: /photo/?fbid=1010709797418193&set=pb.100054375466684.-2207520000
+            - link [ref=e266] [cursor=pointer]:
+              - /url: /photo/?fbid=1010709760751530&set=pb.100054375466684.-2207520000
+            - link [ref=e271] [cursor=pointer]:
+              - /url: /photo/?fbid=1010709727418200&set=pb.100054375466684.-2207520000
+        - contentinfo "Facebook" [ref=e559]:
+          - list [ref=e276]:
+            - listitem [ref=e277]:
+              - link "Privacy" [ref=e560] [cursor=pointer]:
+                - /url: /privacy/policy/?entry_point=comet_dropdown
+              - generic [ref=e279]: ·
+            - listitem [ref=e281]:
+              - link "Terms" [ref=e561] [cursor=pointer]:
+                - /url: /policies?ref=pf
+              - generic [ref=e283]: ·
+            - listitem [ref=e285]:
+              - link "Advertising" [ref=e562] [cursor=pointer]:
+                - /url: /business/
+              - generic [ref=e287]: ·
+            - listitem [ref=e289]:
+              - link "Ad Choices" [ref=e563] [cursor=pointer]:
+                - /url: /help/568137493302217
+                - text: Ad Choices
+                - img [ref=e292]
+              - generic [ref=e295]: ·
+            - listitem [ref=e297]:
+              - link "Cookies" [ref=e564] [cursor=pointer]:
+                - /url: /policies/cookies/
+              - generic [ref=e299]: ·
+            - listitem [ref=e301]:
+              - button "More footer links" [ref=e565] [cursor=pointer]: More
+      - generic [ref=e304]:
+        - article [ref=e311]:
+          - generic [ref=e319]:
+            - generic [ref=e321]:
+              - link "SGC Dental Clinic" [ref=e566] [cursor=pointer]:
+                - /url: https://www.facebook.com/sgcdentalclinic?__cft__[0]=AZbajbIzJO9CY0HwQ7HoTRDjS0KxSQpAQ2AmLtRAcN4NKkE5YMxiv4e-k2V4dNysWkQUJs-fEtmBTOUhlc9b91cvC4qToq2BqBK9YREuO_5O5uydVTGf49BDuv0UCZP2nb2u5NvyGIpCXXAK-c1ZOtygJRomSu6PTF2qcpBv2YmKuoCmZI55nkElEksQfw9oJ7TqSrUJkXtTlkG1Q0QVEVaPOX4OTIbf7tNlVRyviQZj1g&__tn__=%3C%3C%2CP-R
+                - img "SGC Dental Clinic" [ref=e567]
+              - generic [ref=e333]:
+                - heading "SGC Dental Clinic" [level=2] [ref=e568]:
+                  - link "SGC Dental Clinic" [ref=e569] [cursor=pointer]:
+                    - /url: https://www.facebook.com/sgcdentalclinic?__cft__[0]=AZbajbIzJO9CY0HwQ7HoTRDjS0KxSQpAQ2AmLtRAcN4NKkE5YMxiv4e-k2V4dNysWkQUJs-fEtmBTOUhlc9b91cvC4qToq2BqBK9YREuO_5O5uydVTGf49BDuv0UCZP2nb2u5NvyGIpCXXAK-c1ZOtygJRomSu6PTF2qcpBv2YmKuoCmZI55nkElEksQfw9oJ7TqSrUJkXtTlkG1Q0QVEVaPOX4OTIbf7tNlVRyviQZj1g&__tn__=-UC%2CP-R
+                    - generic [ref=e343]: SGC Dental Clinic
+                - generic [ref=e346]:
+                  - link "December 28, 2025" [ref=e570] [cursor=pointer]:
+                    - /url: https://www.facebook.com/sgcdentalclinic/posts/pfbid022MPysjVcJ6SoFEaiHEMFpsnzze9YShARbPs1oq9nEz5P5UkdtSM4o6AqQD5Jv22gl?__cft__[0]=AZbajbIzJO9CY0HwQ7HoTRDjS0KxSQpAQ2AmLtRAcN4NKkE5YMxiv4e-k2V4dNysWkQUJs-fEtmBTOUhlc9b91cvC4qToq2BqBK9YREuO_5O5uydVTGf49BDuv0UCZP2nb2u5NvyGIpCXXAK-c1ZOtygJRomSu6PTF2qcpBv2YmKuoCmZI55nkElEksQfw9oJ7TqSrUJkXtTlkG1Q0QVEVaPOX4OTIbf7tNlVRyviQZj1g&__tn__=%2CO%2CP-R
+                  - generic [ref=e352]: ·
+                  - img "Shared with Public" [ref=e571]
+            - generic [ref=e366]:
+              - link "No photo description available." [ref=e572] [cursor=pointer]:
+                - /url: https://www.facebook.com/photo/?fbid=904034678848577&set=a.239103498675035&__cft__[0]=AZbajbIzJO9CY0HwQ7HoTRDjS0KxSQpAQ2AmLtRAcN4NKkE5YMxiv4e-k2V4dNysWkQUJs-fEtmBTOUhlc9b91cvC4qToq2BqBK9YREuO_5O5uydVTGf49BDuv0UCZP2nb2u5NvyGIpCXXAK-c1ZOtygJRomSu6PTF2qcpBv2YmKuoCmZI55nkElEksQfw9oJ7TqSrUJkXtTlkG1Q0QVEVaPOX4OTIbf7tNlVRyviQZj1g&__tn__=EH-y-R
+                - img "No photo description available." [ref=e573]
+              - generic [ref=e376]:
+                - link "Ella Roxas" [ref=e574] [cursor=pointer]:
+                  - /url: https://www.facebook.com/ellaroxasdmd?__cft__[0]=AZbajbIzJO9CY0HwQ7HoTRDjS0KxSQpAQ2AmLtRAcN4NKkE5YMxiv4e-k2V4dNysWkQUJs-fEtmBTOUhlc9b91cvC4qToq2BqBK9YREuO_5O5uydVTGf49BDuv0UCZP2nb2u5NvyGIpCXXAK-c1ZOtygJRomSu6PTF2qcpBv2YmKuoCmZI55nkElEksQfw9oJ7TqSrUJkXtTlkG1Q0QVEVaPOX4OTIbf7tNlVRyviQZj1g&__tn__=%3C%3C%2CP-y-R
+                  - img "Ella Roxas" [ref=e575]
+                - generic [ref=e387]:
+                  - heading "Ella Roxas" [level=3] [ref=e576]:
+                    - link "Ella Roxas" [ref=e577] [cursor=pointer]:
+                      - /url: https://www.facebook.com/ellaroxasdmd?__cft__[0]=AZbajbIzJO9CY0HwQ7HoTRDjS0KxSQpAQ2AmLtRAcN4NKkE5YMxiv4e-k2V4dNysWkQUJs-fEtmBTOUhlc9b91cvC4qToq2BqBK9YREuO_5O5uydVTGf49BDuv0UCZP2nb2u5NvyGIpCXXAK-c1ZOtygJRomSu6PTF2qcpBv2YmKuoCmZI55nkElEksQfw9oJ7TqSrUJkXtTlkG1Q0QVEVaPOX4OTIbf7tNlVRyviQZj1g&__tn__=-UC%2CP-y-R
+                      - generic [ref=e397]: Ella Roxas
+                  - generic [ref=e400]:
+                    - link "December 25, 2025" [ref=e578] [cursor=pointer]:
+                      - /url: https://www.facebook.com/ellaroxasdmd/posts/pfbid02ZwqHxJC5QiQzL1EX6eGddVnek6dn1gRn1QLeRRQAnF7KDChf9duS6BgupcAfB8TBl?__cft__[0]=AZbajbIzJO9CY0HwQ7HoTRDjS0KxSQpAQ2AmLtRAcN4NKkE5YMxiv4e-k2V4dNysWkQUJs-fEtmBTOUhlc9b91cvC4qToq2BqBK9YREuO_5O5uydVTGf49BDuv0UCZP2nb2u5NvyGIpCXXAK-c1ZOtygJRomSu6PTF2qcpBv2YmKuoCmZI55nkElEksQfw9oJ7TqSrUJkXtTlkG1Q0QVEVaPOX4OTIbf7tNlVRyviQZj1g&__tn__=%2CO%2CP-y-R
+                    - generic [ref=e406]: ·
+                    - img "Shared with Public" [ref=e579]
+              - generic [ref=e426]: Surprise Doc eka ng pasyente namin
+            - generic [ref=e433]:
+              - button "Like" [ref=e580] [cursor=pointer]:
+                - generic [ref=e440]: Like
+              - button "Comment" [ref=e581] [cursor=pointer]:
+                - generic [ref=e447]: Comment
+        - generic [ref=e449]:
+          - article [ref=e450]:
+            - status "Loading..." [ref=e582]
+          - article [ref=e463]:
+            - status "Loading..." [ref=e583]
+  - generic [ref=e585]:
+    - generic [ref=e588]: Log in or sign up for Facebook to connect with friends, family and people you know.
+    - generic [ref=e590]:
+      - link "Log In" [ref=e592] [cursor=pointer]:
+        - /url: /login/?next=%2Fsgcdentalclinic%2F
+        - generic [ref=e595]: Log In
+      - generic [ref=e597]: or
+      - link "Create new account" [ref=e599] [cursor=pointer]:
+        - /url: /reg/?next=%2Fsgcdentalclinic%2F
+        - generic [ref=e602]: Create new account

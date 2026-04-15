@@ -1,0 +1,196 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "SGC Dental Clinic General Trias, Cavite" [ref=e3] [cursor=pointer]:
+      - /url: "#"
+      - img [ref=e5]
+      - generic [ref=e7]:
+        - generic [ref=e8]: SGC Dental Clinic
+        - generic [ref=e9]: General Trias, Cavite
+    - list [ref=e10]:
+      - listitem [ref=e11]:
+        - link "Services" [ref=e12] [cursor=pointer]:
+          - /url: "#services"
+      - listitem [ref=e13]:
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: "#about"
+      - listitem [ref=e15]:
+        - link "Contact" [ref=e16] [cursor=pointer]:
+          - /url: "#contact"
+    - link "Book Appointment" [ref=e17] [cursor=pointer]:
+      - /url: "#contact"
+  - generic [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img [ref=e21]
+        - text: General Dentistry
+      - heading "Your Smile, Our Priority" [level=1] [ref=e23]:
+        - text: Your Smile,
+        - text: Our
+        - emphasis [ref=e24]: Priority
+      - paragraph [ref=e25]: Quality dental care you can trust — from routine cleanings to orthodontics and cosmetic procedures, right here in General Trias, Cavite.
+      - generic [ref=e26]:
+        - link "Book Appointment" [ref=e27] [cursor=pointer]:
+          - /url: "#contact"
+        - link "View Services" [ref=e28] [cursor=pointer]:
+          - /url: "#services"
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: S
+        - generic [ref=e33]:
+          - generic [ref=e34]: Dr. Susan Gay Despares-Cequina
+          - text: General Dentist
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: 13+
+          - generic [ref=e38]: Happy Patients
+        - generic [ref=e39]:
+          - generic [ref=e40]: "1.0"
+          - generic [ref=e41]: Star Rating
+        - generic [ref=e42]:
+          - generic [ref=e43]: "1"
+          - generic [ref=e44]: Services Offered
+        - generic [ref=e45]:
+          - generic [ref=e46]: "1"
+          - generic [ref=e47]: Days Open
+  - generic [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]: What We Offer
+      - heading "Dental Services" [level=2] [ref=e52]
+      - paragraph [ref=e53]: Comprehensive care for every stage of your dental health — handled with precision and a gentle touch.
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]: "01"
+          - img [ref=e59]
+          - generic [ref=e61]:
+            - strong [ref=e62]: Teeth Cleaning
+            - paragraph [ref=e63]: Professional scaling and prophylaxis for a healthy, fresh smile.
+        - generic [ref=e64]:
+          - generic [ref=e65]: "02"
+          - img [ref=e67]
+          - generic [ref=e70]:
+            - strong [ref=e71]: Dental Bridge
+            - paragraph [ref=e72]: Restore missing teeth with a fixed, natural-looking dental bridge.
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]: "03"
+          - img [ref=e77]
+          - generic [ref=e79]:
+            - strong [ref=e80]: Removable Partial Denture
+            - paragraph [ref=e81]: Comfortable, custom-fit dentures designed for everyday use.
+        - generic [ref=e82]:
+          - generic [ref=e83]: "04"
+          - img [ref=e85]
+          - generic [ref=e88]:
+            - strong [ref=e89]: Metal Braces
+            - paragraph [ref=e90]: Traditional braces for effective and lasting teeth alignment.
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - generic [ref=e93]: "05"
+          - img [ref=e95]
+          - generic [ref=e98]:
+            - strong [ref=e99]: Clear Aligners
+            - paragraph [ref=e100]: Invisible aligners for straighter teeth — no wires, no worries.
+        - generic [ref=e101]:
+          - generic [ref=e102]: "06"
+          - img [ref=e104]
+          - generic [ref=e106]:
+            - strong [ref=e107]: General Check-Up
+            - paragraph [ref=e108]: Comprehensive oral exams to catch issues early and keep you healthy.
+  - generic [ref=e111]:
+    - generic [ref=e112]:
+      - generic [ref=e113]:
+        - img [ref=e115]
+        - generic [ref=e117]:
+          - generic [ref=e118]: SGC Dental Clinic
+          - text: General Trias, Cavite
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - strong [ref=e121]: "5.0"
+          - text: Google Rating
+        - generic [ref=e122]:
+          - strong [ref=e123]: 500+
+          - text: Patients Served
+        - generic [ref=e124]:
+          - strong [ref=e125]: "6"
+          - text: Services
+        - generic [ref=e126]:
+          - strong [ref=e127]: $$
+          - text: Affordable Rates
+    - generic [ref=e128]:
+      - generic [ref=e129]: About the Clinic
+      - heading "Comfort and Care, Every Visit" [level=2] [ref=e130]:
+        - text: Comfort and Care,
+        - text: Every Visit
+      - paragraph [ref=e131]: "SGC Dental Clinic was built with one goal in mind: to make every patient feel comfortable and satisfied. Led by Dr. Susan Gay Despares-Cequina, we provide quality dental services in a friendly, welcoming environment right in the heart of General Trias."
+      - paragraph [ref=e132]: Whether you're coming in for a routine cleaning or starting orthodontic treatment, you're in good hands. We take the time to understand your needs and deliver care that lasts.
+      - list [ref=e133]:
+        - listitem [ref=e134]:
+          - img [ref=e136]
+          - text: Experienced, patient-focused dentist
+        - listitem [ref=e138]:
+          - img [ref=e140]
+          - text: Flexible appointment scheduling
+        - listitem [ref=e142]:
+          - img [ref=e144]
+          - text: Affordable rates for all services
+        - listitem [ref=e146]:
+          - img [ref=e148]
+          - text: Located in Tejero, General Trias, Cavite
+  - generic [ref=e152]:
+    - generic [ref=e153]:
+      - generic [ref=e154]: Get in Touch
+      - heading "Book Your Appointment" [level=2] [ref=e155]
+      - paragraph [ref=e156]: Ready for a healthier smile? Reach out via call, message, or fill out the form and we'll get back to you right away.
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - img [ref=e160]
+          - generic [ref=e162]:
+            - strong [ref=e163]: Phone
+            - text: 0946 697 2021
+        - generic [ref=e164]:
+          - img [ref=e166]
+          - generic [ref=e169]:
+            - strong [ref=e170]: Email
+            - text: cequinasusan8@gmail.com
+        - generic [ref=e171]:
+          - img [ref=e173]
+          - generic [ref=e176]:
+            - strong [ref=e177]: Address
+            - generic [ref=e178]:
+              - text: Purok 1, Brgy. Tejero, General Trias, Cavite
+              - text: 2nd floor of Smart Padala Tejero Branch
+    - generic [ref=e179]:
+      - heading "Request an Appointment" [level=3] [ref=e180]
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - generic [ref=e183]: Full Name
+          - textbox "Your full name" [ref=e184]
+        - generic [ref=e185]:
+          - generic [ref=e186]: Phone Number
+          - textbox "09XX XXX XXXX" [ref=e187]
+      - generic [ref=e188]:
+        - generic [ref=e189]: Service Needed
+        - combobox [ref=e190]:
+          - option "Select a service" [selected]
+          - option "Teeth Cleaning"
+          - option "Dental Bridge"
+          - option "Removable Partial Denture"
+          - option "Metal Braces"
+          - option "Clear Aligners"
+          - option "General Check-Up"
+      - generic [ref=e191]:
+        - generic [ref=e192]: Preferred Date & Time
+        - textbox "e.g. Monday, 10:00 AM" [ref=e193]
+      - generic [ref=e194]:
+        - generic [ref=e195]: Message (optional)
+        - textbox "Any concerns or questions?" [ref=e196]
+      - button "Send Appointment Request" [ref=e197] [cursor=pointer]
+  - contentinfo [ref=e198]:
+    - generic [ref=e199]:
+      - img [ref=e201]
+      - generic [ref=e203]: SGC Dental Clinic
+    - generic [ref=e204]:
+      - paragraph [ref=e205]: Purok 1, Brgy. Tejero, General Trias, Cavite
+      - link "facebook.com/sgcdentalclinic" [ref=e206] [cursor=pointer]:
+        - /url: https://www.facebook.com/sgcdentalclinic

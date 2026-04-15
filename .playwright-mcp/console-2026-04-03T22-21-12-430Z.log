@@ -1,0 +1,5 @@
+[     632ms] SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token '<'
+    at i (http://localhost:3000/_next/static/chunks/app/auth/signin/page-b5d49840fcddda80.js:1:4436)
+[     630ms] [ERROR] Failed to load runtime config, using defaults: Error: Runtime config not available after script execution
+    at i (http://localhost:3000/_next/static/chunks/app/auth/signin/page-b5d49840fcddda80.js:1:4684) @ http://localhost:3000/_next/static/chunks/487-136afe72e3ba82fb.js:0
+[     630ms] [LOG] 🔄 Using fallback runtime config: {NEXT_PUBLIC_API_URL: http://localhost:8000, NEXTAUTH_URL: http://localhost:3000} @ http://localhost:3000/_next/static/chunks/app/auth/signin/page-b5d49840fcddda80.js:0

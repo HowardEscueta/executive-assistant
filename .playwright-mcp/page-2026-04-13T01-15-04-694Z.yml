@@ -1,0 +1,414 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-PH
+      - link "Accessibility feedback" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Go to Google Home" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "Search" [ref=e26]: Dr Celeste Uy Dental Clinic General Trias Cavite facebook Dr Celeste Uy Dental Clinic General Trias Cavite facebook
+            - generic [ref=e27]:
+              - button "Clear" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "Search by voice" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "Search by image" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "Search" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "Settings" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google apps" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "Sign in" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DDr%2BCeleste%2BUy%2BDental%2BClinic%2BGeneral%2BTrias%2BCavite%2Bfacebook&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e73]:
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "AI Mode" [ref=e78] [cursor=pointer]:
+              - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3u6MWRtAr31GIrXLfiKhJJ9zMfgfAzmC0EaStM63-fN2fJznjTITF3FGZoxrj5LOieUUMULhFrmNVa5nckeMXQBRgHqasLptW8fT3TIo_8MzwM-cOndR21p0SU5IE3tvpCH4ygE6gD9PBYR4TV9r2oGKZaCpyoFdj2YBuc0ZTLenwr5kYQ&aep=1&ntc=1&sa=X&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ2J8OegQIChAE
+              - generic [ref=e81]: AI Mode
+          - listitem [ref=e82]:
+            - link "All" [disabled] [ref=e83]:
+              - generic [ref=e85]: All
+          - listitem [ref=e86]:
+            - link "Images" [ref=e87] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3u6MWRtAr31GIrXLfiKhJJ9zMfgfAzmC0EaStM63-fN2fJznjTITF3FGZoxrj5LOieUUMULhFrmNVa5nckeMXQBRgHqasLptW8fT3TIo_8MzwM-cOndR21p0SU5IE3tvpCH4ygE6gD9PBYR4TV9r2oGKZaCpyoFdj2YBuc0ZTLenwr5kYQ&q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sa=X&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQtKgLegQIDxAB
+              - generic [ref=e89]: Images
+          - listitem [ref=e90]:
+            - link "Forums" [ref=e91] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=18&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3u6MWRtAr31GIrXLfiKhJJ9zMfgfAzmC0EaStM63-fN2fJznjTITF3FGZoxrj5LOieUUMULhFrmNVa5nckeMXQBRgHqasLptW8fT3TIo_8MzwM-cOndR21p0SU5IE3tvpCH4ygE6gD9PBYR4TV9r2oGKZaCpyoFdj2YBuc0ZTLenwr5kYQ&q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sa=X&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQs6gLegQIDhAB
+              - generic [ref=e93]: Forums
+          - listitem [ref=e94]:
+            - link "Shopping" [ref=e95] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3u6MWRtAr31GIrXLfiKhJJ9zMfgfAzmC0EaStM63-fN2fJznjTITF3FGZoxrj5LOieUUMULhFrmNVa5nckeMXQBRgHqasLptW8fT3TIo_8MzwM-cOndR21p0SU5IE3tvpCH4ygE6gD9PBYR4TV9r2oGKZaCpyoFdj2YBuc0ZTLenwr5kYQ&q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&ved=1t:220175&ictx=111
+              - generic [ref=e97]: Shopping
+          - listitem [ref=e98]:
+            - link "Videos" [ref=e99] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3u6MWRtAr31GIrXLfiKhJJ9zMfgfAzmC0EaStM63-fN2fJznjTITF3FGZoxrj5LOieUUMULhFrmNVa5nckeMXQBRgHqasLptW8fT3TIo_8MzwM-cOndR21p0SU5IE3tvpCH4ygE6gD9PBYR4TV9r2oGKZaCpyoFdj2YBuc0ZTLenwr5kYQ&q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sa=X&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQtKgLegQIDBAB
+              - generic [ref=e101]: Videos
+          - listitem [ref=e102]:
+            - link "Short videos" [ref=e103] [cursor=pointer]:
+              - /url: /search?sca_esv=6632e39a9fd71d54&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3u6MWRtAr31GIrXLfiKhJJ9zMfgfAzmC0EaStM63-fN2fJznjTITF3FGZoxrj5LOieUUMULhFrmNVa5nckeMXQBRgHqasLptW8fT3TIo_8MzwM-cOndR21p0SU5IE3tvpCH4ygE6gD9PBYR4TV9r2oGKZaCpyoFdj2YBuc0ZTLenwr5kYQ&q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sa=X&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQs6gLegQIERAB
+              - generic [ref=e105]: Short videos
+          - listitem [ref=e106]:
+            - button "More filters" [ref=e107] [cursor=pointer]:
+              - generic "More filters" [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: More
+                  - img [ref=e112]
+        - button "Tools" [ref=e115] [cursor=pointer]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: Tools
+            - img [ref=e120]
+    - heading "Search Results" [level=1] [ref=e122]
+    - generic [ref=e127]:
+      - main [ref=e128]:
+        - tabpanel [ref=e142]:
+          - generic [ref=e146]:
+            - generic [ref=e151]:
+              - generic [ref=e158]:
+                - button "See photos" [ref=e162] [cursor=pointer]:
+                  - generic [ref=e165]: See photos
+                - generic [ref=e166]:
+                  - link "Map of Dr. Celeste Uy's Dental Clinic" [ref=e168] [cursor=pointer]:
+                    - /url: /maps/place/Dr.+Celeste+Uy's+Dental+Clinic/data=!4m2!3m1!1s0x0:0xce29c38da3ece02a?sa=X&ved=1t:2428&ictx=111
+                    - img "Map of Dr. Celeste Uy's Dental Clinic" [ref=e170]
+                  - link "See outside" [ref=e178] [cursor=pointer]:
+                    - /url: /local/place/fid/0x33962c9204074041:0xce29c38da3ece02a/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3DfgBQx-zeDwsQpJ7WIl1ccA%26cb_client%3Dsearch.gws-prod.gps%26yaw%3D97.22277%26pitch%3D0%26thumbfov%3D100%26w%3D0%26h%3D0&ik=CAISFmZnQlF4LXplRHdzUXBKN1dJbDFjY0E%3D&sa=X&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQpx96BAgaEBE
+                    - generic [ref=e180]: See outside
+              - generic [ref=e183]:
+                - heading "Dr. Celeste Uy's Dental Clinic" [level=2] [ref=e186]
+                - generic [ref=e187]:
+                  - generic [ref=e189]:
+                    - text: "4.5"
+                    - img "Rated 4.5 out of 5," [ref=e190]
+                    - button "8 Google reviews" [ref=e195] [cursor=pointer]
+                    - text: Dental clinic in General Trias, Cavite
+                  - button "More options for Dr. Celeste Uy's Dental Clinic" [ref=e201] [cursor=pointer]:
+                    - img "More options for Dr. Celeste Uy's Dental Clinic" [ref=e202]:
+                      - img [ref=e204]
+            - generic [ref=e209]:
+              - generic [ref=e218]:
+                - link "Directions" [ref=e220]:
+                  - generic [ref=e221] [cursor=pointer]:
+                    - img [ref=e223]
+                    - generic [ref=e228]: Directions
+                - link "Reviews" [ref=e230] [cursor=pointer]:
+                  - /url: /search?sca_esv=6632e39a9fd71d54&si=AL3DRZFIhG6pAqfNLal55wUTwygCG0fClF3UxiOmgw9Hq7nbWfHgz03budekyO33gTCZMiB2JPH5_DY1gdlXVBdxWiW0AU5aEr_K4mpS2ugsOYZApxlADPBgGtX8vGXS8H1VANHMnFJl6p6yvJaSNjlui0EQc2BwEg%3D%3D&q=Dr.+Celeste+Uy%27s+Dental+Clinic+Reviews&sa=X&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ0bkNegQIIRAF
+                  - generic [ref=e231]:
+                    - img [ref=e233]
+                    - generic [ref=e235]: Reviews
+                - button "Save" [ref=e240] [cursor=pointer]:
+                  - img [ref=e241]
+                  - generic [ref=e243]: Save
+                - button "Share" [ref=e246] [cursor=pointer]:
+                  - generic [ref=e247]:
+                    - img [ref=e249]
+                    - generic [ref=e251]: Share
+                - button "Call" [ref=e253] [cursor=pointer]:
+                  - generic [ref=e254]:
+                    - img [ref=e256]
+                    - generic [ref=e258]: Call
+              - separator [ref=e259]
+            - generic [ref=e263]:
+              - generic [ref=e265]:
+                - generic [ref=e267]:
+                  - generic [ref=e268]:
+                    - link "Address" [ref=e269] [cursor=pointer]:
+                      - /url: /search?sca_esv=6632e39a9fd71d54&q=dr.+celeste+uy%27s+dental+clinic+general+trias+address&ludocid=14855619858966306858&sa=X&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ6BN6BAgdEAI
+                    - text: ":"
+                  - text: 421B Tejero Bypass Rd, General Trias, 4107 Cavite
+                - generic [ref=e272]:
+                  - generic [ref=e273]: "Phone:"
+                  - link "Call Phone Number 0917 551 6990" [ref=e276] [cursor=pointer]:
+                    - /url: "#"
+                    - text: 0917 551 6990
+                - generic [ref=e277]:
+                  - generic [ref=e278]:
+                    - link "Hours" [ref=e279] [cursor=pointer]:
+                      - /url: /search?sca_esv=6632e39a9fd71d54&q=dr.+celeste+uy%27s+dental+clinic+general+trias+hours&ludocid=14855619858966306858&sa=X&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ6BN6BAgfEAI
+                    - text: ":"
+                  - button "Closed · Opens 10 AM" [ref=e281]:
+                    - generic [ref=e287]: Closed · Opens 10 AM
+                - generic [ref=e291]:
+                  - generic [ref=e292]:
+                    - button "Suggest an edit" [ref=e295] [cursor=pointer]
+                    - text: ·
+                    - link "Own this business?" [ref=e296] [cursor=pointer]:
+                      - /url: https://business.google.com/create?hl=en&getstarted&authuser=0&fp=14855619858966306858&gmbsrc=ph-en-et-ip-z-gmb-s-z-l~skp%7Cclaimbz_aoc_a%7Cu&ppsrc=GMBSI
+                  - generic [ref=e297]:
+                    - generic [ref=e298]: Add missing information
+                    - link "Add website" [ref=e299] [cursor=pointer]: Add website
+              - separator [ref=e300]
+            - generic [ref=e304]:
+              - heading "Reviews" [level=3] [ref=e307]
+              - generic [ref=e312]:
+                - generic [ref=e313]:
+                  - heading "Google reviews" [level=3] [ref=e314]
+                  - button "More info" [ref=e318] [cursor=pointer]:
+                    - generic "More info" [ref=e319]:
+                      - img [ref=e320]
+                  - generic [ref=e322]:
+                    - button "Write a review" [ref=e326] [cursor=pointer]:
+                      - generic [ref=e327]: Write a review
+                    - link "Add a photo" [ref=e329] [cursor=pointer]:
+                      - /url: "#"
+                - generic [ref=e330]:
+                  - text: "4.5"
+                  - img "Rated 4.5 out of 5," [ref=e332]
+                  - button "8 Google reviews" [ref=e336] [cursor=pointer]
+            - generic [ref=e344]:
+              - generic [ref=e347]:
+                - link "Dr. Melody D. Uy-Celestino Dental Clinic | General Trias Facebook · Dr. Melody D. Uy-Celestino Dental Clinic 490+ followers" [ref=e349] [cursor=pointer]:
+                  - /url: https://www.facebook.com/DocMelUyC/
+                  - heading "Dr. Melody D. Uy-Celestino Dental Clinic | General Trias" [level=3] [ref=e350]
+                  - generic [ref=e355]:
+                    - generic [ref=e357]: Facebook · Dr. Melody D. Uy-Celestino Dental Clinic
+                    - generic [ref=e359]: 490+ followers
+                - button "About this result" [ref=e360] [cursor=pointer]:
+                  - img [ref=e363]
+              - generic [ref=e366]:
+                - generic [ref=e367]:
+                  - emphasis [ref=e368]: Dr. Melody D. Uy-Celestino Dental Clinic, General Trias
+                  - text: ... sapphire street Sunshine Village, Manggahan General Trias, Cavite, General Trias, Philippines, 4...
+                - link "Read more" [ref=e369] [cursor=pointer]:
+                  - /url: https://www.facebook.com/DocMelUyC/#:~:text=sapphire%20street%20Sunshine%20Village%2C%20Manggahan,Cavite%2C%20General%20Trias%2C%20Philippines%2C%204...
+            - generic [ref=e377]:
+              - generic [ref=e380]:
+                - link "At Uy Dental Clinic, we provide a comprehensive set of ... Facebook · UDC - Uy Dental Clinic Group 50+ reactions · 3 years ago" [ref=e382] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/posts/at-uy-dental-clinic-we-provide-a-comprehensive-set-of-quality-dental-services-fo/594658458886323/
+                  - heading "At Uy Dental Clinic, we provide a comprehensive set of ..." [level=3] [ref=e383]
+                  - generic [ref=e388]:
+                    - generic [ref=e390]: Facebook · UDC - Uy Dental Clinic Group
+                    - generic [ref=e392]: 50+ reactions · 3 years ago
+                - button "About this result" [ref=e393] [cursor=pointer]:
+                  - img [ref=e396]
+              - generic [ref=e399]:
+                - generic [ref=e400]:
+                  - emphasis [ref=e401]: SERVICES OFFERED
+                  - text: ": ◾GENERAL SERVICES ▪️Dental Consultation/Check-Up ▪️Oral Prophylaxis/Cleaning ▪️Tooth Filling/Pasta ▪️Tooth Extraction/Bunot ◾ORAL ..."
+                - link "Read more" [ref=e402] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/posts/at-uy-dental-clinic-we-provide-a-comprehensive-set-of-quality-dental-services-fo/594658458886323/#:~:text=SERVICES%20OFFERED%20%3A%20%E2%97%BEGENERAL%20SERVICES,%E2%96%AA%EF%B8%8FTooth%20Filling%2FPasta%20%E2%96%AA%EF%B8%8FTooth%20Extraction%2FBunot%20%E2%97%BEORAL
+              - generic [ref=e404]: "Missing: Celeste ‎Trias"
+            - generic [ref=e412]:
+              - generic [ref=e415]:
+                - link "UDC - Uy Dental Clinic Group (@udcgroup) - About Facebook https://www.facebook.com › udcgroup › about" [ref=e417] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/about
+                  - heading "UDC - Uy Dental Clinic Group (@udcgroup) - About" [level=3] [ref=e418]
+                  - generic [ref=e423]:
+                    - generic [ref=e425]: Facebook
+                    - generic [ref=e427]: https://www.facebook.com › udcgroup › about
+                - button "About this result" [ref=e428] [cursor=pointer]:
+                  - img [ref=e431]
+              - generic [ref=e434]:
+                - generic [ref=e435]:
+                  - emphasis [ref=e436]: UDC
+                  - text: "-"
+                  - emphasis [ref=e437]: Uy Dental Clinic
+                  - text: Group. Your picture-perfect smile specialist ... See more. 󱞴 Dentist & Dental Office · $ · 󱛪 +63 917 596 6808.
+                - link "Read more" [ref=e438] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/about#:~:text=UDC%20%2D%20Uy%20Dental%20Clinic,%F3%B1%9B%AA%20%2B63%20917%20596%206808
+              - img "Rated 4.6 out of 5, (110) user reviews" [ref=e443]:
+                - text: "4.6"
+                - img [ref=e444]
+                - text: (110)
+              - generic [ref=e448]: "Missing: Celeste ‎General ‎Trias ‎Cavite"
+            - generic [ref=e456]:
+              - generic [ref=e459]:
+                - link "UDC - Uy Dental Clinic Group Facebook · UDC - Uy Dental Clinic Group 30+ reactions · 3 years ago" [ref=e461] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/posts/706564934362341/
+                  - heading "UDC - Uy Dental Clinic Group" [level=3] [ref=e462]
+                  - generic [ref=e467]:
+                    - generic [ref=e469]: Facebook · UDC - Uy Dental Clinic Group
+                    - generic [ref=e471]: 30+ reactions · 3 years ago
+                - button "About this result" [ref=e472] [cursor=pointer]:
+                  - img [ref=e475]
+              - generic [ref=e478]:
+                - generic [ref=e479]:
+                  - emphasis [ref=e480]: UDC
+                  - text: "-"
+                  - emphasis [ref=e481]: Uy Dental Clinic
+                  - text: Group. 43m󲄭󳆖. 󳄫. HAPPY BIRTHDAY, DJ Shai of ...
+                  - emphasis [ref=e482]: UDC
+                  - text: "-"
+                  - emphasis [ref=e483]: Uy Dental Clinic
+                  - text: Group. 21h󲄭󳆖. 󳄫. Don't trade your healthy ...
+                - link "Read more" [ref=e484] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/posts/706564934362341/#:~:text=UDC%20%2D%20Uy%20Dental%20Clinic,Shai%20of%2096.3%20Easy%20Rock!&text=UDC%20%2D%20Uy%20Dental%20Clinic,your%20healthy%20teeth%20for%20cigarettes.
+              - generic [ref=e486]: "Missing: Dr ‎Celeste ‎General ‎Trias ‎Cavite"
+            - generic [ref=e494]:
+              - generic [ref=e497]:
+                - link "Thank you Doc Emalyn bernal ✨♥️ ... Facebook https://www.facebook.com › nmjjhomedecor › posts › t..." [ref=e499] [cursor=pointer]:
+                  - /url: https://www.facebook.com/nmjjhomedecor/posts/thank-you-doc-emalyn-bernal-%EF%B8%8Fsalamat-po-sa-tiwala-sa-page-namin-mam-thank-you-po/854042180069262/
+                  - heading "Thank you Doc Emalyn bernal ✨♥️ ..." [level=3] [ref=e500]
+                  - generic [ref=e505]:
+                    - generic [ref=e507]: Facebook
+                    - generic [ref=e509]: https://www.facebook.com › nmjjhomedecor › posts › t...
+                - button "About this result" [ref=e510] [cursor=pointer]:
+                  - img [ref=e513]
+              - generic [ref=e517]:
+                - emphasis [ref=e518]: Thank you Dr. celeste Uy from Tejero,general trias cavite
+                - text: ✨ 4pcs Roller blinds Beige Color ✨ God bless po ✨ For more info message Us now! May be an ...
+            - generic [ref=e526]:
+              - generic [ref=e529]:
+                - link "UDC - Uy Dental Clinic Group Facebook · UDC - Uy Dental Clinic Group 20+ reactions · 5 years ago" [ref=e531] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/posts/d41d8cd9/3578964715492810/?locale=tl_PH
+                  - heading "UDC - Uy Dental Clinic Group" [level=3] [ref=e532]
+                  - generic [ref=e537]:
+                    - generic [ref=e539]: Facebook · UDC - Uy Dental Clinic Group
+                    - generic [ref=e541]: 20+ reactions · 5 years ago
+                - button "About this result" [ref=e542] [cursor=pointer]:
+                  - img [ref=e545]
+              - generic [ref=e548]:
+                - text: To purchase or order you may text,message or Viber us first for the availability! • SCRUB SUIT Uniform for Doctors, Nurses, Caregivers, ...
+                - link "Read more" [ref=e549] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/posts/d41d8cd9/3578964715492810/?locale=tl_PH#:~:text=To%20purchase%20or%20order%20you,Midwives%20and%20other%20Healthcare%20Professionals.
+              - generic [ref=e551]: "Missing: Celeste ‎General ‎Trias ‎Cavite"
+            - generic [ref=e561]:
+              - generic [ref=e564]:
+                - link "Wondering what to expect when you visit UDC? Check out our ... Facebook · UDC - Uy Dental Clinic Group 230+ reactions · 4 years ago" [ref=e566] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/videos/wondering-what-to-expect-when-you-visit-udc-check-out-our-patient-visit-walkthro/1586254661728099/
+                  - heading "Wondering what to expect when you visit UDC? Check out our ..." [level=3] [ref=e567]
+                  - generic [ref=e572]:
+                    - generic [ref=e574]: Facebook · UDC - Uy Dental Clinic Group
+                    - generic [ref=e576]: 230+ reactions · 4 years ago
+                - button "About this result" [ref=e577] [cursor=pointer]:
+                  - img [ref=e580]
+              - generic [ref=e582]:
+                - link "Wondering what to expect when you visit UDC? Check out our ... by UDC - Uy Dental Clinic Group on Facebook. Play on Facebook. 0:46" [ref=e583] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/videos/wondering-what-to-expect-when-you-visit-udc-check-out-our-patient-visit-walkthro/1586254661728099/
+                  - generic [ref=e585]:
+                    - img [ref=e591]
+                    - generic [ref=e595]: 0:46
+                - generic [ref=e597]: Check out our Patient Visit Walkthrough. Practicing Safe and Quality Dentistry since 2010 Visit our newly opened branch at the 5th Level of SM ...
+            - generic [ref=e605]:
+              - generic [ref=e608]:
+                - link "UDC - To the man who made quality dentistry accessible ... Facebook · UDC - Uy Dental Clinic Group 140+ reactions · 1 year ago" [ref=e610] [cursor=pointer]:
+                  - /url: https://www.facebook.com/udcgroup/photos/to-the-man-who-made-quality-dentistry-accessible-for-all-happiest-birthday-to-yo/1032355825116582/
+                  - heading "UDC - To the man who made quality dentistry accessible ..." [level=3] [ref=e611]
+                  - generic [ref=e616]:
+                    - generic [ref=e618]: Facebook · UDC - Uy Dental Clinic Group
+                    - generic [ref=e620]: 140+ reactions · 1 year ago
+                - button "About this result" [ref=e621] [cursor=pointer]:
+                  - img [ref=e624]
+              - generic [ref=e628]:
+                - text: To the man who made quality
+                - emphasis [ref=e629]: dentistry
+                - text: accessible for all, Happiest Birthday to you!!! Your brand of leadership, compassion and commitment ...
+            - generic [ref=e637]:
+              - generic [ref=e640]:
+                - link "UDC - Uy Dental Clinic Group Facebook · UDC - Uy Dental Clinic Group 1 reaction · 7 months ago" [ref=e642] [cursor=pointer]:
+                  - /url: https://www.facebook.com/photo.php?fbid=1310673620618133&id=100050265228926&set=a.248311853520987
+                  - heading "UDC - Uy Dental Clinic Group" [level=3] [ref=e643]
+                  - generic [ref=e648]:
+                    - generic [ref=e650]: Facebook · UDC - Uy Dental Clinic Group
+                    - generic [ref=e652]: 1 reaction · 7 months ago
+                - button "About this result" [ref=e653] [cursor=pointer]:
+                  - img [ref=e656]
+              - generic [ref=e659]:
+                - generic [ref=e660]:
+                  - text: ⚠️ Scaling removes the buildup that can lead to inflamed gums and bigger
+                  - emphasis [ref=e661]: dental
+                  - text: issues. ✨ We know you want to keep your
+                  - emphasis [ref=e662]: teeth
+                  - text: and gums healthy.
+                - link "Read more" [ref=e663] [cursor=pointer]:
+                  - /url: https://www.facebook.com/photo.php?fbid=1310673620618133&id=100050265228926&set=a.248311853520987#:~:text=%F0%9F%A6%B7%E2%9A%A0%EF%B8%8F%20Scaling%20removes%20the%20buildup,your%20teeth%20and%20gums%20healthy.
+            - generic [ref=e671]:
+              - generic [ref=e674]:
+                - link "Ces Dental Clinic | Cavite Facebook · Ces Dental Clinic 8.9K+ followers" [ref=e676] [cursor=pointer]:
+                  - /url: https://www.facebook.com/cesdentalclinic/
+                  - heading "Ces Dental Clinic | Cavite" [level=3] [ref=e677]
+                  - generic [ref=e682]:
+                    - generic [ref=e684]: Facebook · Ces Dental Clinic
+                    - generic [ref=e686]: 8.9K+ followers
+                - button "About this result" [ref=e687] [cursor=pointer]:
+                  - img [ref=e690]
+              - generic [ref=e693]:
+                - generic [ref=e694]:
+                  - text: ✨ Contact us to book your appointments! 09276485719 ✉️ Ces
+                  - emphasis [ref=e695]: Dental Clinic
+                  - text: Page
+                  - emphasis [ref=e696]: Cavite
+                  - text: branches- Imus, Dasma,
+                  - emphasis [ref=e697]: General Trias
+                  - text: "#"
+                  - emphasis [ref=e698]: cesdentalclinic
+                  - text: "#"
+                  - emphasis [ref=e699]: cavitedentist
+                  - text: ...
+                - link "Read more" [ref=e700] [cursor=pointer]:
+                  - /url: https://www.facebook.com/cesdentalclinic/#:~:text=%F0%9F%A6%B7%E2%9C%A8%20Contact%20us%20to%20book,General%20Trias%20%23cesdentalclinic%20%23cavitedentist%20%23oralprophylaxis
+              - generic [ref=e702]: "Missing: Celeste ‎Uy"
+        - navigation [ref=e705]:
+          - heading "Page Navigation" [level=1] [ref=e706]
+          - text: "1"
+          - link "Page 2" [ref=e709] [cursor=pointer]:
+            - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=10&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8tMDegQICxAE
+            - text: "2"
+          - link "Page 3" [ref=e711] [cursor=pointer]:
+            - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=20&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8tMDegQICxAG
+            - text: "3"
+          - link "Page 4" [ref=e713] [cursor=pointer]:
+            - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=30&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8tMDegQICxAI
+            - text: "4"
+          - link "Page 5" [ref=e715] [cursor=pointer]:
+            - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=40&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8tMDegQICxAK
+            - text: "5"
+          - link "Page 6" [ref=e717] [cursor=pointer]:
+            - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=50&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8tMDegQICxAM
+            - text: "6"
+          - link "Page 7" [ref=e719] [cursor=pointer]:
+            - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=60&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8tMDegQICxAO
+            - text: "7"
+          - link "Page 8" [ref=e721] [cursor=pointer]:
+            - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=70&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8tMDegQICxAQ
+            - text: "8"
+          - link "Page 9" [ref=e723] [cursor=pointer]:
+            - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=80&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8tMDegQICxAS
+            - text: "9"
+          - link "Page 10" [ref=e725] [cursor=pointer]:
+            - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=90&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8tMDegQICxAU
+            - text: "10"
+          - heading "Next" [level=2] [ref=e727]:
+            - link "Next" [ref=e728] [cursor=pointer]:
+              - /url: /search?q=Dr+Celeste+Uy+Dental+Clinic+General+Trias+Cavite+facebook&sca_esv=6632e39a9fd71d54&ei=k0PcaZ2bGYuhhbIPj9mdmQ4&start=10&sa=N&sstk=Af77f_e5Uur2lPNejSJ2cTv4dZupWEjY9VWvtz7xCwRsA7YiBNDpVg0fzUQSsNsecNrnuA9G5mC8w2OwPdTvcV6Qq5z_KEOcpLrD1A&ved=2ahUKEwjdsICx0-mTAxWLUEEAHY9sJ-MQ8NMDegQICxAW
+              - generic [ref=e730]: Next
+        - navigation
+      - complementary "Complementary Results" [ref=e731]:
+        - heading "Complementary Results" [level=2] [ref=e732]
+    - contentinfo [ref=e733]:
+      - heading "Footer Links" [level=1] [ref=e734]
+      - generic [ref=e738]:
+        - generic [ref=e740]:
+          - text: Philippines
+          - generic [ref=e742]:
+            - button "General Trias, Cavite - Based on your past activity" [ref=e744] [cursor=pointer]:
+              - generic [ref=e745]: General Trias, Cavite
+              - generic [ref=e747]:
+                - text: "-"
+                - generic [ref=e748]: Based on your past activity
+            - text: "-"
+            - button "Update location" [ref=e750] [cursor=pointer]: Update location
+        - generic [ref=e753]:
+          - link "Help" [ref=e754] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-PH&fg=1
+          - link "Send feedback" [ref=e755] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e756] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-PH&fg=1
+          - link "Terms" [ref=e757] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-PH&fg=1

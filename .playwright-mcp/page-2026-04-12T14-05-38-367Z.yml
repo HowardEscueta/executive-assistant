@@ -1,0 +1,574 @@
+- generic [ref=e11]:
+  - generic [ref=e13]:
+    - link "Instagram" [ref=e16] [cursor=pointer]:
+      - /url: /
+      - img "Instagram" [ref=e19]
+    - generic [ref=e24]:
+      - link "Log In" [ref=e26] [cursor=pointer]:
+        - /url: /accounts/login/?next=%2Freel%2FDWx-D4izROJ%2F%3Figsh%3DNTc4MTIwNjQ2YQ%253D%253D&source=desktop_nav
+      - link "Sign Up" [ref=e28] [cursor=pointer]:
+        - /url: /accounts/emailsignup/
+  - main [ref=e29]:
+    - dialog [ref=e34]:
+      - generic [ref=e35]:
+        - button "Close" [ref=e37] [cursor=pointer]:
+          - img "Close" [ref=e39]
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - link "stanleychenry's profile picture" [ref=e46] [cursor=pointer]:
+              - img "stanleychenry's profile picture" [ref=e47]
+            - generic [ref=e49]:
+              - generic [ref=e50]: Never miss a post from stanleychenry
+              - generic [ref=e52]: Sign up for Instagram to stay in the loop.
+              - generic [ref=e54]:
+                - text: By continuing, you agree to Instagram's
+                - link "Terms of Use" [ref=e55] [cursor=pointer]:
+                  - /url: https://help.instagram.com/581066165581870/?locale=en_US
+                - text: and
+                - link "Privacy Policy" [ref=e56] [cursor=pointer]:
+                  - /url: https://privacycenter.instagram.com/policy/
+                - text: .
+          - generic [ref=e57]:
+            - link "Sign up" [ref=e60] [cursor=pointer]:
+              - /url: /accounts/emailsignup/
+            - link "Log in" [ref=e63] [cursor=pointer]:
+              - /url: /accounts/login/?source=desktop_dynamic_landing_dialog
+    - generic [ref=e64]:
+      - generic [ref=e66]:
+        - button [ref=e71]:
+          - group [ref=e84]:
+            - button [ref=e86] [cursor=pointer]:
+              - img [ref=e88]
+            - button [ref=e91] [cursor=pointer]:
+              - img [ref=e93]
+        - generic [ref=e96]:
+          - generic [ref=e98]:
+            - button "stanleychenry's profile picture" [disabled] [ref=e102]:
+              - link "stanleychenry's profile picture" [disabled] [ref=e104] [cursor=pointer]:
+                - img "stanleychenry's profile picture" [ref=e105]
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - generic [ref=e112]:
+                  - link "stanleychenry" [ref=e114] [cursor=pointer]:
+                    - /url: /stanleychenry/
+                    - generic [ref=e117]: stanleychenry
+                  - img "Verified" [ref=e119]
+                - generic [ref=e121]:
+                  - generic [ref=e123]: •
+                  - button "Follow" [ref=e124] [cursor=pointer]
+              - link "Original audio" [ref=e128] [cursor=pointer]:
+                - /url: /reels/audio/26861679286773350/
+                - generic [ref=e131]: Original audio
+            - button "More options" [ref=e134] [cursor=pointer]:
+              - img "More options" [ref=e137]
+          - separator [ref=e141]
+          - generic [ref=e143]:
+            - generic [ref=e145]:
+              - link "stanleychenry's profile picture" [ref=e147] [cursor=pointer]:
+                - /url: /stanleychenry/
+                - img "stanleychenry's profile picture" [ref=e148]
+              - generic [ref=e152]:
+                - generic [ref=e153]:
+                  - link "stanleychenry Verified" [ref=e154] [cursor=pointer]:
+                    - /url: /stanleychenry/
+                    - generic [ref=e156]:
+                      - generic [ref=e157]: stanleychenry
+                      - img "Verified" [ref=e159]
+                  - time [ref=e162]: 6d
+                - generic [ref=e163]:
+                  - text: Comment Claude to join the live webinar where I go through how we build all of this sort of stuff
+                  - text: The reason I think this such a good tool. It's not just analytics, but it's a platform that helps you design your strategy, your activities that you need to do to win on social. It holds you accountable. It allows you and your team to keep track of it by building weekly, monthly, quarterly meetings and rhythms where you can actually work through all the things that you have to do to achieve the goals that you want. The analytics then show you the results of that work.
+                  - text: Now the reason I think that's great is that most people don't know how they're going to get the results; they just want to look at their results. I think that a real good organic social strategy is both looking at it from the work, the input that goes in, to see what the output that comes out is. This is what I think the difference is with this one compared to all the others. All the others are just like "look at my analytics".
+            - button "Load more comments" [ref=e165] [cursor=pointer]:
+              - img "Load more comments" [ref=e167]
+            - generic [ref=e169]:
+              - generic [ref=e172]:
+                - link "aydincakirofficial's profile picture" [ref=e175] [cursor=pointer]:
+                  - /url: /aydincakirofficial/
+                  - img "aydincakirofficial's profile picture" [ref=e176]
+                - generic [ref=e178]:
+                  - generic [ref=e180]:
+                    - generic [ref=e181]:
+                      - link "aydincakirofficial" [ref=e183] [cursor=pointer]:
+                        - /url: /aydincakirofficial/
+                        - generic [ref=e186]: aydincakirofficial
+                      - link "37m" [ref=e188] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/17974559427010083/
+                        - time [ref=e189]: 37m
+                    - generic [ref=e191]: Claude
+                  - generic [ref=e192]:
+                    - button "Like" [ref=e193] [cursor=pointer]:
+                      - generic [ref=e194]: Like
+                    - button "Reply" [ref=e195] [cursor=pointer]:
+                      - generic [ref=e197]: Reply
+              - generic [ref=e200]:
+                - link "paigeellerbusch's profile picture" [ref=e203] [cursor=pointer]:
+                  - /url: /paigeellerbusch/
+                  - img "paigeellerbusch's profile picture" [ref=e204]
+                - generic [ref=e206]:
+                  - generic [ref=e208]:
+                    - generic [ref=e209]:
+                      - link "paigeellerbusch" [ref=e211] [cursor=pointer]:
+                        - /url: /paigeellerbusch/
+                        - generic [ref=e214]: paigeellerbusch
+                      - link "59m" [ref=e216] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18086630342607909/
+                        - time [ref=e217]: 59m
+                    - generic [ref=e219]: Claude
+                  - generic [ref=e220]:
+                    - button "Like" [ref=e221] [cursor=pointer]:
+                      - generic [ref=e222]: Like
+                    - button "Reply" [ref=e223] [cursor=pointer]:
+                      - generic [ref=e225]: Reply
+              - generic [ref=e228]:
+                - link "giulianosalvarani's profile picture" [ref=e231] [cursor=pointer]:
+                  - /url: /giulianosalvarani/
+                  - img "giulianosalvarani's profile picture" [ref=e232]
+                - generic [ref=e234]:
+                  - generic [ref=e236]:
+                    - generic [ref=e237]:
+                      - link "giulianosalvarani Verified" [ref=e239] [cursor=pointer]:
+                        - /url: /giulianosalvarani/
+                        - generic [ref=e241]:
+                          - generic [ref=e242]: giulianosalvarani
+                          - img "Verified" [ref=e244]
+                      - link "2h" [ref=e247] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/17922735195300130/
+                        - time [ref=e248]: 2h
+                    - generic [ref=e250]: Claude
+                  - generic [ref=e251]:
+                    - button "Like" [ref=e252] [cursor=pointer]:
+                      - generic [ref=e253]: Like
+                    - button "Reply" [ref=e254] [cursor=pointer]:
+                      - generic [ref=e256]: Reply
+              - generic [ref=e259]:
+                - link "murph100's profile picture" [ref=e262] [cursor=pointer]:
+                  - /url: /murph100/
+                  - img "murph100's profile picture" [ref=e263]
+                - generic [ref=e265]:
+                  - generic [ref=e267]:
+                    - generic [ref=e268]:
+                      - link "murph100" [ref=e270] [cursor=pointer]:
+                        - /url: /murph100/
+                        - generic [ref=e273]: murph100
+                      - link "4h" [ref=e275] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18353841061208582/
+                        - time [ref=e276]: 4h
+                    - generic [ref=e278]: Claude
+                  - generic [ref=e279]:
+                    - button "Like" [ref=e280] [cursor=pointer]:
+                      - generic [ref=e281]: Like
+                    - button "Reply" [ref=e282] [cursor=pointer]:
+                      - generic [ref=e284]: Reply
+              - generic [ref=e287]:
+                - link "edkirwan's profile picture" [ref=e290] [cursor=pointer]:
+                  - /url: /edkirwan/
+                  - img "edkirwan's profile picture" [ref=e291]
+                - generic [ref=e293]:
+                  - generic [ref=e295]:
+                    - generic [ref=e296]:
+                      - link "edkirwan" [ref=e298] [cursor=pointer]:
+                        - /url: /edkirwan/
+                        - generic [ref=e301]: edkirwan
+                      - link "4h" [ref=e303] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18096763255851938/
+                        - time [ref=e304]: 4h
+                    - generic [ref=e306]: Claude
+                  - generic [ref=e307]:
+                    - button "Like" [ref=e308] [cursor=pointer]:
+                      - generic [ref=e309]: Like
+                    - button "Reply" [ref=e310] [cursor=pointer]:
+                      - generic [ref=e312]: Reply
+              - generic [ref=e315]:
+                - link "samaugustine's profile picture" [ref=e318] [cursor=pointer]:
+                  - /url: /samaugustine/
+                  - img "samaugustine's profile picture" [ref=e319]
+                - generic [ref=e321]:
+                  - generic [ref=e323]:
+                    - generic [ref=e324]:
+                      - link "samaugustine" [ref=e326] [cursor=pointer]:
+                        - /url: /samaugustine/
+                        - generic [ref=e329]: samaugustine
+                      - link "5h" [ref=e331] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18356912986231887/
+                        - time [ref=e332]: 5h
+                    - generic [ref=e334]: Claude
+                  - generic [ref=e335]:
+                    - button "Like" [ref=e336] [cursor=pointer]:
+                      - generic [ref=e337]: Like
+                    - button "Reply" [ref=e338] [cursor=pointer]:
+                      - generic [ref=e340]: Reply
+              - generic [ref=e343]:
+                - link "petaronline's profile picture" [ref=e346] [cursor=pointer]:
+                  - /url: /petaronline/
+                  - img "petaronline's profile picture" [ref=e347]
+                - generic [ref=e349]:
+                  - generic [ref=e351]:
+                    - generic [ref=e352]:
+                      - link "petaronline" [ref=e354] [cursor=pointer]:
+                        - /url: /petaronline/
+                        - generic [ref=e357]: petaronline
+                      - link "7h" [ref=e359] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18098159504073319/
+                        - time [ref=e360]: 7h
+                    - generic [ref=e362]: Claude
+                  - generic [ref=e363]:
+                    - button "Like" [ref=e364] [cursor=pointer]:
+                      - generic [ref=e365]: Like
+                    - button "Reply" [ref=e366] [cursor=pointer]:
+                      - generic [ref=e368]: Reply
+              - generic [ref=e371]:
+                - link "petaronline's profile picture" [ref=e374] [cursor=pointer]:
+                  - /url: /petaronline/
+                  - img "petaronline's profile picture" [ref=e375]
+                - generic [ref=e377]:
+                  - generic [ref=e379]:
+                    - generic [ref=e380]:
+                      - link "petaronline" [ref=e382] [cursor=pointer]:
+                        - /url: /petaronline/
+                        - generic [ref=e385]: petaronline
+                      - link "7h" [ref=e387] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18524379373078848/
+                        - time [ref=e388]: 7h
+                    - generic [ref=e390]: I've built the same with Manus but I have a problem with Meta API not letting data older than 90 days here. Anyone has the same problem?
+                  - generic [ref=e391]:
+                    - button "Like" [ref=e392] [cursor=pointer]:
+                      - generic [ref=e393]: Like
+                    - button "Reply" [ref=e394] [cursor=pointer]:
+                      - generic [ref=e396]: Reply
+              - generic [ref=e399]:
+                - link "ifrazzzali's profile picture" [ref=e402] [cursor=pointer]:
+                  - /url: /ifrazzzali/
+                  - img "ifrazzzali's profile picture" [ref=e403]
+                - generic [ref=e405]:
+                  - generic [ref=e407]:
+                    - generic [ref=e408]:
+                      - link "ifrazzzali" [ref=e410] [cursor=pointer]:
+                        - /url: /ifrazzzali/
+                        - generic [ref=e413]: ifrazzzali
+                      - link "9h" [ref=e415] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18081235259526876/
+                        - time [ref=e416]: 9h
+                    - generic [ref=e418]: Claude
+                  - generic [ref=e419]:
+                    - button "Like" [ref=e420] [cursor=pointer]:
+                      - generic [ref=e421]: Like
+                    - button "Reply" [ref=e422] [cursor=pointer]:
+                      - generic [ref=e424]: Reply
+              - generic [ref=e427]:
+                - link "marceloramos.ia's profile picture" [ref=e430] [cursor=pointer]:
+                  - /url: /marceloramos.ia/
+                  - img "marceloramos.ia's profile picture" [ref=e431]
+                - generic [ref=e433]:
+                  - generic [ref=e435]:
+                    - generic [ref=e436]:
+                      - link "marceloramos.ia Verified" [ref=e438] [cursor=pointer]:
+                        - /url: /marceloramos.ia/
+                        - generic [ref=e440]:
+                          - generic [ref=e441]: marceloramos.ia
+                          - img "Verified" [ref=e443]
+                      - link "10h" [ref=e446] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18002372423736355/
+                        - time [ref=e447]: 10h
+                    - generic [ref=e449]: Claude
+                  - generic [ref=e450]:
+                    - button "Like" [ref=e451] [cursor=pointer]:
+                      - generic [ref=e452]: Like
+                    - button "Reply" [ref=e453] [cursor=pointer]:
+                      - generic [ref=e455]: Reply
+              - generic [ref=e458]:
+                - link "kean.shihab's profile picture" [ref=e461] [cursor=pointer]:
+                  - /url: /kean.shihab/
+                  - img "kean.shihab's profile picture" [ref=e462]
+                - generic [ref=e464]:
+                  - generic [ref=e466]:
+                    - generic [ref=e467]:
+                      - link "kean.shihab" [ref=e469] [cursor=pointer]:
+                        - /url: /kean.shihab/
+                        - generic [ref=e472]: kean.shihab
+                      - link "12h" [ref=e474] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18125987434598322/
+                        - time [ref=e475]: 12h
+                    - generic [ref=e477]: Claude
+                  - generic [ref=e478]:
+                    - button "Like" [ref=e479] [cursor=pointer]:
+                      - generic [ref=e480]: Like
+                    - button "Reply" [ref=e481] [cursor=pointer]:
+                      - generic [ref=e483]: Reply
+              - generic [ref=e486]:
+                - link "jimmy.gaffa's profile picture" [ref=e489] [cursor=pointer]:
+                  - /url: /jimmy.gaffa/
+                  - img "jimmy.gaffa's profile picture" [ref=e490]
+                - generic [ref=e492]:
+                  - generic [ref=e494]:
+                    - generic [ref=e495]:
+                      - link "jimmy.gaffa" [ref=e497] [cursor=pointer]:
+                        - /url: /jimmy.gaffa/
+                        - generic [ref=e500]: jimmy.gaffa
+                      - link "16h" [ref=e502] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18442968475119679/
+                        - time [ref=e503]: 16h
+                    - generic [ref=e505]: claude
+                  - generic [ref=e506]:
+                    - button "Like" [ref=e507] [cursor=pointer]:
+                      - generic [ref=e508]: Like
+                    - button "Reply" [ref=e509] [cursor=pointer]:
+                      - generic [ref=e511]: Reply
+              - generic [ref=e514]:
+                - link "jessjessfong's profile picture" [ref=e517] [cursor=pointer]:
+                  - /url: /jessjessfong/
+                  - img "jessjessfong's profile picture" [ref=e518]
+                - generic [ref=e520]:
+                  - generic [ref=e522]:
+                    - generic [ref=e523]:
+                      - link "jessjessfong" [ref=e525] [cursor=pointer]:
+                        - /url: /jessjessfong/
+                        - generic [ref=e528]: jessjessfong
+                      - link "16h" [ref=e530] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/17885329428473748/
+                        - time [ref=e531]: 16h
+                    - generic [ref=e533]: Claude
+                  - generic [ref=e534]:
+                    - button "Like" [ref=e535] [cursor=pointer]:
+                      - generic [ref=e536]: Like
+                    - button "Reply" [ref=e537] [cursor=pointer]:
+                      - generic [ref=e539]: Reply
+              - generic [ref=e542]:
+                - link "toni.leah.d's profile picture" [ref=e545] [cursor=pointer]:
+                  - /url: /toni.leah.d/
+                  - img "toni.leah.d's profile picture" [ref=e546]
+                - generic [ref=e548]:
+                  - generic [ref=e550]:
+                    - generic [ref=e551]:
+                      - link "toni.leah.d" [ref=e553] [cursor=pointer]:
+                        - /url: /toni.leah.d/
+                        - generic [ref=e556]: toni.leah.d
+                      - link "18h" [ref=e558] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18054410210713301/
+                        - time [ref=e559]: 18h
+                    - generic [ref=e561]: Claude
+                  - generic [ref=e562]:
+                    - button "Like" [ref=e563] [cursor=pointer]:
+                      - generic [ref=e564]: Like
+                    - button "Reply" [ref=e565] [cursor=pointer]:
+                      - generic [ref=e567]: Reply
+              - generic [ref=e570]:
+                - link "aroojabrarr's profile picture" [ref=e573] [cursor=pointer]:
+                  - /url: /aroojabrarr/
+                  - img "aroojabrarr's profile picture" [ref=e574]
+                - generic [ref=e576]:
+                  - generic [ref=e578]:
+                    - generic [ref=e579]:
+                      - link "aroojabrarr" [ref=e581] [cursor=pointer]:
+                        - /url: /aroojabrarr/
+                        - generic [ref=e584]: aroojabrarr
+                      - link "20h" [ref=e586] [cursor=pointer]:
+                        - /url: /p/DWx-D4izROJ/c/18117021655726020/
+                        - time [ref=e587]: 20h
+                    - generic [ref=e589]: Claude
+                  - generic [ref=e590]:
+                    - button "Like" [ref=e591] [cursor=pointer]:
+                      - generic [ref=e592]: Like
+                    - button "Reply" [ref=e593] [cursor=pointer]:
+                      - generic [ref=e595]: Reply
+              - progressbar [ref=e598]:
+                - img "Loading..." [ref=e599]
+          - generic [ref=e612]:
+            - generic [ref=e613]:
+              - generic [ref=e614]:
+                - button "Like" [ref=e617] [cursor=pointer]:
+                  - img "Like" [ref=e620]
+                - button "850" [ref=e622] [cursor=pointer]
+                - button "Comment" [ref=e624] [cursor=pointer]:
+                  - img "Comment" [ref=e626]
+                - button "1.4K" [ref=e628] [cursor=pointer]
+                - button "Share" [ref=e629] [cursor=pointer]:
+                  - img "Share" [ref=e630]
+              - button "Save" [ref=e634] [cursor=pointer]:
+                - img "Save" [ref=e636]
+            - link "6 days ago" [ref=e640] [cursor=pointer]:
+              - /url: /stanleychenry/reel/DWx-D4izROJ/
+              - time [ref=e642]: 6 days ago
+          - generic [ref=e647]:
+            - link "Log in" [ref=e648] [cursor=pointer]:
+              - /url: /accounts/login/?next=%2Freel%2FDWx-D4izROJ%2F&source=post_comment_input
+            - text: to like or comment.
+      - separator [ref=e650]
+      - generic [ref=e651]:
+        - generic [ref=e653]:
+          - text: More posts from
+          - link "stanleychenry" [ref=e654] [cursor=pointer]:
+            - /url: /stanleychenry/
+        - generic [ref=e657]:
+          - generic [ref=e658]:
+            - link "We run a seven-figure agency with zero project managers. Not because we hate project managers. Because we realised 80% of that job is just scanning and updating. Reading emails. Copying info into a task list. Chasing people for updates. Writing a report about what happened. That's not project management. That's a human database. The real job is the conversations. The decisions. The relationships. The judgment calls. So we're building an AI that handles the scanning and updating. Every morning it reads every email, every message, every meeting note. Then it tells the team exactly what to do. Nobody tracks anything manually. Nobody misses a deadline. Nobody spends 6 hours on admin. We're not done yet. We're building it right now. But the thinking behind it already changed everything. Comment WEBINAR and I'll send you the link to watch me walk through the whole system live. Carousel" [ref=e660] [cursor=pointer]:
+              - /url: /stanleychenry/p/DXBtQQmFn5v/
+              - img "We run a seven-figure agency with zero project managers. Not because we hate project managers. Because we realised 80% of that job is just scanning and updating. Reading emails. Copying info into a task list. Chasing people for updates. Writing a report about what happened. That's not project management. That's a human database. The real job is the conversations. The decisions. The relationships. The judgment calls. So we're building an AI that handles the scanning and updating. Every morning it reads every email, every message, every meeting note. Then it tells the team exactly what to do. Nobody tracks anything manually. Nobody misses a deadline. Nobody spends 6 hours on admin. We're not done yet. We're building it right now. But the thinking behind it already changed everything. Comment WEBINAR and I'll send you the link to watch me walk through the whole system live." [ref=e663]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Carousel"
+            - link "Comment “Claude” to register for the webinar to see how we set up our system to make this possible. Clip" [ref=e666] [cursor=pointer]:
+              - /url: /stanleychenry/reel/DXBrrHWTRFz/
+              - img "Comment “Claude” to register for the webinar to see how we set up our system to make this possible." [ref=e669]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+            - link "Comment “Claude” to register for the webinar Clip" [ref=e672] [cursor=pointer]:
+              - /url: /stanleychenry/reel/DW_ZlXqzWsY/
+              - img "Comment “Claude” to register for the webinar" [ref=e675]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+          - generic [ref=e677]:
+            - link [ref=e679] [cursor=pointer]:
+              - /url: /stanleychenry/reel/DW_ZrX8zV1Z/
+              - img [ref=e682]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+            - link "Comment “Claude” to register for the webinar Clip" [ref=e685] [cursor=pointer]:
+              - /url: /stanleychenry/reel/DW_KbLpzulh/
+              - img "Comment “Claude” to register for the webinar" [ref=e688]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+            - link "Comment “Claude” to register for the webinar Clip" [ref=e691] [cursor=pointer]:
+              - /url: /stanleychenry/reel/DW_Bt9dTq5F/
+              - img "Comment “Claude” to register for the webinar" [ref=e694]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+          - generic [ref=e696]:
+            - link "Comment “Claude” and I’ll send you think link to join our webinar Clip" [ref=e698] [cursor=pointer]:
+              - /url: /stanleychenry/reel/DW7ciYOTbQ-/
+              - img "Comment “Claude” and I’ll send you think link to join our webinar" [ref=e701]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+            - 'link "Photo shared by Stanley Henry on April 08, 2026 tagging @marketing_assoc. May be a graphic of poster, banner, magazine and text that says ''ma. Marketing MarkotingAssodation Assocation #ONSOCIAL26 THE SOCIAL MEDIA CONFERENCE INPARTMERSHIPNITE NITE TikTok 00 Meta OMNICOM MEDIA''." [ref=e704] [cursor=pointer]':
+              - /url: /stanleychenry/p/DW5WLCQE6Vc/
+              - 'img "Photo shared by Stanley Henry on April 08, 2026 tagging @marketing_assoc. May be a graphic of poster, banner, magazine and text that says ''ma. Marketing MarkotingAssodation Assocation #ONSOCIAL26 THE SOCIAL MEDIA CONFERENCE INPARTMERSHIPNITE NITE TikTok 00 Meta OMNICOM MEDIA''." [ref=e707]'
+            - link "Comment “Claude” and I’ll send you the link to our next webinar on how I built my AI brain Clip" [ref=e710] [cursor=pointer]:
+              - /url: /stanleychenry/reel/DW5VTZBTCMj/
+              - img "Comment “Claude” and I’ll send you the link to our next webinar on how I built my AI brain" [ref=e713]
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Clip"
+        - generic [ref=e715]:
+          - link "See more posts" [ref=e717] [cursor=pointer]:
+            - /url: /stanleychenry/
+            - generic [ref=e718]: See more posts
+          - separator [ref=e719]
+  - contentinfo [ref=e720]:
+    - generic [ref=e721]:
+      - generic [ref=e723]:
+        - link "Meta" [ref=e725] [cursor=pointer]:
+          - /url: https://about.meta.com/
+          - generic [ref=e726]: Meta
+        - link "About" [ref=e728] [cursor=pointer]:
+          - /url: https://about.instagram.com/
+          - generic [ref=e729]: About
+        - link "Blog" [ref=e731] [cursor=pointer]:
+          - /url: https://about.instagram.com/blog/
+          - generic [ref=e732]: Blog
+        - link "Jobs" [ref=e734] [cursor=pointer]:
+          - /url: https://about.instagram.com/about-us/careers
+          - generic [ref=e735]: Jobs
+        - link "Help" [ref=e737] [cursor=pointer]:
+          - /url: https://help.instagram.com/
+          - generic [ref=e738]: Help
+        - link "API" [ref=e740] [cursor=pointer]:
+          - /url: https://developers.facebook.com/docs/instagram
+          - generic [ref=e741]: API
+        - link "Privacy" [ref=e743] [cursor=pointer]:
+          - /url: /legal/privacy/
+          - generic [ref=e744]: Privacy
+        - link "Terms" [ref=e746] [cursor=pointer]:
+          - /url: /legal/terms/
+          - generic [ref=e747]: Terms
+        - link "Locations" [ref=e749] [cursor=pointer]:
+          - /url: /explore/locations/
+          - generic [ref=e750]: Locations
+        - link "Instagram Lite" [ref=e752] [cursor=pointer]:
+          - /url: /web/lite/
+          - generic [ref=e753]: Instagram Lite
+        - link "Meta AI" [ref=e755] [cursor=pointer]:
+          - /url: https://www.meta.ai/?utm_source=foa_web_footer
+          - generic [ref=e756]: Meta AI
+        - link "Threads" [ref=e758] [cursor=pointer]:
+          - /url: https://www.threads.com/
+          - generic [ref=e759]: Threads
+        - link "Contact Uploading & Non-Users" [ref=e761] [cursor=pointer]:
+          - /url: https://www.facebook.com/help/instagram/261704639352628
+          - generic [ref=e762]: Contact Uploading & Non-Users
+        - link "Meta Verified" [ref=e764] [cursor=pointer]:
+          - /url: /accounts/meta_verified/?entrypoint=web_footer
+          - generic [ref=e765]: Meta Verified
+      - generic [ref=e766]:
+        - generic [ref=e767] [cursor=pointer]:
+          - generic [ref=e768]:
+            - generic [ref=e769]: English
+            - img "Down chevron icon" [ref=e772]
+          - combobox "Switch Display Language" [ref=e774]:
+            - option "Afrikaans"
+            - option "العربية"
+            - option "Čeština"
+            - option "Dansk"
+            - option "Deutsch"
+            - option "Ελληνικά"
+            - option "English" [selected]
+            - option "English (UK)"
+            - option "Español (España)"
+            - option "Español"
+            - option "فارسی"
+            - option "Suomi"
+            - option "Français"
+            - option "עברית"
+            - option "Bahasa Indonesia"
+            - option "Italiano"
+            - option "日本語"
+            - option "한국어"
+            - option "Bahasa Melayu"
+            - option "Norsk"
+            - option "Nederlands"
+            - option "Polski"
+            - option "Português (Brasil)"
+            - option "Português (Portugal)"
+            - option "Русский"
+            - option "Svenska"
+            - option "ภาษาไทย"
+            - option "Filipino"
+            - option "Türkçe"
+            - option "中文(简体)"
+            - option "中文(台灣)"
+            - option "বাংলা"
+            - option "ગુજરાતી"
+            - option "हिन्दी"
+            - option "Hrvatski"
+            - option "Magyar"
+            - option "ಕನ್ನಡ"
+            - option "മലയാളം"
+            - option "मराठी"
+            - option "नेपाली"
+            - option "ਪੰਜਾਬੀ"
+            - option "සිංහල"
+            - option "Slovenčina"
+            - option "தமிழ்"
+            - option "తెలుగు"
+            - option "اردو"
+            - option "Tiếng Việt"
+            - option "中文(香港)"
+            - option "Български"
+            - option "Français (Canada)"
+            - option "Română"
+            - option "Српски"
+            - option "Українська"
+        - generic [ref=e776]: © 2026 Instagram from Meta

@@ -1,0 +1,459 @@
+[     453ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:24914
+[16425028ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:241
+[16425331ms] [ERROR] ./src/components/ui/portfolio-hero.tsx
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ui/portfolio-hero.tsx
+./src/app/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/globals/intercept-console-error.js:49
+[16431896ms] [LOG] [Fast Refresh] done in 6868ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:73
+[16432964ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:241
+[16433614ms] [LOG] [Fast Refresh] done in 650ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:73
+[16434939ms] [ERROR] ./src/components/ui/portfolio-hero.tsx
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ui/portfolio-hero.tsx
+./src/app/page.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/globals/intercept-console-error.js:49
+[16436047ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/?_rsc=1oqwi:0
+[16436411ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/?_rsc=1oqwi:0
+[16436787ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/?_rsc=1oqwi:0
+[16436985ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/?_rsc=1oqwi:0
+[16437135ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/:0
+[16437648ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(pages-dir-browser)/./node_modules/react-dom/cjs/react-dom-client.development.js:28004
+[16437706ms] ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+
+Caused by:
+    Syntax Error
+    at processResult (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/webpack/bundle5.js:29:407111)
+    at <unknown> (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/webpack/bundle5.js:29:408906)
+    at <unknown> (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:8645)
+    at <unknown> (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:5019)
+    at r.callback (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4039)
+[16437705ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:41
+[16437713ms] [ERROR] ./src/components/ui/portfolio-hero.tsx
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/client.js:85
+[16437713ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16437975ms] [ERROR] ./src/components/ui/portfolio-hero.tsx
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/client.js:85
+[16438322ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16438646ms] [ERROR] ./src/components/ui/portfolio-hero.tsx
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/client.js:85
+[16441581ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:251
+[16442000ms] [ERROR] ./src/components/ui/portfolio-hero.tsx
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ui/portfolio-hero.tsx
+./src/app/page.tsx @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/client.js:85
+[16442416ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442416ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442417ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442438ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/_next/static/webpack/a436af12d69a6c97.webpack.hot-update.json:0
+[16442439ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:390
+[16442444ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442444ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442444ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442467ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442470ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442471ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442494ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3001/:0
+[16442882ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(pages-dir-browser)/./node_modules/react-dom/cjs/react-dom-client.development.js:28004
+[16442932ms] ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+
+Caused by:
+    Syntax Error
+    at processResult (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/webpack/bundle5.js:29:407111)
+    at <unknown> (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/webpack/bundle5.js:29:408906)
+    at <unknown> (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:8645)
+    at <unknown> (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:5019)
+    at r.callback (file:///home/delo/Desktop/howard/dan-portfolio/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js:1:4039)
+[16442918ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:41
+[16442924ms] [ERROR] ./src/components/ui/portfolio-hero.tsx
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/client.js:85
+[16442925ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16442926ms] [ERROR] ./src/components/ui/portfolio-hero.tsx
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/client.js:85
+[16443232ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16443535ms] [ERROR] ./src/components/ui/portfolio-hero.tsx
+Error:   x Expression expected
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:44:1]
+ 41 |   }, []);
+ 42 | 
+ 43 |   return (
+ 44 |     <>
+    :      ^
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+    `----
+  x Expected ',', got '< (jsx tag start)'
+    ,-[/home/delo/Desktop/howard/dan-portfolio/src/components/ui/portfolio-hero.tsx:46:1]
+ 43 |   return (
+ 44 |     <>
+ 45 |       {/* ── Navbar ── */}
+ 46 |       <header
+    :       ^
+ 47 |         className="fixed top-0 left-0 right-0 z-50"
+ 48 |         style={{ backgroundColor: "#252836" }}
+ 49 |       >
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/client.js:85
+[16468105ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:251
+[16468437ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16468440ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16468441ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16468539ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3001/_next/static/webpack/a436af12d69a6c97.webpack.hot-update.json:0
+[16468539ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:392
+[16468573ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16468574ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16468575ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16468576ms] [WARNING] [HMR] Invalid message: {"action":"isrManifest","data":{}}
+TypeError: Cannot read properties of undefined (reading '__N_SSP')
+    at handleStaticIndicator (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:229:124)
+    at processMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:244:17)
+    at eval (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:70:13)
+    at WebSocket.handleMessage (webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js:65:17) @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js:72
+[16469538ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:24914

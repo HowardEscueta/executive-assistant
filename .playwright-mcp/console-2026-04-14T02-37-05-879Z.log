@@ -1,0 +1,10 @@
+[    1252ms] [WARNING] Uniform location for fit not found @ https://esm.sh/@paper-design/shaders@0.0.74/es2022/shaders.mjs:151
+[    1252ms] [WARNING] Uniform location for scale not found @ https://esm.sh/@paper-design/shaders@0.0.74/es2022/shaders.mjs:151
+[    1252ms] [WARNING] Uniform location for rotation not found @ https://esm.sh/@paper-design/shaders@0.0.74/es2022/shaders.mjs:151
+[    1252ms] [WARNING] Uniform location for offsetX not found @ https://esm.sh/@paper-design/shaders@0.0.74/es2022/shaders.mjs:151
+[    1252ms] [WARNING] Uniform location for offsetY not found @ https://esm.sh/@paper-design/shaders@0.0.74/es2022/shaders.mjs:151
+[    1252ms] [WARNING] Uniform location for originX not found @ https://esm.sh/@paper-design/shaders@0.0.74/es2022/shaders.mjs:151
+[    1252ms] [WARNING] Uniform location for originY not found @ https://esm.sh/@paper-design/shaders@0.0.74/es2022/shaders.mjs:151
+[    1252ms] [WARNING] Uniform location for worldWidth not found @ https://esm.sh/@paper-design/shaders@0.0.74/es2022/shaders.mjs:151
+[    1252ms] [WARNING] Uniform location for worldHeight not found @ https://esm.sh/@paper-design/shaders@0.0.74/es2022/shaders.mjs:151
+[    1324ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:3034/favicon.ico:0

@@ -1,0 +1,8 @@
+[     123ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[     124ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'web-share'. @ :0
+[    1195ms] [INFO] [O11Y] [DatadogRUM] Initialized {service: claude-ai, env: production, version: 8e97a4b6c5} @ https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/index-CGaJSFw2.js:1
+[    2135ms] [ERROR] Access to fetch at 'https://a-cdn.claude.ai/params/sri/EEA5F558-D6AC-4C03-B678-AABF639EE69A' from origin 'https://claude.ai' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled. @ https://claude.ai/login?returnTo=%2Fartifacts%2Flatest%2Fa8905aa9-716b-441b-83c6-405bfcc657ec:0
+[    2136ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://a-cdn.claude.ai/params/sri/EEA5F558-D6AC-4C03-B678-AABF639EE69A:0
+[    2302ms] [ERROR] Not signed in with the identity provider. @ https://claude.ai/login?returnTo=%2Fartifacts%2Flatest%2Fa8905aa9-716b-441b-83c6-405bfcc657ec:0
+[    2547ms] [WARNING] [Intercom] The App ID in your code snippet has not been set. Set it to your App ID found in settings to complete installation: https://app.intercom.com/a/apps/_/settings/web @ https://js.intercomcdn.com/frame-modern.3fa1db07.js:0
+[    3492ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/index-CGaJSFw2.js:1

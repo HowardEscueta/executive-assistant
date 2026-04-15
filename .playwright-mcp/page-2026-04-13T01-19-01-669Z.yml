@@ -1,0 +1,192 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "Dr. Celeste Uy's Dental Clinic General Trias, Cavite" [ref=e3] [cursor=pointer]:
+      - /url: "#"
+      - img [ref=e5]
+      - generic [ref=e7]:
+        - generic [ref=e8]: Dr. Celeste Uy's Dental Clinic
+        - generic [ref=e9]: General Trias, Cavite
+    - list [ref=e10]:
+      - listitem [ref=e11]:
+        - link "Services" [ref=e12] [cursor=pointer]:
+          - /url: "#services"
+      - listitem [ref=e13]:
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: "#about"
+      - listitem [ref=e15]:
+        - link "Contact" [ref=e16] [cursor=pointer]:
+          - /url: "#contact"
+    - link "Book Appointment" [ref=e17] [cursor=pointer]:
+      - /url: "#contact"
+  - generic [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img [ref=e21]
+        - text: General Dentistry
+      - heading "A Smile You're Proud to Show" [level=1] [ref=e23]:
+        - text: A Smile You're
+        - emphasis [ref=e24]: Proud to Show
+      - paragraph [ref=e25]: Gentle, reliable dental care for the whole family. From check-ups to orthodontics, we're here to keep your smile healthy in General Trias, Cavite.
+      - generic [ref=e26]:
+        - link "Book Appointment" [ref=e27] [cursor=pointer]:
+          - /url: "#contact"
+        - link "Our Services" [ref=e28] [cursor=pointer]:
+          - /url: "#services"
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: C
+        - generic [ref=e33]:
+          - generic [ref=e34]: Dr. Celeste Uy
+          - text: General Dentist
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: "2.5"
+          - generic [ref=e38]: Google Rating
+        - generic [ref=e39]:
+          - generic [ref=e40]: "2"
+          - generic [ref=e41]: Services
+        - generic [ref=e42]:
+          - generic [ref=e43]: "2"
+          - generic [ref=e44]: Days Open
+        - generic [ref=e45]:
+          - generic [ref=e46]: 2AM
+          - generic [ref=e47]: Opens At
+  - generic [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]: What We Offer
+      - heading "Dental Services" [level=2] [ref=e52]
+      - paragraph [ref=e53]: Complete dental care in one place — from preventive treatments to cosmetic and restorative procedures.
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]: "01"
+          - img [ref=e59]
+          - generic [ref=e61]:
+            - strong [ref=e62]: General Check-Up
+            - paragraph [ref=e63]: Thorough oral exam to assess and maintain your overall dental health.
+        - generic [ref=e64]:
+          - generic [ref=e65]: "02"
+          - img [ref=e67]
+          - generic [ref=e70]:
+            - strong [ref=e71]: Teeth Cleaning
+            - paragraph [ref=e72]: Professional prophylaxis and scaling for a fresh, healthy smile.
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]: "03"
+          - img [ref=e77]
+          - generic [ref=e79]:
+            - strong [ref=e80]: Dental Filling
+            - paragraph [ref=e81]: Restore decayed teeth with durable, natural-looking composite fillings.
+        - generic [ref=e82]:
+          - generic [ref=e83]: "04"
+          - img [ref=e85]
+          - generic [ref=e88]:
+            - strong [ref=e89]: Orthodontics / Braces
+            - paragraph [ref=e90]: Metal and wire braces for effective teeth alignment at any age.
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - generic [ref=e93]: "05"
+          - img [ref=e95]
+          - generic [ref=e98]:
+            - strong [ref=e99]: Tooth Extraction
+            - paragraph [ref=e100]: Safe, gentle extraction with minimal discomfort and quick recovery.
+        - generic [ref=e101]:
+          - generic [ref=e102]: "06"
+          - img [ref=e104]
+          - generic [ref=e106]:
+            - strong [ref=e107]: Dentures & Prosthetics
+            - paragraph [ref=e108]: Custom-fit partial and complete dentures for a restored, confident smile.
+  - generic [ref=e111]:
+    - generic [ref=e112]:
+      - generic [ref=e113]:
+        - img [ref=e115]
+        - generic [ref=e117]:
+          - generic [ref=e118]: Dr. Celeste Uy's Dental Clinic
+          - text: General Trias, Cavite
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - strong [ref=e121]: "4.5"
+          - text: Google Rating
+        - generic [ref=e122]:
+          - strong [ref=e123]: 8+
+          - text: Verified Reviews
+        - generic [ref=e124]:
+          - strong [ref=e125]: "6"
+          - text: Services
+        - generic [ref=e126]:
+          - strong [ref=e127]: 10AM
+          - text: Opens Daily
+    - generic [ref=e128]:
+      - generic [ref=e129]: About the Clinic
+      - heading "Gentle Care You Can Rely On" [level=2] [ref=e130]:
+        - text: Gentle Care You
+        - text: Can Rely On
+      - paragraph [ref=e131]: Dr. Celeste Uy's Dental Clinic has been serving patients in General Trias with a focus on gentle, thorough dental care. Our goal is simple — to make every visit comfortable and every patient leave with a healthier smile.
+      - paragraph [ref=e132]: Whether it's a routine check-up or a full orthodontic treatment, Dr. Uy brings the patience and expertise needed to deliver results you'll be proud of.
+      - list [ref=e133]:
+        - listitem [ref=e134]:
+          - img [ref=e136]
+          - text: Gentle, patient-first approach
+        - listitem [ref=e138]:
+          - img [ref=e140]
+          - text: Comprehensive general dentistry services
+        - listitem [ref=e142]:
+          - img [ref=e144]
+          - text: Affordable rates with flexible scheduling
+        - listitem [ref=e146]:
+          - img [ref=e148]
+          - text: Located along Tejero Bypass Rd, General Trias
+  - generic [ref=e152]:
+    - generic [ref=e153]:
+      - generic [ref=e154]: Get in Touch
+      - heading "Book Your Appointment" [level=2] [ref=e155]
+      - paragraph [ref=e156]: Ready for a healthier smile? Call us or fill out the form and we'll get back to you right away.
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - img [ref=e160]
+          - generic [ref=e162]:
+            - strong [ref=e163]: Phone
+            - text: 0917 551 6990
+        - generic [ref=e164]:
+          - img [ref=e166]
+          - generic [ref=e169]:
+            - strong [ref=e170]: Address
+            - text: 421B Tejero Bypass Rd, General Trias, Cavite
+        - generic [ref=e171]:
+          - img [ref=e173]
+          - generic [ref=e176]:
+            - strong [ref=e177]: Hours
+            - text: Monday – Saturday, 10:00 AM – 6:00 PM
+    - generic [ref=e178]:
+      - heading "Request an Appointment" [level=3] [ref=e179]
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - generic [ref=e182]: Full Name
+          - textbox "Your full name" [ref=e183]
+        - generic [ref=e184]:
+          - generic [ref=e185]: Phone Number
+          - textbox "09XX XXX XXXX" [ref=e186]
+      - generic [ref=e187]:
+        - generic [ref=e188]: Service Needed
+        - combobox [ref=e189]:
+          - option "Select a service" [selected]
+          - option "General Check-Up"
+          - option "Teeth Cleaning"
+          - option "Dental Filling"
+          - option "Orthodontics / Braces"
+          - option "Tooth Extraction"
+          - option "Dentures & Prosthetics"
+      - generic [ref=e190]:
+        - generic [ref=e191]: Preferred Date & Time
+        - textbox "e.g. Tuesday, 2:00 PM" [ref=e192]
+      - generic [ref=e193]:
+        - generic [ref=e194]: Message (optional)
+        - textbox "Any concerns or special requests?" [ref=e195]
+      - button "Send Appointment Request" [ref=e196] [cursor=pointer]
+  - contentinfo [ref=e197]:
+    - generic [ref=e198]:
+      - img [ref=e200]
+      - generic [ref=e202]: Dr. Celeste Uy's Dental Clinic
+    - generic [ref=e203]:
+      - paragraph [ref=e204]: 421B Tejero Bypass Rd, General Trias, Cavite
+      - paragraph [ref=e205]: 0917 551 6990

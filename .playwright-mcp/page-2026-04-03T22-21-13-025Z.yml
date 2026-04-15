@@ -1,0 +1,43 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Navigation
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - link "Dashboard" [ref=e13] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e14]
+              - generic [ref=e17]: Dashboard
+          - listitem [ref=e18]:
+            - link "User Management" [ref=e19] [cursor=pointer]:
+              - /url: /user-management
+              - img [ref=e20]
+              - generic [ref=e25]: User Management
+          - listitem [ref=e26]:
+            - link "Change Log" [ref=e27] [cursor=pointer]:
+              - /url: /change-logs/google-search-console
+              - img [ref=e28]
+              - generic [ref=e31]: Change Log
+          - listitem [ref=e32]:
+            - button "Logout" [ref=e33] [cursor=pointer]:
+              - img [ref=e34]
+              - generic [ref=e37]: Logout
+      - generic [ref=e38]: v0.1.0
+    - main [ref=e39]:
+      - button "Toggle Sidebar" [ref=e40] [cursor=pointer]:
+        - img [ref=e41]
+        - generic [ref=e43]: Toggle Sidebar
+      - generic [ref=e45]:
+        - heading "Sign in to your account" [level=2] [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - generic [ref=e51]: Email address
+              - textbox "Email address" [ref=e52]
+            - generic [ref=e53]:
+              - generic [ref=e54]: Password
+              - textbox "Password" [ref=e55]
+          - button "Sign in" [ref=e57] [cursor=pointer]
+  - region "Notifications alt+T"
+  - alert [ref=e58]

@@ -1,0 +1,228 @@
+- main [ref=e2]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]: DM
+    - generic [ref=e6]:
+      - link "About" [ref=e7] [cursor=pointer]:
+        - /url: "#about"
+      - link "Skills" [ref=e8] [cursor=pointer]:
+        - /url: "#skills"
+      - link "Experience" [ref=e9] [cursor=pointer]:
+        - /url: "#experience"
+      - link "Certificates" [ref=e10] [cursor=pointer]:
+        - /url: "#certificates"
+      - link "Contact" [ref=e11] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e12]:
+    - generic:
+      - generic:
+        - img "Dan Michael Dela Cruz"
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - heading "Dan Michael Dela Cruz." [level=1] [ref=e16]:
+          - text: Dan Michael
+          - text: Dela Cruz.
+        - generic [ref=e18]:
+          - link "Email" [ref=e19] [cursor=pointer]:
+            - /url: mailto:dmedelacruz10@gmail.com
+            - img [ref=e20]
+          - link "LinkedIn" [ref=e23] [cursor=pointer]:
+            - /url: https://linkedin.com/in/danmichaeldelacruz
+            - img [ref=e24]
+          - link "GitHub" [ref=e28] [cursor=pointer]:
+            - /url: https://github.com/danmichaeldelacruz
+            - img [ref=e29]
+      - generic [ref=e32]:
+        - paragraph [ref=e33]: — Introduction
+        - heading "Senior Java Software Engineer, based in Pampanga, Philippines." [level=2] [ref=e34]:
+          - text: Senior Java Software Engineer, based in
+          - text: Pampanga, Philippines.
+        - paragraph [ref=e35]: 6 years building high-performance Java backends and AWS cloud infrastructure for enterprise teams across Southeast Asia.
+        - link "View Experience →" [ref=e36] [cursor=pointer]:
+          - /url: "#experience"
+  - generic [ref=e39]:
+    - generic [ref=e40]:
+      - paragraph [ref=e41]: — About
+      - paragraph [ref=e42]: Senior Java engineer specializing in scalable Spring Boot microservices and AWS cloud architecture. I design RESTful APIs, secure auth systems, and CI/CD pipelines — delivering maintainable, production-grade solutions for cross-functional enterprise teams.
+      - link "dmedelacruz10@gmail.com →" [ref=e43] [cursor=pointer]:
+        - /url: mailto:dmedelacruz10@gmail.com
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]: 6+
+        - generic [ref=e47]: Years of Experience
+      - generic [ref=e48]:
+        - generic [ref=e49]: "4"
+        - generic [ref=e50]: Companies
+      - generic [ref=e51]:
+        - generic [ref=e52]: "4"
+        - generic [ref=e53]: Certifications
+  - generic [ref=e55]:
+    - generic [ref=e56]:
+      - paragraph [ref=e57]: — Skills
+      - heading "Technical Expertise." [level=2] [ref=e58]
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - img [ref=e61]
+        - generic [ref=e64]:
+          - heading "Java Backend." [level=3] [ref=e65]
+          - generic [ref=e66]:
+            - generic [ref=e67]: Spring Boot
+            - generic [ref=e68]: Microservices
+            - generic [ref=e69]: REST APIs
+            - generic [ref=e70]: JUnit 5 / Mockito
+            - generic [ref=e71]: Kotlin
+      - generic [ref=e72]:
+        - img [ref=e73]
+        - generic [ref=e75]:
+          - heading "AWS Cloud." [level=3] [ref=e76]
+          - generic [ref=e77]:
+            - generic [ref=e78]: EC2 / ECS / EKS
+            - generic [ref=e79]: Lambda & Step Functions
+            - generic [ref=e80]: RDS / DynamoDB
+            - generic [ref=e81]: S3 / CloudFront
+            - generic [ref=e82]: SNS / SQS
+      - generic [ref=e83]:
+        - img [ref=e84]
+        - generic [ref=e88]:
+          - heading "DevOps & Security." [level=3] [ref=e89]
+          - generic [ref=e90]:
+            - generic [ref=e91]: Docker & Kubernetes
+            - generic [ref=e92]: CI/CD Pipelines
+            - generic [ref=e93]: Spring Security
+            - generic [ref=e94]: OAuth2 / JWT
+            - generic [ref=e95]: Agile & Scrum
+  - generic [ref=e97]:
+    - generic [ref=e98]:
+      - paragraph [ref=e99]: — Experience
+      - heading "Work History." [level=2] [ref=e100]
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - heading "Senior AWS Java Software Engineer" [level=3] [ref=e105]
+            - paragraph [ref=e106]: 77 Global Solutions
+          - generic [ref=e107]:
+            - generic [ref=e108]: 09/2024 — Present · Manila, Metro Manila (Remote)
+            - generic [ref=e109]: Current
+        - list [ref=e110]:
+          - listitem [ref=e111]:
+            - generic [ref=e112]: —
+            - text: Designed and implemented highly available, fault-tolerant, and scalable architectures on AWS using EC2, ECS/EKS, Lambda, API Gateway, S3, DynamoDB, RDS, and CloudFront.
+          - listitem [ref=e113]:
+            - generic [ref=e114]: —
+            - text: Implemented fault-tolerant and highly efficient RESTful APIs using Java and Spring Boot.
+          - listitem [ref=e115]:
+            - generic [ref=e116]: —
+            - text: Wrote unit and integration tests using JUnit 5, Mockito, and Spring Boot Test for controllers, services, and repositories.
+          - listitem [ref=e117]:
+            - generic [ref=e118]: —
+            - text: Exhibited strong problem-solving skills while troubleshooting complex technical issues under tight deadlines.
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - heading "Senior Java Software Engineer" [level=3] [ref=e122]
+            - paragraph [ref=e123]: Offshore-Team
+          - generic [ref=e125]: 02/2022 — 09/2024 · Remote
+        - list [ref=e126]:
+          - listitem [ref=e127]:
+            - generic [ref=e128]: —
+            - text: Built event-driven applications using AWS Lambda, SNS, SQS, EventBridge, and Step Functions for real-time data processing and asynchronous workflows.
+          - listitem [ref=e129]:
+            - generic [ref=e130]: —
+            - text: Secured REST APIs using Spring Security with JWT authentication, OAuth2, and role-based access control.
+          - listitem [ref=e131]:
+            - generic [ref=e132]: —
+            - text: Introduced a testing system using the Karate framework for seamless integration of new features.
+          - listitem [ref=e133]:
+            - generic [ref=e134]: —
+            - text: Mentored junior developers in Java programming best practices, fostering a culture of knowledge-sharing and collaboration.
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - heading "Senior Java Software Engineer" [level=3] [ref=e138]
+            - paragraph [ref=e139]: Innovantage
+          - generic [ref=e141]: 11/2018 — 02/2022 · Mabalacat, Pampanga
+        - list [ref=e142]:
+          - listitem [ref=e143]:
+            - generic [ref=e144]: —
+            - text: Designed and maintained highly scalable RESTful APIs on a microservice architecture.
+          - listitem [ref=e145]:
+            - generic [ref=e146]: —
+            - text: Used DevOps techniques such as containerization and orchestration with Docker and Kubernetes.
+          - listitem [ref=e147]:
+            - generic [ref=e148]: —
+            - text: Experienced working as a Solutions Architect on AWS, delivering well-architected systems based on business requirements.
+          - listitem [ref=e149]:
+            - generic [ref=e150]: —
+            - text: Worked with DevOps to develop and maintain CI/CD pipelines.
+      - generic [ref=e151]:
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - heading "Associate Java Software Engineer" [level=3] [ref=e154]
+            - paragraph [ref=e155]: Accenture
+          - generic [ref=e157]: 04/2018 — 11/2018 · Philippines
+        - list [ref=e158]:
+          - listitem [ref=e159]:
+            - generic [ref=e160]: —
+            - text: Worked on Spring Boot applications, web apps, microservices, and RESTful APIs in an agile environment.
+          - listitem [ref=e161]:
+            - generic [ref=e162]: —
+            - text: Learned and applied best practices and clean coding from senior mentors.
+          - listitem [ref=e163]:
+            - generic [ref=e164]: —
+            - text: Experienced working as a support team for debugging, investigating, and solving production issues.
+  - generic [ref=e166]:
+    - generic [ref=e167]:
+      - paragraph [ref=e168]: — Certificates
+      - heading "Certifications." [level=2] [ref=e169]
+    - generic [ref=e170]:
+      - link "Java Spring Boot TestDome" [ref=e171] [cursor=pointer]:
+        - /url: https://app.testdome.com/cert/1eafbaef16dd40fd933b55857494e68f
+        - img [ref=e173]
+        - generic [ref=e176]:
+          - paragraph [ref=e177]: Java Spring Boot
+          - paragraph [ref=e178]: TestDome
+        - img [ref=e179]
+      - link "Google Cloud Essentials Google Cloud" [ref=e183] [cursor=pointer]:
+        - /url: https://www.cloudskillsboost.google/public_profiles/d387d547-f2e3-4a55-b27b-3f9619c43e2d/badges/62499
+        - img [ref=e185]
+        - generic [ref=e188]:
+          - paragraph [ref=e189]: Google Cloud Essentials
+          - paragraph [ref=e190]: Google Cloud
+        - img [ref=e191]
+      - link "Kubernetes in Google Cloud Google Cloud" [ref=e195] [cursor=pointer]:
+        - /url: https://www.cloudskillsboost.google/public_profiles/d387d547-f2e3-4a55-b27b-3f9619c43e2d/badges/66340
+        - img [ref=e197]
+        - generic [ref=e200]:
+          - paragraph [ref=e201]: Kubernetes in Google Cloud
+          - paragraph [ref=e202]: Google Cloud
+        - img [ref=e203]
+      - link "PSM I Certified Scrum.org" [ref=e207] [cursor=pointer]:
+        - /url: https://www.credly.com/badges/4d435c4d-06b5-4528-8829-886eef9d0834/public_url
+        - img [ref=e209]
+        - generic [ref=e212]:
+          - paragraph [ref=e213]: PSM I Certified
+          - paragraph [ref=e214]: Scrum.org
+        - img [ref=e215]
+  - generic [ref=e220]:
+    - generic [ref=e221]:
+      - generic [ref=e222]:
+        - paragraph [ref=e223]: — Contact
+        - heading "Got a project? Let's talk." [level=2] [ref=e224]:
+          - text: Got a project?
+          - text: Let's talk.
+        - paragraph [ref=e225]: Available for senior engineering roles, consulting, and technical leadership opportunities.
+        - link "dmedelacruz10@gmail.com →" [ref=e226] [cursor=pointer]:
+          - /url: mailto:dmedelacruz10@gmail.com
+      - generic [ref=e227]:
+        - heading "Send a message. Let me know here." [level=3] [ref=e228]:
+          - text: Send a message.
+          - text: Let me know here.
+        - generic [ref=e229]:
+          - textbox "What's your name?" [ref=e231]
+          - textbox "Your email address" [ref=e233]
+          - textbox "Tell me about your project" [ref=e235]
+          - button "Send message →" [ref=e236]
+    - generic [ref=e237]:
+      - generic [ref=e238]: DM
+      - paragraph [ref=e239]: Thanks for scrolling, that's all folks.
+      - paragraph [ref=e240]: © 2026 Dan Michael Dela Cruz. All rights reserved.

@@ -1,0 +1,42 @@
+- generic "Google Maps" [ref=e2]:
+  - generic [ref=e3]:
+    - application "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key." [ref=e8]
+    - search [ref=e14]:
+      - button "Menu" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: 
+      - generic [ref=e18]:
+        - combobox [ref=e20]
+        - button "Search" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: 
+        - button "Directions" [ref=e25] [cursor=pointer]:
+          - generic [ref=e26]: 
+    - generic [ref=e27]:
+      - main [ref=e33]:
+        - generic [ref=e39]:
+          - generic:
+            - heading [level=1]
+        - region "Actions for" [ref=e42]:
+          - button "Directions" [active] [ref=e44] [cursor=pointer]:
+            - generic [ref=e46]: 
+            - generic [ref=e47]: Directions
+          - button "Save" [ref=e49] [cursor=pointer]:
+            - generic [ref=e51]: 
+            - generic [ref=e52]: Save
+          - button "Nearby" [ref=e54] [cursor=pointer]:
+            - generic [ref=e56]: 
+            - generic [ref=e57]: Nearby
+          - button "Send to phone" [ref=e59] [cursor=pointer]:
+            - generic [ref=e61]: 
+            - generic [ref=e62]: Send to phone
+          - button "Share" [ref=e64] [cursor=pointer]:
+            - generic [ref=e66]: 
+            - generic [ref=e67]: Share
+        - link "About this data" [ref=e74] [cursor=pointer]:
+          - /url: https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=en
+          - generic [ref=e76]: About this data
+        - heading "Get the most out of Google Maps Sign in" [level=2] [ref=e80]:
+          - generic [ref=e81]: Get the most out of Google Maps
+          - button "Sign in" [ref=e84] [cursor=pointer]:
+            - generic [ref=e86]: Sign in
+      - button "Collapse side panel" [ref=e88] [cursor=pointer]:
+        - generic [ref=e89]: 

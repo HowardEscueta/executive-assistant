@@ -1,0 +1,112 @@
+- generic [active] [ref=e1]:
+  - img [ref=e2]
+  - generic [ref=e8]:
+    - status [ref=e9]
+    - generic [ref=e10]:
+      - link "Skip to main content ↓" [ref=e11] [cursor=pointer]:
+        - /url: "#main"
+        - generic [ref=e12]: Skip to main content
+        - text: ↓
+      - banner [ref=e13]:
+        - link "Netlify" [ref=e16] [cursor=pointer]:
+          - /url: /drop
+          - img "Netlify" [ref=e18]
+          - generic [ref=e20]: Netlify Drop
+      - generic [ref=e23]:
+        - main "Drop" [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e29]:
+              - generic [ref=e30]:
+                - img "checkmark" [ref=e32]
+                - img [ref=e33]
+                - generic [ref=e61]:
+                  - generic [ref=e62]:
+                    - heading "Check it out! point down" [level=1] [ref=e63]:
+                      - text: Check it out!
+                      - img "point down" [ref=e64]: 👇
+                    - paragraph [ref=e65]:
+                      - link "https://unique-kringle-283a18.netlify.app →" [ref=e66] [cursor=pointer]:
+                        - /url: https://unique-kringle-283a18.netlify.app
+                    - paragraph [ref=e67]:
+                      - text: Your project will be live for
+                      - strong [ref=e68]: 1 hour
+                      - text: .
+                    - paragraph [ref=e69]:
+                      - text: "The password for accessing the project is:"
+                      - strong [ref=e70]: My-Drop-Site
+                    - paragraph [ref=e71]: To keep your Netlify projects online, create a free account.
+                    - link "Sign up for free" [ref=e75] [cursor=pointer]:
+                      - /url: /drop/unique-kringle-283a18/claim
+                  - link "Go to project unique-kringle-283a18" [ref=e77] [cursor=pointer]:
+                    - /url: https://unique-kringle-283a18.netlify.app
+              - generic [ref=e78]:
+                - heading "Your project is live!" [level=1] [ref=e79]
+                - paragraph [ref=e80]: Absolutely magnificent!
+            - generic [ref=e83]:
+              - heading "So what’s next?" [level=2] [ref=e85]
+              - generic [ref=e86]:
+                - article [ref=e87]:
+                  - generic [ref=e89]:
+                    - heading "Connect a Git repo" [level=3] [ref=e90]:
+                      - link "Connect a Git repo" [ref=e91] [cursor=pointer]:
+                        - /url: https://netlify.com/build
+                    - paragraph [ref=e92]: Automated continuous deployment
+                - article [ref=e93]:
+                  - generic [ref=e95]:
+                    - heading "Add a custom domain" [level=3] [ref=e96]:
+                      - link "Add a custom domain" [ref=e97] [cursor=pointer]:
+                        - /url: https://docs.netlify.com/domains-https/custom-domains/
+                    - paragraph [ref=e98]: Give your project a personalized home
+                - article [ref=e99]:
+                  - generic [ref=e101]:
+                    - heading "Add a form" [level=3] [ref=e102]:
+                      - link "Add a form" [ref=e103] [cursor=pointer]:
+                        - /url: https://www.netlify.com/products/forms/
+                    - paragraph [ref=e104]: Forms without any server-side code
+                - article [ref=e105]:
+                  - generic [ref=e107]:
+                    - heading "Gather feedback" [level=3] [ref=e108]:
+                      - link "Gather feedback" [ref=e109] [cursor=pointer]:
+                        - /url: https://www.netlify.com/products/deploy-previews/
+                    - paragraph [ref=e110]: Collaborate on deploy previews
+                - article [ref=e111]:
+                  - generic [ref=e113]:
+                    - heading "Fine tune your workflow" [level=3] [ref=e114]:
+                      - link "Fine tune your workflow" [ref=e115] [cursor=pointer]:
+                        - /url: https://www.netlify.com/products/build/plugins/
+                    - paragraph [ref=e116]: Power up with build plugins
+                - article [ref=e117]:
+                  - generic [ref=e119]:
+                    - heading "Build dynamic apps" [level=3] [ref=e120]:
+                      - link "Build dynamic apps" [ref=e121] [cursor=pointer]:
+                        - /url: https://www.netlify.com/products/functions/
+                    - paragraph [ref=e122]: Scale with Netlify functions
+              - link "Sign up for Netlify for free" [ref=e124] [cursor=pointer]:
+                - /url: /drop/unique-kringle-283a18/claim
+        - contentinfo [ref=e125]:
+          - generic [ref=e126]:
+            - navigation [ref=e127]:
+              - list "External links" [ref=e128]:
+                - listitem [ref=e129]:
+                  - link "Docs" [ref=e130] [cursor=pointer]:
+                    - /url: https://docs.netlify.com/
+                - listitem [ref=e131]:
+                  - link "Pricing" [ref=e132] [cursor=pointer]:
+                    - /url: https://www.netlify.com/pricing/
+                - listitem [ref=e133]:
+                  - link "Support" [ref=e134] [cursor=pointer]:
+                    - /url: https://www.netlify.com/support/
+                - listitem [ref=e135]:
+                  - link "Blog" [ref=e136] [cursor=pointer]:
+                    - /url: https://www.netlify.com/blog/
+                - listitem [ref=e137]:
+                  - link "Changelog" [ref=e138] [cursor=pointer]:
+                    - /url: https://www.netlify.com/changelog/
+                - listitem [ref=e139]:
+                  - link "Terms" [ref=e140] [cursor=pointer]:
+                    - /url: https://www.netlify.com/legal/terms-of-use/
+            - paragraph [ref=e141]:
+              - text: © 2026
+              - link "Netlify" [ref=e142] [cursor=pointer]:
+                - /url: https://www.netlify.com
+    - region "Notifications alt+T"

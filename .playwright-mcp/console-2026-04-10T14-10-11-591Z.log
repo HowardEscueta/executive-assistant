@@ -1,0 +1,8 @@
+[    1817ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.netlify.com/v3/static/storage.html:0
+[    2922ms] [WARNING] using deprecated parameters for the initialization function; pass a single object instead @ https://www.netlify.com/pagefind/pagefind-worker.js:0
+[    3222ms] [WARNING] Merging a Pagefind index from a different version than the main Pagefind instance.
+Main Pagefind JS: 1.5.0. Merged index (https://docs.netlify.com/pagefind/): 1.3.0
+If you encounter any search errors, make sure that both sites are running the same version of Pagefind. @ https://www.netlify.com/pagefind/pagefind-worker.js:0
+[    3560ms] [WARNING] Merging a Pagefind index from a different version than the main Pagefind instance.
+Main Pagefind JS: 1.5.0. Merged index (https://developers.netlify.com/pagefind/): 1.3.0
+If you encounter any search errors, make sure that both sites are running the same version of Pagefind. @ https://www.netlify.com/pagefind/pagefind-worker.js:0
